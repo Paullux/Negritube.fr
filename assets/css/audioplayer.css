@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    color: #fff;
+}
+a{
+    color:yellow;
+}
+.bar-wrapper {
+    height: 300px;
+    position: relative;
+}
+.bar {
+    position: relative;
+    bottom: 0;
+    width: 5px;
+    display: inline-block;
+    border: 1px solid red;
+    height: 5px;
+    border-bottom: 3px solid #fff;
+}
+
+canvas {
+  border: 3px solid rgba(255,0,0,0.5);
+  background-image: url("../img/philippe.png");
+  background-size: cover;
+}

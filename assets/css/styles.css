@@ -1,0 +1,385 @@
+@font-face {
+   font-family: 'HeydingsControlsRegular';
+   src: url('../fonts/heydings_controls.eot');
+   src: url('../fonts/heydings_controls.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/heydings_controls.woff') format('woff'),
+        url('../fonts/heydings_controls.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+button:before {
+  font-family: HeydingsControlsRegular;
+  font-size: 20px;
+  position: relative;
+  content: attr(data-icon);
+  color: #aaa;
+  text-shadow: 1px 1px 0px black;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
+                    url('../img/fresque_coloree.jpg');
+  background-size: cover;
+}
+
+video {
+  width: 80%;
+}
+
+@media screen and (max-width: 1280px) and (orientation: portrait)
+{
+  body {
+
+  }
+  .index{
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
+                      url('../img/fresque_coloree_rotate.jpg');
+    background-size: 100vh auto;
+  }
+  .my_page {
+    height: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+    column-count: 4;
+    background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
+                      url('../img/fresque_coloree.jpg');
+  }
+  .video_page {
+    transform: rotate(90deg);
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+  video {
+    width: 100%;
+  }
+  .title_site {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .subtitle_site {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .left_col {
+    display: none;
+  }
+  .link_song > .flex-row-item {
+      flex: 1 1 40% !important; /*grow | shrink | basis */
+      flex-basis: 40% !important;
+      flex-grow: 0 !important;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 50px;
+  }
+  .song_title {
+    height: 9vw;
+  }
+
+  .description {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) and (orientation: landscape)
+{
+  body {
+    height: 97vh;
+  }
+  .index{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
+                      url('../img/fresque_coloree.jpg');
+    background-size: 100vh auto;
+  }
+  .my_page {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    row-count: 4;
+    background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
+                      url('../img/fresque_coloree.jpg');
+  }
+  .video_page {
+    margin-left: 25vw;
+    margin-rigth: 25vw;
+  }
+  video {
+    width: 100%;
+  }
+  .title_site {
+    font-size: 20pt !important;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .subtitle_site {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .left_col {
+    display: none;
+  }
+  .link_song > .flex-row-item {
+      flex: 1 1 40% !important; /*grow | shrink | basis */
+      flex-basis: 40% !important;
+      flex-grow: 0 !important;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 50px;
+  }
+  .song_title {
+    height: 9vh;
+    font-size: 18pt !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .description {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.title_site {
+  font-family: 'Lobster', cursive;
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-size: 40pt;
+  color: 	#FF8C00;
+  width: fit-content;
+  margin: auto;
+  text-shadow: 3px 3px 3px #000;
+  background-color: lightblue;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+
+.title_link {
+  text-decoration: none;
+}
+
+.subtitle_site {
+  font-family: 'Lobster', cursive;
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30pt;
+  color: 	#FF8C00;
+  width: fit-content;
+  margin: auto;
+  text-shadow: 3px 3px 3px #000;
+  background-color: lightblue;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.left_col {
+    width:10%;
+    margin-left: 4%;
+    margin-right: 4%;
+    float: left;
+    height: 50vh;
+    position: absolute;
+    overflow-y: scroll;
+    background-color: rgba(209, 222, 145, 0.8);
+    border: 10px solid rgba(255, 0, 0, 0.95);
+ }
+
+.left_col img {
+  width: 100%;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.left_col::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.left_col {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.left_col {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25pt;
+  color: #547192;
+  text-shadow: 1px 1px 1px #000;
+}
+
+ dd {
+   margin: 0;
+ }
+
+ dt {
+   margin: 0;
+   position: absolute;
+   height: 100vh;
+   top: 0;
+   left: 0;
+ }
+
+ p {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 20pt;
+   color: #547192;
+   width: 100%;
+   margin: 0;
+   text-align: center;
+   text-shadow: 1px 1px 1px #000;
+ }
+
+.link_song {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.link_song > .flex-row-item {
+    flex: 1 1 25%; /*grow | shrink | basis */
+    flex-basis: 25%;
+    flex-grow: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.link_song img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.controls {
+  visibility: hidden;
+  opacity: 0.5;
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -200px;
+  background-color: black;
+  box-shadow: 3px 3px 5px black;
+  transition: 1s all;
+  display: flex;
+}
+
+.player {
+  padding-left: 15%;
+  text-align: center;
+}
+
+.player:hover .controls, player:focus .controls {
+  opacity: 1;
+}
+
+.player:after {
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 35%;
+}
+
+.timer {
+  line-height: 38px;
+  font-size: 10px;
+  font-family: monospace;
+  text-shadow: 1px 1px 0px black;
+  color: white;
+  flex: 5;
+  position: relative;
+}
+
+.timer div {
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 38px;
+  z-index: 2;
+}
+
+.timer span {
+  position: absolute;
+  z-index: 3;
+  left: 19px;
+}
+
+.song_title {
+  font-family: 'Lobster', cursive;
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-size: 38pt;
+  color: 	#000;
+  text-align: center;
+  text-shadow: 3px 3px 3px #FFF;
+  background-color: orange;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.description {
+  font-family: 'Lobster', cursive;
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30pt;
+  color: 	#000;
+  text-align: center;
+  text-shadow: 3px 3px 3px #FFF;
+  background-color: orange;
+  padding-bottom: 20px;
+}
+
+.visiteurs {
+  font-family: 'Lobster', cursive;
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20pt;
+  color: 	#000;
+  text-align: center;
+  text-shadow: 3px 3px 3px #FFF;
+  padding-bottom: 20px;
+}
+
+footer p {
+  position: relative;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 10pt;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
