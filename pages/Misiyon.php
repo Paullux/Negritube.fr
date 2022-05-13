@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
   </head>
-  <body>
+  <body  onload="document.getElementById(1).style.backgroundColor = '#D88851';">
     <div class="my_page">
       <div class="video_page">
         <a href="../index.php">
@@ -44,51 +44,51 @@
           <source src="../assets/audio/Misiyon/1.mp3" type="audio/mpeg">
         </audio>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/1.mp3');document.getElementById('song_title').innerHTML='► Chanson 01 - West Indies Blue';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 01 - West Indies Blue
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/2.mp3');document.getElementById('song_title').innerHTML='► Chanson 02 - Pawol A Bondyé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="2" onclick="launchNewMusic(2);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 02 - Pawol A Bondyé
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/3.mp3');document.getElementById('song_title').innerHTML='► Chanson 03 - Fò Pa Nou Dékourajé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="3" onclick="launchNewMusic(3);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 03 - Fò Pa Nou Dékourajé
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/4.mp3');document.getElementById('song_title').innerHTML='► Chanson 04 - Yenki Asisté';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="4" onclick="launchNewMusic(4);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 04 - Yenki Asisté
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/5.mp3');document.getElementById('song_title').innerHTML='► Chanson 05 - Tribilasiyon';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="5" onclick="launchNewMusic(5);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 05 - Tribilasiyon
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/6.mp3');document.getElementById('song_title').innerHTML='► Chanson 06 - Omaj A Vélo';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="6" onclick="launchNewMusic(6);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 06 - Omaj A Vélo
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/7.mp3');document.getElementById('song_title').innerHTML='► Chanson 07 - Sonjé Bino';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="7" onclick="launchNewMusic(7);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 07 - Sonjé Bino
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/8.mp3');document.getElementById('song_title').innerHTML='► Chanson 08 - Fòs É Kouraj';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="8" onclick="launchNewMusic(8);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 08 - Fòs É Kouraj
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/9.mp3');document.getElementById('song_title').innerHTML='► Chanson 09 - Sajès';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="9" onclick="launchNewMusic(9);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 09 - Sajès
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/10.mp3');document.getElementById('song_title').innerHTML='► Chanson 10 - Nou Mélé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="10" onclick="launchNewMusic(10);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 10 - Nou Mélé
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/11.mp3');document.getElementById('song_title').innerHTML='► Chanson 11 - On Gran Sanblé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="11" onclick="launchNewMusic(11);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 11 - On Gran Sanblé
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/12.mp3');document.getElementById('song_title').innerHTML='► Chanson 12 - Lésé Tè-La Touné';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="12" onclick="launchNewMusic(12);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 12 - Lésé Tè-La Touné
         </button>
         <br>
@@ -110,4 +110,22 @@
 </footer>
 <script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
 <script src="../assets/js/graph_audio.js" crossorigin="padivw"></script>
+<script type="text/javascript">
+   var myaud = document.getElementById("audio");
+   var song = document.getElementById('song_title');
+
+   function launchNewMusic(trackNumber) {
+
+     document.getElementById('song_title').style.backgroundColor = "#D88851";
+
+     for (let i = 1; i < 13; i++) {
+       document.getElementById(i).style.backgroundColor = "orange";
+     }
+
+     document.getElementById(trackNumber).style.backgroundColor = "#D88851";
+
+     document.getElementById('audio').setAttribute('src', '../assets/audio/Misiyon/' + trackNumber + '.mp3');
+     song.innerHTML=document.getElementById(trackNumber).innerHTML;
+   }
+ </script>
 </html>

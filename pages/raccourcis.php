@@ -78,7 +78,7 @@
   </dd>
   <dd>
     <a href="../pages/Eritaj.php" style="text-decoration:none;">
-      <p>Eritaj (album complet)</p>
+      <p>Eritaj (extrait de l'album)</p>
       <img src="../assets/img/miniature/Eritaj.png" alt="" />
     </a>
     <div style="height:10px;font-size:10px;width:100%;background-color:rgba(255, 0, 0, 0.95);">

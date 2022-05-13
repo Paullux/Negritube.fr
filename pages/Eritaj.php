@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
   </head>
-  <body>
+  <body onload="document.getElementById(1).style.backgroundColor = '#D88851';">
     <div class="my_page">
       <div class="video_page">
         <a href="../index.php">
@@ -32,7 +32,7 @@
         <br>
         <?php include("raccourcis.php") ?>
         <div class="song_title" id="title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
-        Album Eritaj
+        Album Eritaj (Extrait)
         </div>
         <br>
         <canvas id='canvas' width="800" height="350" style="background-image: url('../assets/img/album cover/Eritaj.jpg');background-size: auto;"></canvas>
@@ -44,55 +44,55 @@
             <source src="../assets/audio/Eritaj/1.mp3" type="audio/mpeg">
           </audio>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/1.mp3');document.getElementById('song_title').innerHTML='► Chanson 01 - A prèzan';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 01 - A prèzan
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/2.mp3');document.getElementById('song_title').innerHTML='► Chanson 02 - Blagamas';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="2" onclick="launchNewMusic(2);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 02 - Blagamas
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/3.mp3');document.getElementById('song_title').innerHTML='► Chanson 03 - Jòd\'la';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="3"  onclick="launchNewMusic(3);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 03 - Jòd'la
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/4.mp3');document.getElementById('song_title').innerHTML='► Chanson 04 - Vyé zèb';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="4" onclick="launchNewMusic(4);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 04 - Vyé zèb
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/5.mp3');document.getElementById('song_title').innerHTML='► Chanson 05 - Piétòn-la';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="5" onclick="launchNewMusic(5);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 05 - Piétòn-la
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/6.mp3');document.getElementById('song_title').innerHTML='► Chanson 06 - Latina';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="6" onclick="launchNewMusic(6);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 06 - Latina
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/7.mp3');document.getElementById('song_title').innerHTML='► Chanson 07 - Mèsi Bondyé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="7" onclick="launchNewMusic(7);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 07 - Mèsi Bondyé
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/8.mp3');document.getElementById('song_title').innerHTML='► Chanson 08 - Dlo';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="8" onclick="launchNewMusic(8);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 08 - Dlo
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/9.mp3');document.getElementById('song_title').innerHTML='► Chanson 09 - Fawniennt\'';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="9" onclick="launchNewMusic(9);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 09 - Fawniennt'
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/10.mp3');document.getElementById('song_title').innerHTML='► Chanson 10 - Fiyansaiy';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="10" onclick="launchNewMusic(10);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 10 - Fiyansaiy
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/11.mp3');document.getElementById('song_title').innerHTML='► Chanson 11 - Twopik';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="11" onclick="launchNewMusic(11);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 11 - Twopik
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/12.mp3');document.getElementById('song_title').innerHTML='► Chanson 12 - Zépon';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="12" onclick="launchNewMusic(12);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 12 - Zépon
           </button>
           <br>
-          <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/13.mp3');document.getElementById('song_title').innerHTML='► Chanson 13 - Jwé mizik';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+          <button class="song_title" id="13" onclick="launchNewMusic(13);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Chanson 13 - Jwé mizik
           </button>
           <br>
@@ -114,4 +114,38 @@
 </footer>
 <script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
 <script src="../assets/js/graph_audio.js" crossorigin="padivw"></script>
+<script type="text/javascript">
+   var myaud = document.getElementById("audio");
+   var k = setInterval("pauseAud()", 20000);
+   var song = document.getElementById('song_title');
+
+   function launchNewMusic(trackNumber) {
+
+     document.getElementById('song_title').style.backgroundColor = "#D88851";
+
+     for (let i = 1; i < 14; i++) {
+       document.getElementById(i).style.backgroundColor = "orange";
+     }
+
+     document.getElementById(trackNumber).style.backgroundColor = "#D88851";
+
+     document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/' + trackNumber + '.mp3');
+     song.innerHTML=document.getElementById(trackNumber).innerHTML;
+
+     clearInterval(k);
+     k = setInterval("pauseAud()", 20000);
+   }
+
+   function playAud() {
+       myaud.play();
+   }
+
+   function pauseAud() {
+       myaud.pause();
+       myaud.currentTime=0;
+       song.style.backgroundColor = "#D56B56";
+       song.innerHTML+=" - Fin de l'Extrait";
+       clearInterval(k);
+   }
+</script>
 </html>

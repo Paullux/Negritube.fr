@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
   </head>
-  <body>
+  <body onload="document.getElementById(1).style.backgroundColor = '#D88851';">
     <div class="my_page">
       <div class="video_page">
         <a href="../index.php">
@@ -44,31 +44,31 @@
           <source src="../assets/audio/Konsyans/1.mp3" type="audio/mpeg">
         </audio>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/1.mp3');document.getElementById('song_title').innerHTML='► Chanson 01 - Lévé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 01 - Lévé
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/2.mp3');document.getElementById('song_title').innerHTML='► Chanson 02 - Syel la tandé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="2" onclick="launchNewMusic(2);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 02 - Syel la tandé
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/3.mp3');document.getElementById('song_title').innerHTML='► Chanson 03 - An bato la';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="3" onclick="launchNewMusic(3);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 03 - An bato la
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/4.mp3');document.getElementById('song_title').innerHTML='► Chanson 04 - On jédi swa';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="4" onclick="launchNewMusic(4);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 04 - On jédi swa
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/5.mp3');document.getElementById('song_title').innerHTML='► Chanson 05 - Jénès';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="5" onclick="launchNewMusic(5);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 05 - Jénès
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/6.mp3');document.getElementById('song_title').innerHTML='► Chanson 06 - Polèt';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="6" onclick="launchNewMusic(6);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 06 - Polèt
         </button>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/7.mp3');document.getElementById('song_title').innerHTML='► Chanson 07 - An mwé';" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" id="7" onclick="launchNewMusic(7);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 07 - An mwé
         </button>
         <div class="hidden">
@@ -88,4 +88,22 @@
 </footer>
 <script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
 <script src="../assets/js/graph_audio.js" crossorigin="padivw"></script>
+<script type="text/javascript">
+   var myaud = document.getElementById("audio");
+   var song = document.getElementById('song_title');
+
+   function launchNewMusic(trackNumber) {
+
+     document.getElementById('song_title').style.backgroundColor = "#D88851";
+
+     for (let i = 1; i < 8; i++) {
+       document.getElementById(i).style.backgroundColor = "orange";
+     }
+
+     document.getElementById(trackNumber).style.backgroundColor = "#D88851";
+
+     document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/' + trackNumber + '.mp3');
+     song.innerHTML=document.getElementById(trackNumber).innerHTML;
+   }
+ </script>
 </html>
