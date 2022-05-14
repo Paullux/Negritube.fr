@@ -40,7 +40,7 @@
       <br>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Ekzòd.php"><img src="assets/img/miniature/Ekzòd.png" alt="" /><h3 class="accueilH3">Ekzòd</h3></a>
-        <a class="flex-row-item" href="pages/Fòs é kouraj.php"><img src="assets/img/miniature/Fòs é kouraj.png" alt="" /><h3 class="accueilH3">Fòs é kouraj</h3>/a>
+        <a class="flex-row-item" href="pages/Fòs é kouraj.php"><img src="assets/img/miniature/Fòs é kouraj.png" alt="" /><h3 class="accueilH3">Fòs é kouraj</h3></a>
         <a class="flex-row-item" href="pages/Pénélope.php"><img src="assets/img/miniature/Pénélope.png" alt="" /><h3 class="accueilH3">Pénélope</h3></a>
         <a class="flex-row-item" href="pages/Piétònn'la (Philippe BLAZE).php"><img src="assets/img/miniature/Piétònn'la (Philippe BLAZE).png" alt="" /><h3 class="accueilH3">Piétònn'la</h3></a>
         <a class="flex-row-item" href="pages/Sò a limanité.php"><img src="assets/img/miniature/Sò a limanité.png" alt="" /><h3 class="accueilH3">Sò a limanité</h3></a>
