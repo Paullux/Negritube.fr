@@ -35,7 +35,7 @@
         <div style="height:10px;font-size:10px;">&nbsp;</div>
         <?php include("raccourcis.php") ?>
         <div class="player">
-          <video controls playsinline autoplay>
+          <video controls playsinline autoplay controlsList="nodownload">
             <source src="../assets/videos/Konjé bonifié.mp4" type="video/mp4">
             <source src="../assets/videos/Konjé bonifié.mp4" type="video/webm">
             <!-- fallback contenu ici -->

@@ -40,7 +40,7 @@
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
         <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">► Chanson 01 - A prèzan</div>
-          <audio id="audio" controls autoplay>
+          <audio id="audio" controls autoplay controlsList="nodownload">
             <source src="../assets/audio/Eritaj/1.mp3" type="audio/mpeg">
           </audio>
           <br>
@@ -143,7 +143,7 @@
    function pauseAud() {
        myaud.pause();
        myaud.currentTime=0;
-       song.style.backgroundColor = "#D56B56";
+       song.style.backgroundColor = "#EE6B56";
        song.innerHTML+=" - Fin de l'Extrait";
        clearInterval(k);
    }

@@ -40,7 +40,7 @@
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
         <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">► Chanson 01 - Lévé</div>
-        <audio id="audio" controls autoplay>
+        <audio id="audio" controls autoplay controlsList="nodownload">
           <source src="../assets/audio/Konsyans/1.mp3" type="audio/mpeg">
         </audio>
         <br>

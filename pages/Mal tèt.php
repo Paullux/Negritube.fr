@@ -40,9 +40,9 @@
         <br>
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
-        <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay>audio element not supported</audio>
+        <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay controlsList="nodownload">audio element not supported</audio>
         <br>
-        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Mal tèt.mp3');" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
+        <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Mal tèt.mp3');" style="background-color: #D88851; border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Philippe Blaze - Mal tèt
         </button>
         <div class="hidden">
