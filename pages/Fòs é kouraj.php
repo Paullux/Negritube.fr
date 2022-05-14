@@ -19,16 +19,16 @@
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
           <a class="title_link" href="../index.php">
-            <div class="title_site">
+            <h1 class="title_site">
               &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </div>
+            </h1>
           </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
-        <div class="subtitle_site">
+        <h2 class="subtitle_site">
             &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-        </div>
+        </h2>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
@@ -51,12 +51,12 @@
             <button class="fwd" data-icon="F" aria-label="avance rapide"></button>
           </div>
           <div style="height:10px;font-size:10px;">&nbsp;</div>
-          <div class="song_title">
+          <h3 class="song_title">
             Fòs é kouraj
-          </div>
-          <div class="description">
+          </h3>
+          <p class="description">
             #GWOKA. "Fòs é kouraj" est un titre tiré de l'album MISIYON de 12 titres du groupe JÒD'LA de Philippe BLAZE
-          </div>
+          </p>
           <div style="height:6px;font-size:6px;">&nbsp;</div>
         </div>
       </div>

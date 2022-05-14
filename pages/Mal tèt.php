@@ -24,17 +24,20 @@
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
           <a class="title_link" href="../index.php">
-            <div class="title_site">
+            <h1 class="title_site">
               &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </div>
+            </h1>
           </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
-        <div class="subtitle_site">
+        <h2 class="subtitle_site">
             &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-        </div>
+        </h2>
         <?php include("raccourcis.php") ?>
+        <h3 class="song_title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
+          Chanson Mal tèt
+        </h3>
         <br>
         <canvas id='canvas' width="800" height="350"></canvas>
         <br>
@@ -43,7 +46,7 @@
         <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay controlsList="nodownload">audio element not supported</audio>
         <br>
         <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Mal tèt.mp3');" style="background-color: #D88851; border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Philippe Blaze - Mal tèt
+          ► Philippe Blaze - Mal tèt
         </button>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>

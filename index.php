@@ -29,28 +29,28 @@
     <div class="index">
       <a href="index.php"><img class="logo" src="assets/img/logo-negritube.png" alt="negritube"></a>
       <br>
-        <div class="title_site">
+        <h1 class="title_site">
           &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-        </div>
+        </h1>
       <br>
-        <div class="subtitle_site">
+        <h2 class="subtitle_site">
           &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-        </div>
+        </h2>
       <br>
       <br>
       <div class="link_song">
-        <a class="flex-row-item" href="pages/Ekzòd.php"><img src="assets/img/miniature/Ekzòd.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Fòs é kouraj.php"><img src="assets/img/miniature/Fòs é kouraj.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Pénélope.php"><img src="assets/img/miniature/Pénélope.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Piétònn'la (Philippe BLAZE).php"><img src="assets/img/miniature/Piétònn'la (Philippe BLAZE).png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Sò a limanité.php"><img src="assets/img/miniature/Sò a limanité.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Sonjé BINO (Philippe BLAZE).php"><img src="assets/img/miniature/Sonjé BINO (Philippe BLAZE).png" alt="" /></a>
-        <a class="flex-row-item" href="pages/WIB.php"><img src="assets/img/miniature/WIB.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Konjé bonifié.php"><img src="assets/img/miniature/Konjé bonifié.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Mal tèt.php"><img src="assets/img/miniature/Mal tèt.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Eritaj.php"><img src="assets/img/miniature/Eritaj.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Misiyon.php"><img src="assets/img/miniature/Misiyon.png" alt="" /></a>
-        <a class="flex-row-item" href="pages/Konsyans.php"><img src="assets/img/miniature/Konsyans.png" alt="" /></a>
+        <a class="flex-row-item" href="pages/Ekzòd.php"><img src="assets/img/miniature/Ekzòd.png" alt="" /><h3 class="accueilH3">Ekzòd</h3></a>
+        <a class="flex-row-item" href="pages/Fòs é kouraj.php"><img src="assets/img/miniature/Fòs é kouraj.png" alt="" /><h3 class="accueilH3">Fòs é kouraj</h3>/a>
+        <a class="flex-row-item" href="pages/Pénélope.php"><img src="assets/img/miniature/Pénélope.png" alt="" /><h3 class="accueilH3">Pénélope</h3></a>
+        <a class="flex-row-item" href="pages/Piétònn'la (Philippe BLAZE).php"><img src="assets/img/miniature/Piétònn'la (Philippe BLAZE).png" alt="" /><h3 class="accueilH3">Piétònn'la</h3></a>
+        <a class="flex-row-item" href="pages/Sò a limanité.php"><img src="assets/img/miniature/Sò a limanité.png" alt="" /><h3 class="accueilH3">Sò a limanité</h3></a>
+        <a class="flex-row-item" href="pages/Sonjé BINO (Philippe BLAZE).php"><img src="assets/img/miniature/Sonjé BINO (Philippe BLAZE).png" alt="" /><h3 class="accueilH3">Sonjé BINO</h3></a>
+        <a class="flex-row-item" href="pages/WIB.php"><img src="assets/img/miniature/WIB.png" alt="" /><h3 class="accueilH3">WIB</h3></a>
+        <a class="flex-row-item" href="pages/Konjé bonifié.php"><img src="assets/img/miniature/Konjé bonifié.png" alt="" /><h3 class="accueilH3">Konjé bonifié</h3></a>
+        <a class="flex-row-item" href="pages/Mal tèt.php"><img src="assets/img/miniature/Mal tèt.png" alt="" /><h3 class="accueilH3">Mal tèt</h3></a>
+        <a class="flex-row-item" href="pages/Eritaj.php"><img src="assets/img/miniature/Eritaj.png" alt="" /><h3 class="accueilH3">Eritaj</h3></a>
+        <a class="flex-row-item" href="pages/Misiyon.php"><img src="assets/img/miniature/Misiyon.png" alt="" /><h3 class="accueilH3">Misiyon</h3></a>
+        <a class="flex-row-item" href="pages/Konsyans.php"><img src="assets/img/miniature/Konsyans.png" alt="" /><h3 class="accueilH3">Konsyans</h3></a>
       </div>
       <center>
         <div class="visiteurs">

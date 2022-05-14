@@ -19,28 +19,28 @@
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
           <a class="title_link" href="../index.php">
-            <div class="title_site">
+            <h1 class="title_site">
               &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </div>
+            </h1>
           </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
-        <div class="subtitle_site">
+        <h2 class="subtitle_site">
             &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-        </div>
+        </h2>
         <br>
         <?php include("raccourcis.php") ?>
-        <div class="song_title" id="title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
-        Album Eritaj (Extrait)
-        </div>
+        <h3 class="song_title" id="title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
+          Album Eritaj (Extrait)
+        </h3>
         <br>
         <canvas id='canvas' width="800" height="350" style="background-image: url('../assets/img/album cover/Eritaj.jpg');background-size: auto;"></canvas>
         <br>
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
         <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">► Chanson 01 - A prèzan</div>
-          <audio id="audio" controls autoplay controlsList="nodownload">
+          <audio id="audio" controls autoplay controlsList="nodownload" onplay="playAud();">
             <source src="../assets/audio/Eritaj/1.mp3" type="audio/mpeg">
           </audio>
           <br>
@@ -132,20 +132,33 @@
      document.getElementById('audio').setAttribute('src', '../assets/audio/Eritaj/' + trackNumber + '.mp3');
      song.innerHTML=document.getElementById(trackNumber).innerHTML;
 
+     myaud.play();
+
      clearInterval(k);
      k = setInterval("pauseAud()", 20000);
    }
 
    function playAud() {
-       myaud.play();
+     if (song.innerHTML.endsWith(" - Fin de l'Extrait")) {
+       song.innerHTML = rmEnd(song.innerHTML, " - Fin de l'Extrait");
+     }
+     song.style.backgroundColor = "#D88851";
+     myaud.currentTime=0;
+     myaud.play();
+     clearInterval(k);
+     k = setInterval("pauseAud()", 20000);
    }
 
    function pauseAud() {
        myaud.pause();
        myaud.currentTime=0;
-       song.style.backgroundColor = "#EE6B56";
+       song.style.backgroundColor = "#c7432e";
        song.innerHTML+=" - Fin de l'Extrait";
        clearInterval(k);
+   }
+
+   function rmEnd(str, ending){
+     return str.slice(0, -ending.length);
    }
 </script>
 </html>

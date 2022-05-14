@@ -19,16 +19,16 @@
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
           <a class="title_link" href="../index.php">
-            <div class="title_site">
+            <h1 class="title_site">
               &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </div>
+            </h1>
           </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
-        <div class="subtitle_site">
+        <h2 class="subtitle_site">
             &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-        </div>
+        </h2>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
@@ -51,14 +51,14 @@
             <button class="fwd" data-icon="F" aria-label="avance rapide"></button>
           </div>
           <div style="height:10px;font-size:10px;">&nbsp;</div>
-          <div class="song_title">
+          <h3 class="song_title">
             Sonjé BINO (Philippe BLAZE)
-          </div>
-          <div class="description" style="width: 60%; padding-left: 20%; padding-right: 20%;">
+          </h3>
+          <p class="description" style="width: 60%; padding-left: 20%; padding-right: 20%;">
             #gwokaévolutif. A la demande de nombre d'entre vous, voici l'intégralité de ma chanson "Sonjé BINO".
-Mai 1802 ok. Mai 67 ok. Mais n'oublions surtout pas le dernier militant ayant perdu sa vie pour le peuple guadeloupéen,
-lors de la mobilisation en janvier-février 2009. Sonjé BINO .Extrait de l'abum "MISYON" du groupe "JÒD'LA" publié en 2011.
-          </div>
+            Mai 1802 ok. Mai 67 ok. Mais n'oublions surtout pas le dernier militant ayant perdu sa vie pour le peuple guadeloupéen,
+            lors de la mobilisation en janvier-février 2009. Sonjé BINO .Extrait de l'abum "MISYON" du groupe "JÒD'LA" publié en 2011.
+          </p>
           <div style="height:6px;font-size:6px;">&nbsp;</div>
         </div>
       </div>
