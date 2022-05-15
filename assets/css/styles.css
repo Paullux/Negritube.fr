@@ -32,34 +32,16 @@ video {
 @media screen and (max-width: 1280px) and (orientation: portrait)
 {
   body {
-
-  }
-  .index{
-    height: 100vh;
-    background-image: linear-gradient(to left, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
-    url('../img/fresque_coloree_rotate.jpg');
-    background-size: 100vh auto;
+    height:100%;
   }
   .my_page {
-    height: 70%;
-    display: flex;
-    flex-direction: column-reverse;
-    column-count: 4;
-    background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
-    url('../img/fresque_coloree.jpg');
+    height: 100%;
+    min-height: 100vh;
   }
-  .video_page {
-    transform: rotate(90deg);
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-  }
-  video {
-    width: 100%;
-  }
-  .title_site {
-    display: block;
-    padding-top: 0px;
-    padding-bottom: 10px;
+  .left_col {
+    width:0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .subtitle_site {
     display: none;
@@ -70,58 +52,36 @@ video {
   .left_col {
     display: none;
   }
-  .link_song > .flex-row-item {
-    flex: 1 1 40% !important; /*grow | shrink | basis */
-    flex-basis: 40% !important;
-    flex-grow: 0 !important;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .song_title {
-    height: 9vw;
-  }
 
   .description {
     display: none;
   }
   footer {
     display: none;
+  }
+  .link_song > .flex-row-item {
+    flex: 50% !important; /*grow | shrink | basis */
+    flex-basis: 25%;
+    flex-grow: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .player {
+    padding-left: 0;
+    text-align: center;
+    margin-right: 15%;
+  }
+
+  .player:after {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape)
 {
-  body {
-    height: 97vh;
-  }
-  .index{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
-    url('../img/fresque_coloree.jpg');
-    background-size: 100vh auto;
-  }
-  .my_page {
-    width: 80%;
-    display: flex;
-    flex-direction: row-reverse;
-    row-count: 4;
-    background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
-    url('../img/fresque_coloree.jpg');
-  }
-  .video_page {
-    margin-left: 25vw;
-    margin-rigth: 25vw;
-  }
-  video {
-    width: 100%;
-  }
-  .title_site {
-    font-size: 20pt !important;
-    display: block;
-    padding-top: 0px;
-    padding-bottom: 10px;
-  }
   .subtitle_site {
     display: none;
   }
@@ -131,25 +91,30 @@ video {
   .left_col {
     display: none;
   }
-  .link_song > .flex-row-item {
-    flex: 1 1 40% !important; /*grow | shrink | basis */
-    flex-basis: 40% !important;
-    flex-grow: 0 !important;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .song_title {
-    height: 9vh;
-    font-size: 18pt !important;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
   .description {
     display: none;
   }
   footer {
     display: none;
+  }
+  .link_song > .flex-row-item {
+    flex: 33% !important; /*grow | shrink | basis */
+    flex-basis: 25%;
+    flex-grow: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .player {
+    padding-left: 0;
+    text-align: center;
+    margin-right: 15%;
+  }
+
+  .player:after {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
