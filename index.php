@@ -29,13 +29,13 @@
     <div class="index">
       <a href="index.php"><img class="logo" src="assets/img/logo-negritube.png" alt="negritube"></a>
       <br>
-        <h1 class="title_site">
-          &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-        </h1>
+      <h1 class="title_site">
+        &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
+      </h1>
       <br>
-        <h2 class="subtitle_site">
-          &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-        </h2>
+      <h2 class="subtitle_site">
+        &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
+      </h2>
       <br>
       <br>
       <div class="link_song">

@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <style>
-      .left_col {
-        height: 25%;
-      }
+    .left_col {
+      height: 25%;
+    }
     </style>
   </head>
   <body>
@@ -23,16 +23,16 @@
           <img class="logo" src="../assets/img/logo-negritube.png" alt="negritube">
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
-          <a class="title_link" href="../index.php">
-            <h1 class="title_site">
-              &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </h1>
-          </a>
+        <a class="title_link" href="../index.php">
+          <h1 class="title_site">
+            &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
+          </h1>
+        </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
         <h2 class="subtitle_site">
-            &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
+          &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
         </h2>
         <?php include("raccourcis.php") ?>
         <h3 class="song_title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
@@ -43,7 +43,7 @@
         <br>
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
-        <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay controlsList="nodownload">audio element not supported</audio>
+        <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay controlsList="nodownload"></audio>
         <br>
         <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Mal tèt.mp3');" style="background-color: #D88851; border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Philippe Blaze - Mal tèt
@@ -55,14 +55,13 @@
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>
-  </div>
-</body>
-<footer>
-  <br>
-  <p>All rights reserved © Negritube.fr</p>
-  <p>Music and Video by Monsieur Philippe Blaze</p>
-  <p>Site by Paullux Waffle</p>
-</footer>
-<script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
-<script src="../assets/js/graph_audio.js" crossorigin="paulw"></script>
+  </body>
+  <footer>
+    <br>
+    <p>All rights reserved © Negritube.fr</p>
+    <p>Music and Video by Monsieur Philippe Blaze</p>
+    <p>Site by Paullux Waffle</p>
+  </footer>
+  <script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
+  <script src="../assets/js/graph_audio.js" crossorigin="paulw"></script>
 </html>

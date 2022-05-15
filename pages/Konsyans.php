@@ -18,16 +18,16 @@
           <img class="logo" src="../assets/img/logo-negritube.png" alt="negritube">
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
-          <a class="title_link" href="../index.php">
-            <h1 class="title_site">
-              &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </h1>
-          </a>
+        <a class="title_link" href="../index.php">
+          <h1 class="title_site">
+            &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
+          </h1>
+        </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
         <h2 class="subtitle_site">
-            &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
+          &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
         </h2>
         <br>
         <?php include("raccourcis.php") ?>
@@ -39,37 +39,39 @@
         <br>
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
-        <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">► Chanson 01 - Lévé</div>
+        <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">
+          ► Chanson 01 - Lévé
+        </div>
         <audio id="audio" controls autoplay controlsList="nodownload">
-          <source src="../assets/audio/Konsyans/1.mp3" type="audio/mpeg">
+          <source src="../assets/audio/Konsyans/1.mp3" type="audio/mpeg" />
         </audio>
         <br>
         <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 01 - Lévé
+          ► Chanson 01 - Lévé
         </button>
         <br>
         <button class="song_title" id="2" onclick="launchNewMusic(2);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 02 - Syel la tandé
+          ► Chanson 02 - Syel la tandé
         </button>
         <br>
         <button class="song_title" id="3" onclick="launchNewMusic(3);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 03 - An bato la
+          ► Chanson 03 - An bato la
         </button>
         <br>
         <button class="song_title" id="4" onclick="launchNewMusic(4);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 04 - On jédi swa
+          ► Chanson 04 - On jédi swa
         </button>
         <br>
         <button class="song_title" id="5" onclick="launchNewMusic(5);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 05 - Jénès
+          ► Chanson 05 - Jénès
         </button>
         <br>
         <button class="song_title" id="6" onclick="launchNewMusic(6);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 06 - Polèt
+          ► Chanson 06 - Polèt
         </button>
         <br>
         <button class="song_title" id="7" onclick="launchNewMusic(7);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
-        ► Chanson 07 - An mwé
+          ► Chanson 07 - An mwé
         </button>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
@@ -78,34 +80,33 @@
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>
-  </div>
-</body>
-<footer>
-  <br>
-  <p>All rights reserved © Negritube.fr</p>
-  <p>Music and Video by Monsieur Philippe Blaze</p>
-  <p>Site by Paullux Waffle</p>
-</footer>
-<script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
-<script src="../assets/js/graph_audio.js" crossorigin="padivw"></script>
-<script type="text/javascript">
-   var myaud = document.getElementById("audio");
-   var song = document.getElementById('song_title');
+  </body>
+  <footer>
+    <br>
+    <p>All rights reserved © Negritube.fr</p>
+    <p>Music and Video by Monsieur Philippe Blaze</p>
+    <p>Site by Paullux Waffle</p>
+  </footer>
+  <script src="../assets/js/progressbar.js" crossorigin="padivw"></script>
+  <script src="../assets/js/graph_audio.js" crossorigin="padivw"></script>
+  <script type="text/javascript">
+    var myaud = document.getElementById("audio");
+    var song = document.getElementById('song_title');
 
-   function launchNewMusic(trackNumber) {
+    function launchNewMusic(trackNumber) {
 
-     document.getElementById('song_title').style.backgroundColor = "#D88851";
+      document.getElementById('song_title').style.backgroundColor = "#D88851";
 
-     for (let i = 1; i < 8; i++) {
-       document.getElementById(i).style.backgroundColor = "orange";
-     }
+      for (let i = 1; i < 8; i++) {
+        document.getElementById(i).style.backgroundColor = "orange";
+      }
 
-     document.getElementById(trackNumber).style.backgroundColor = "#D88851";
+      document.getElementById(trackNumber).style.backgroundColor = "#D88851";
 
-     document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/' + trackNumber + '.mp3');
-     song.innerHTML=document.getElementById(trackNumber).innerHTML;
+      document.getElementById('audio').setAttribute('src', '../assets/audio/Konsyans/' + trackNumber + '.mp3');
+      song.innerHTML=document.getElementById(trackNumber).innerHTML;
 
-     myaud.play();
-   }
- </script>
+      myaud.play();
+    }
+  </script>
 </html>

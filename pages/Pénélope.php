@@ -18,16 +18,16 @@
           <img class="logo" src="../assets/img/logo-negritube.png" alt="negritube">
         </a>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
-          <a class="title_link" href="../index.php">
-            <h1 class="title_site">
-              &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-            </h1>
-          </a>
+        <a class="title_link" href="../index.php">
+          <h1 class="title_site">
+            &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
+          </h1>
+        </a>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
         </div>
         <h2 class="subtitle_site">
-            &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
+          &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
         </h2>
         <div class="hidden">
           <div style="height:10px;font-size:10px;">&nbsp;</div>
@@ -36,9 +36,8 @@
         <?php include("raccourcis.php") ?>
         <div class="player">
           <video controls playsinline autoplay controlsList="nodownload">
-            <source src="../assets/videos/Pénélope.mp4" type="video/mp4">
-            <source src="../assets/videos/Pénélope.mp4" type="video/webm">
-            <!-- fallback contenu ici -->
+            <source src="../assets/videos/Pénélope.mp4" type="video/mp4" />
+            <source src="../assets/videos/Pénélope.mp4" type="video/webm" />
           </video>
           <div class="controls">
             <button class="play" data-icon="P" aria-label="bascule lecture pause"></button>
