@@ -58,7 +58,7 @@
           Album Misiyon
         </h3>
         <br>
-        <canvas id='canvas' width="800" height="350" style="background-image: url('../assets/img/album cover/Misiyon.jpg');background-size: auto;"></canvas>
+        <canvas id='canvas' width="800" height="350" style="background-image: url('../assets/img/album cover/Misiyon.jpg');background-size: cover;"></canvas>
         <br>
         <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
         <br>
