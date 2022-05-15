@@ -78,6 +78,10 @@ video {
     margin-left: 0;
     margin-right: 0;
   }
+  audio {
+    width: 80% !important;
+    zoom: 200%;
+  }
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape)
@@ -115,6 +119,10 @@ video {
     width: 50%;
     margin-left: 0;
     margin-right: 0;
+  }
+  audio {
+    width: 80% !important;
+    zoom: 200%;
   }
 }
 
