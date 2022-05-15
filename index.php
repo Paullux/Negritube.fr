@@ -2,22 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- HTML Meta Tags -->
     <title>Negritube.fr</title>
+    <meta name="description" content="Re-Découvrez le Gwoka !">
     <meta name="keywords" content="créole" />
-    <meta name="description" content="Un site web qui vous présente le gwoka évolutif." />
     <meta name="author" content="Philippe Blaze" />
-    <meta property="og:title" content="Negritube.fr" />
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:image" content="https://negritube.fr/assets/img/Carte-og.png" />
-    <meta property="og:description" content="Re-Découvrez le Gwoka !" />
-    <meta property="og:url" content="https://www.negritube.fr/" />
     <meta name="theme-color" content="#f6b73c" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://negritube.fr/index.php/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negritube.fr">
+    <meta property="og:description" content="Re-Découvrez le Gwoka !">
+    <meta property="og:image" content="https://negritube.fr/assets/img/Carte-og.png">
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Negritube.fr" />
-    <meta name="twitter:description" content="Re-Découvrez le Gwoka !" />
-    <meta name="twitter:image" content="https://negritube.fr/assets/img/Carte-Twitter.png" />
+    <meta property="twitter:domain" content="negritube.fr">
+    <meta property="twitter:url" content="https://negritube.fr/index.php/">
+    <meta name="twitter:title" content="Negritube.fr">
+    <meta name="twitter:description" content="Re-Découvrez le Gwoka !">
+    <meta name="twitter:image" content="https://negritube.fr/assets/img/Carte-Twitter.png">
     <meta name="twitter:image:alt" content="Negritube.fr" />
+
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

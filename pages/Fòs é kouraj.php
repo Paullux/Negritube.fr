@@ -2,7 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Negritube.fr</title>
+    <!-- HTML Meta Tags -->
+    <title>Negritube.fr - Fòs é kouraj</title>
+    <meta name="description" content="#GWOKA. 'Fòs é kouraj' est un titre tiré de l'album MISIYON de 12 titres du groupe JÒD'LA de Philippe BLAZE">
+    <meta name="keywords" content="créole" />
+    <meta name="author" content="Philippe Blaze" />
+    <meta name="theme-color" content="#f6b73c" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://negritube.fr/pages/Fòs%20é%20kouraj.php">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negritube.fr - Fòs é kouraj">
+    <meta property="og:description" content="#GWOKA. 'Fòs é kouraj' est un titre tiré de l'album MISIYON de 12 titres du groupe JÒD'LA de Philippe BLAZE">
+    <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Fòs%20é%20kouraj.png">
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:domain" content="negritube.fr">
+    <meta property="twitter:url" content="https://negritube.fr/pages/Fòs%20é%20kouraj.php">
+    <meta name="twitter:title" content="Negritube.fr - Fòs é kouraj">
+    <meta name="twitter:description" content="#GWOKA. 'Fòs é kouraj' est un titre tiré de l'album MISIYON de 12 titres du groupe JÒD'LA de Philippe BLAZE">
+    <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Fòs%20é%20kouraj.png">
+    <meta name="twitter:image:alt" content="Negritube.fr" />
+
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

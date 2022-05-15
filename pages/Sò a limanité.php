@@ -2,7 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Negritube.fr</title>
+    <!-- HTML Meta Tags -->
+    <title>Negritube.fr - Sò a limanité</title>
+    <meta name="description" content="Une chanson d'actualité dans l'esprit ka évolutif, offerte aux fans et aux autres">
+    <meta name="keywords" content="créole" />
+    <meta name="author" content="Philippe Blaze" />
+    <meta name="theme-color" content="#f6b73c" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://negritube.fr/pages/Sò%20a%20limanité.php">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negritube.fr - Sò a limanité">
+    <meta property="og:description" content="Une chanson d'actualité dans l'esprit ka évolutif, offerte aux fans et aux autres">
+    <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Sò%20a%20limanité.png">
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:domain" content="negritube.fr">
+    <meta property="twitter:url" content="https://negritube.fr/pages/Sò%20a%20limanité.php">
+    <meta name="twitter:title" content="Negritube.fr - Sò a limanité">
+    <meta name="twitter:description" content="Une chanson d'actualité dans l'esprit ka évolutif, offerte aux fans et aux autres">
+    <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Sò%20a%20limanité.png">
+    <meta name="twitter:image:alt" content="Negritube.fr" />
+
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

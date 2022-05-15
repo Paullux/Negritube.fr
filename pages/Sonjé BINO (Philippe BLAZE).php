@@ -2,7 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Negritube.fr</title>
+    <!-- HTML Meta Tags -->
+    <title>Negritube.fr - Sonjé BINO (Philippe BLAZE)</title>
+    <meta name="description" content="#gwokaévolutif. A la demande de nombre d'entre vous, voici l'intégralité de ma chanson 'Sonjé BINO'.
+    Mai 1802 ok. Mai 67 ok. Mais n'oublions surtout pas le dernier militant ayant perdu sa vie pour le peuple guadeloupéen, lors de la mobilisation en janvier-février 2009. Sonjé BINO .Extrait de l'abum 'MISYON' du groupe 'JÒD'LA' publié en 2011.">
+    <meta name="keywords" content="créole" />
+    <meta name="author" content="Philippe Blaze" />
+    <meta name="theme-color" content="#f6b73c" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://negritube.fr/pages/Sonjé%20BINO%20%28Philippe%20BLAZE%29.php">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negritube.fr - Sonjé BINO (Philippe BLAZE)">
+    <meta property="og:description" content="#gwokaévolutif. A la demande de nombre d'entre vous, voici l'intégralité de ma chanson 'Sonjé BINO'.
+    Mai 1802 ok. Mai 67 ok. Mais n'oublions surtout pas le dernier militant ayant perdu sa vie pour le peuple guadeloupéen, lors de la mobilisation en janvier-février 2009. Sonjé BINO .Extrait de l'abum 'MISYON' du groupe 'JÒD'LA' publié en 2011.">
+    <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Sonjé%20BINO%20%28Philippe%20BLAZE%29.png">
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:domain" content="negritube.fr">
+    <meta property="twitter:url" content="https://negritube.fr/pages/Sonjé%20BINO%20%28Philippe%20BLAZE%29.php">
+    <meta name="twitter:title" content="Negritube.fr - Sonjé BINO (Philippe BLAZE)">
+    <meta name="twitter:description" content="#gwokaévolutif. A la demande de nombre d'entre vous, voici l'intégralité de ma chanson 'Sonjé BINO'.
+    Mai 1802 ok. Mai 67 ok. Mais n'oublions surtout pas le dernier militant ayant perdu sa vie pour le peuple guadeloupéen, lors de la mobilisation en janvier-février 2009. Sonjé BINO .Extrait de l'abum 'MISYON' du groupe 'JÒD'LA' publié en 2011.">
+    <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Sonjé%20BINO%20%28Philippe%20BLAZE%29.png">
+    <meta name="twitter:image:alt" content="Negritube.fr" />
+
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

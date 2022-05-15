@@ -2,7 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Negritube.fr</title>
+    <!-- HTML Meta Tags -->
+    <title>Negritube.fr - Piétònn'la (Philippe BLAZE)</title>
+    <meta name="description" content="#GWOKA.  Piétònn'la : Un des 13 titres de mon dernier album nommé Eritaj qui comporte des chansons et des instrumentaux. #confinement oblige, je vous ai filmé ce titre en live">
+    <meta name="keywords" content="créole" />
+    <meta name="author" content="Philippe Blaze" />
+    <meta name="theme-color" content="#f6b73c" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://negritube.fr/pages/Pi%C3%A9t%C3%B2nn%27la%20%28Philippe%20BLAZE%29.php">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negritube.fr - Piétònn'la (Philippe BLAZE)">
+    <meta property="og:description" content="#GWOKA.  Piétònn'la : Un des 13 titres de mon dernier album nommé Eritaj qui comporte des chansons et des instrumentaux. #confinement oblige, je vous ai filmé ce titre en live">
+    <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Pi%C3%A9t%C3%B2nn%27la%20%28Philippe%20BLAZE%29.png">
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:domain" content="negritube.fr">
+    <meta property="twitter:url" content="https://negritube.fr/pages/Pi%C3%A9t%C3%B2nn%27la%20%28Philippe%20BLAZE%29.php">
+    <meta name="twitter:title" content="Negritube.fr - Piétònn'la (Philippe BLAZE)">
+    <meta name="twitter:description" content="#GWOKA.  Piétònn'la : Un des 13 titres de mon dernier album nommé Eritaj qui comporte des chansons et des instrumentaux. #confinement oblige, je vous ai filmé ce titre en live">
+    <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Pi%C3%A9t%C3%B2nn%27la%20%28Philippe%20BLAZE%29.png">
+    <meta name="twitter:image:alt" content="Negritube.fr" />
+
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

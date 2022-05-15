@@ -2,7 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Negritube.fr</title>
+    <!-- HTML Meta Tags -->
+    <title>Negritube.fr - Pénélope</title>
+    <meta name="description" content="François Fillon, pénélope et les élections présidentielles 2017.">
+    <meta name="keywords" content="créole" />
+    <meta name="author" content="Philippe Blaze" />
+    <meta name="theme-color" content="#f6b73c" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://negritube.fr/pages/Pénélope.php">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negritube.fr - Pénélope">
+    <meta property="og:description" content="François Fillon, pénélope et les élections présidentielles 2017.">
+    <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Pénélope.png">
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:domain" content="negritube.fr">
+    <meta property="twitter:url" content="https://negritube.fr/pages/Pénélope.php">
+    <meta name="twitter:title" content="Negritube.fr - Pénélope">
+    <meta name="twitter:description" content="François Fillon, pénélope et les élections présidentielles 2017.">
+    <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Pénélope.png">
+    <meta name="twitter:image:alt" content="Negritube.fr" />
+
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
