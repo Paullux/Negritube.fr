@@ -6,16 +6,16 @@
     <meta name="keywords" content="créole" />
     <meta name="description" content="Un site web qui vous présente le gwoka évolutif." />
     <meta name="author" content="Philippe Blaze" />
-    <meta property="og:title" content="Re-Découvrez le Gwoka !" />
+    <meta property="og:title" content="Negritube.fr" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:image" content="https://negritube.fr/assets/img/Carte-og.png" />
-    <meta property="og:description" content="Un site web qui vous présente le gwoka évolutif." />
+    <meta property="og:description" content="Re-Découvrez le Gwoka !" />
     <meta property="og:url" content="https://www.negritube.fr/" />
     <meta name="theme-color" content="#f6b73c" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Re-Découvrez le Gwoka !" />
-    <meta name="twitter:description" content="De la musique typiquement antillaise remis au gout du jour." />
+    <meta name="twitter:title" content="Negritube.fr" />
+    <meta name="twitter:description" content="Re-Découvrez le Gwoka !" />
     <meta name="twitter:image" content="https://negritube.fr/assets/img/Carte-Twitter.png" />
     <meta name="twitter:image:alt" content="Negritube.fr" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
