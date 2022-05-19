@@ -66,12 +66,12 @@
           ► Chanson 01 - A prèzan
         </div>
         <br><br>
-        <audio id="audio" controls autoplay controlsList="nodownload" onplay="playAud();">
+        <audio id="audio" controls autoplay preload="auto" autobuffer controlsList="nodownload" oncontextmenu="return false" onplay="playAud();">
           <source src="../assets/audio/Eritaj/1.mp3" type="audio/mpeg" />
         </audio>
         <br><br>
         <div class="song_title" id="obtension" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: rgba(255,165,0,.5);">
-          Pour acheter cette album rendez vous au siège de COM.G en Guadeloupe, l'entreprise se situe au 73 rue Jean Jaurès 97110 à Pointe à Pitre
+          Pour acheter cet album rendez vous au siège de COM.G en Guadeloupe, l'entreprise se situe au 73 rue Jean Jaurès 97110 à Pointe à Pitre
         </div>
         <br>
         <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
@@ -169,7 +169,6 @@
         song.innerHTML = rmEnd(song.innerHTML, " - Fin de l'Extrait");
       }
       song.style.backgroundColor = "#D88851";
-      myaud.currentTime=0;
       myaud.play();
       clearInterval(k);
       k = setInterval("pauseAud()", 20000);

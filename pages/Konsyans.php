@@ -66,7 +66,7 @@
           ► Chanson 01 - Lévé
         </div>
         <br><br>
-        <audio id="audio" controls autoplay controlsList="nodownload">
+        <audio id="audio" controls autoplay controlsList="nodownload"  oncontextmenu="return false">
           <source src="../assets/audio/Konsyans/1.mp3" type="audio/mpeg" />
         </audio>
         <br><br>

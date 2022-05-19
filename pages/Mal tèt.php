@@ -70,7 +70,7 @@
           ► Philippe Blaze - Mal tèt
         </div>
         <br><br>
-        <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay controlsList="nodownload"></audio>
+        <audio src="../assets/audio/Mal tèt.mp3" id="audio" controls autoplay controlsList="nodownload" oncontextmenu="return false"></audio>
         <br><br>
         <button class="song_title" onclick="document.getElementById('audio').setAttribute('src', '../assets/audio/Mal tèt.mp3');" style="background-color: #D88851; border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
           ► Philippe Blaze - Mal tèt
