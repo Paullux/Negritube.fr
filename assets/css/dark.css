@@ -6,5 +6,5 @@ body {
 }
 
 .accueilH3 img {
-  visibility:hidden;
+  display: none;
 }

@@ -22,7 +22,7 @@ button:before {
 }
 
 video {
-  width: 80%;
+  width: 80vw;
 }
 
 @media screen and (max-width: 1280px) and (orientation: portrait)
@@ -39,6 +39,9 @@ video {
     margin-left: 0%;
     margin-right: 0%;
   }
+  .raccourcis-généraux {
+    display: none;
+  }
   .subtitle_site {
     display: none;
   }
@@ -48,7 +51,9 @@ video {
   .left_col {
     display: none;
   }
-
+  .raccourcis-généraux {
+    display: none;
+  }
   .description {
     display: none;
   }
@@ -65,9 +70,7 @@ video {
 
   }
   .player {
-    padding-left: 0;
     text-align: center;
-    margin-right: 15%;
   }
 
   .player:after {
@@ -107,9 +110,7 @@ video {
     margin-bottom: 50px;
   }
   .player {
-    padding-left: 0;
     text-align: center;
-    margin-right: 15%;
   }
 
   .player:after {
@@ -123,11 +124,22 @@ video {
   }
 }
 
-.logo {
-  display: block;
+.big-title {
+  height:auto;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  text-align: center;
+}
+
+#item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo {
+  height: 70%;
+  width: 70%;
 }
 
 .title_site {
@@ -136,8 +148,7 @@ video {
   font-weight: bold;
   font-style: normal;
   font-size: 40pt;
-  width: fit-content;
-  margin: auto;
+  text-align: center;
   text-shadow: 3px 3px 3px #000;
   color: var(--font-color);
   background: var(--color-secondary);
@@ -150,18 +161,18 @@ video {
 }
 
 .subtitle_site {
-  font-family: 'Lobster', cursive;
-  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: italic;
+  text-align: center;
   font-size: 30pt;
-  width: fit-content;
-  margin: auto;
-  text-shadow: 3px 3px 3px #000;
+  text-align: left;
+  text-shadow: 2px 2px 2px #000;
   color: var(--font-color);
   background: var(--color-secondary);
   padding-top: 5px;
   padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -205,8 +216,43 @@ dt {
 
 .raccourcis {
   font-family: 'Lato', sans-serif;
+  color: rgba(255, 140, 0, 0.95);
   font-size: 25pt;
+  width: calc(80vw - 10px);
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid rgba(255, 165, 0, 0.95);
+  background: #111;
+}
+
+.raccourcis-content {
+  width: calc(80vw - 10px);
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border: 5px solid rgba(255, 165, 0, 0.95);
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.raccourcis-box {
+  width: auto;
+  height: 100%;
+  border: 2px solid rgba(255, 165, 0, 0.95);
+  background: #111;
+}
+
+.raccourcis-box img {
+  max-width: 250px;
+}
+
+.liens-raccourcis {
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+  color: rgba(255, 140, 0, 0.95);
   text-align: center;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .liens-playlist {
@@ -258,6 +304,8 @@ dt {
   font-family: 'Lato', sans-serif;
   text-decoration-color: #fff;
   padding-left: 5%;
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 1280px)
@@ -457,7 +505,6 @@ dt {
 }
 
 .player {
-  padding-left: 15%;
   text-align: center;
 }
 
@@ -498,20 +545,29 @@ dt {
 }
 
 .song_title {
-  font-family: 'Lato', sans-serif;
-
+  font-family: "Gill Sans", sans-serif !important;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   font-style: normal;
-  font-size: 38pt;
+  font-size: 25pt;
   color: 	#000;
-  text-align: center;
-  text-shadow: 3px 3px 3px #FFF;
+  text-align: justify;
+  text-shadow: 1px 1px 1px #FFF;
   background-color: orange;
   padding-top: 1%;
   padding-bottom: 1%;
 }
 
+#title {
+  text-align: center !important;
+}
+
 .description {
+  width: calc(80vw - 60px);
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -533,10 +589,6 @@ dt {
   color: var(--my-color);
   text-align: center;
   padding-bottom: 20px;
-}
-
-#obtension {
-  font-family: 'Lato', sans-serif;
 }
 
 footer p {

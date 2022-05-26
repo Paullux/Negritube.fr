@@ -44,38 +44,36 @@
 <body>
   <div class="my_page">
     <div class="video_page">
-      <a href="../index.php">
-        <img class="logo" src="../assets/img/logo-negritube.png" alt="negritube">
-      </a>
-      <div style="height:10px;font-size:10px;">&nbsp;</div>
-      <a class="title_link" href="../index.php">
-        <h1 class="title_site">
-          &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-        </h1>
-      </a>
+      <div class="big-title">
+        <div id="item">
+          <a href="../index.php"><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
+        </div>
+        <div id="item">
+          <h1 class="title_site">
+            Negritube.fr
+          </h1>
+          <h2 class="subtitle_site">
+            Pour (re-)découvrir le Gwoka
+            <br>(une musique traditionnelle<br>Guadeloupéenne)
+          </h2>
+        </div>
+        <div class="container" id="item">
+          <h1>Changement de Thème</h1>
+          <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+          </label>
+          <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
       <div class="hidden">
         <div style="height:10px;font-size:10px;">&nbsp;</div>
       </div>
-      <h2 class="subtitle_site">
-        &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-      </h2>
-      <br>
-      <div class="container">
-        <h1>Changement de Thème</h1>
-        <label id="switch" class="switch">
-          <input type="checkbox" onchange="toggleTheme()" id="slider">
-          <span class="slider round"></span>
-        </label>
-        <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="hidden">
-        <div style="height:10px;font-size:10px;">&nbsp;</div>
-      </div>
       <div style="height:10px;font-size:10px;">&nbsp;</div>
-      <?php include("raccourcis.php") ?>
       <div class="player">
         <video controls playsinline autoplay controlsList="nodownload">
           <source src="../assets/videos/W.I.B..mp4" type="video/mp4" />
@@ -92,8 +90,9 @@
           <button class="rwd" data-icon="B" aria-label="retour arrière"></button>
           <button class="fwd" data-icon="F" aria-label="avance rapide"></button>
         </div>
+        <?php include("raccourcis horizontaux.php") ?>
         <div style="height:10px;font-size:10px;">&nbsp;</div>
-        <h3 class="song_title">
+        <h3 class="song_title" id="title">
           W.I.B.
         </h3>
         <p class="description">

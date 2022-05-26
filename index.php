@@ -42,25 +42,30 @@
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
 </head>
 <body>
-  <div class="index">
-    <a href="index.php"><img class="logo" src="assets/img/logo-negritube.png" alt="negritube"></a>
-    <br>
-    <h1 class="title_site">
-      &nbsp;&nbsp;Negritube.fr&nbsp;&nbsp;
-    </h1>
-    <br>
-    <h2 class="subtitle_site">
-      &nbsp;&nbsp;Pour (re-)découvrir le Gwoka&nbsp;&nbsp;
-    </h2>
-    <br>
-    <div class="container">
-      <h1>Changement de Thème</h1>
-      <label id="switch" class="switch">
-        <input type="checkbox" onchange="toggleTheme()" id="slider">
-        <span class="slider round"></span>
-      </label>
-      <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+  <div class="index" style="align-items:center;">
+    <div class="big-title">
+      <div id="item">
+        <a href="index.php"><img class="logo" src="assets/img/logo-negritube.png" alt="negritube"></a>
+      </div>
+      <div id="item">
+        <h1 class="title_site">
+          Negritube.fr
+        </h1>
+        <h2 class="subtitle_site">
+          Pour (re-)découvrir le Gwoka
+          <br>(une musique traditionnelle<br>Guadeloupéenne)
+        </h2>
+      </div>
+      <div class="container" id="item">
+        <h1>Changement de Thème</h1>
+        <label id="switch" class="switch">
+          <input type="checkbox" onchange="toggleTheme()" id="slider">
+          <span class="slider round"></span>
+        </label>
+        <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+      </div>
     </div>
+    <br>
     <br>
     <br>
     <br>
