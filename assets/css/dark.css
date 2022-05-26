@@ -1,0 +1,10 @@
+body {
+  background-color: #111;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+}
+
+.accueilH3 img {
+  visibility:hidden;
+}

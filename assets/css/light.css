@@ -1,0 +1,11 @@
+body {
+  background-image: linear-gradient(to bottom, rgba(0,0,255,0.5), rgba(255,255,0,0.5)),
+  url('../img/fresque_coloree.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+}
+
+.accueilH3 img {
+  visibility: visible;
+}

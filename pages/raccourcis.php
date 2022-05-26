@@ -5,6 +5,22 @@
     <div style="height:10px;font-size:10px;width:100%;background-color:rgba(255, 165, 0, 0.95);">
     </dd>
     <dd>
+      <a href="../pages/Avé Maria Antillais.php" style="text-decoration:none;">
+        <h2 class="liens-playlist">Avé Maria Antillais (vidéo)</h2>
+        <img src="../assets/img/miniature/Avé Maria Antillais.png" alt="" />
+      </a>
+      <div style="height:10px;font-size:10px;width:100%;background-color:rgba(255, 165, 0, 0.95);">
+      </div>
+    </dd>
+    <dd>
+      <a href="../pages/DLO.php" style="text-decoration:none;">
+        <h2 class="liens-playlist">DLO (vidéo)</h2>
+        <img src="../assets/img/miniature/DLO.png" alt="" />
+      </a>
+      <div style="height:10px;font-size:10px;width:100%;background-color:rgba(255, 165, 0, 0.95);">
+      </div>
+    </dd>
+    <dd>
       <a href="../pages/Ekzòd.php" style="text-decoration:none;">
         <h2 class="liens-playlist">Ekzòd (vidéo)</h2>
         <img src="../assets/img/miniature/Ekzòd.png" alt="" />
