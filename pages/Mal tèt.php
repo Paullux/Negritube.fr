@@ -57,9 +57,11 @@
           <a href="../index.php"><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
         </div>
         <div id="item">
-          <h1 class="title_site">
-            Negritube.fr
-          </h1>
+          <a href="../index.php" style="text-decoration: none; ">
+            <h1 class="title_site">
+              Negritube.fr
+            </h1>
+          </a>
           <h2 class="subtitle_site">
             Pour (re-)découvrir le Gwoka
             <br>(une musique traditionnelle<br>Guadeloupéenne)
@@ -78,24 +80,31 @@
       <br>
       <br>
       <br>
-      <h3 class="song_title" id="title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
+      <h3 class="song_title" id="title" style="width: 40%;padding-bottom: 1%; margin-left: 30%;">
         Chanson Mal tèt
       </h3>
       <br>
-      <div class="myCanvas">
-        <img class="img" id="img" src="../assets/img/bargraph.gif" alt="graph"/>
-        <canvas class="canvas" id='canvas' width="800" height="350"></canvas>
+      <div class="global-player-aud">
+        <div class="myCanvas">
+          <img class="img" id="img" src="../assets/img/bargraph.gif" alt="graph"/>
+          <canvas class="canvas" id='canvas' width="500" height="350" style="background-image: url('../assets/img/album cover/Mal_tèt.jpeg');"></canvas>
+        </div>
+        <br>
+        <canvas id='progress-bar' width="800" height="20">canvas not supported</canvas>
+        <br><br>
       </div>
-      <br>
-      <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
-      <br>
-      <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">
+      <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">
         ► Philippe Blaze - Mal tèt
       </div>
       <br><br>
       <?php include("aud-player.php") ?>
+      <br>
       <?php include("raccourcis horizontaux.php") ?>
       <br><br>
+      <div class="song_title" id="title" style="height:auto; font-size:20pt;width: 40%;padding-top: 1%;padding-bottom: 1%; margin-left: 30%;">
+        Pour relancer la lecture de cette chanson cliquez ci-dessus
+      </div>
+      <br>
       <button class="song_title" id="1" onclick="launchNewMusic();" style="background-color: #D88851; border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Philippe Blaze - Mal tèt
       </button>

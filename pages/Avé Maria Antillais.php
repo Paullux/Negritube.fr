@@ -49,9 +49,11 @@
           <a href="../index.php"><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
         </div>
         <div id="item">
-          <h1 class="title_site">
-            Negritube.fr
-          </h1>
+          <a href="../index.php" style="text-decoration: none; ">
+            <h1 class="title_site">
+              Negritube.fr
+            </h1>
+          </a>
           <h2 class="subtitle_site">
             Pour (re-)découvrir le Gwoka
             <br>(une musique traditionnelle<br>Guadeloupéenne)

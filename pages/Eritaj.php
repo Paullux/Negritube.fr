@@ -52,9 +52,11 @@
           <a href="../index.php"><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
         </div>
         <div id="item">
-          <h1 class="title_site">
-            Negritube.fr
-          </h1>
+          <a href="../index.php" style="text-decoration: none; ">
+            <h1 class="title_site">
+              Negritube.fr
+            </h1>
+          </a>
           <h2 class="subtitle_site">
             Pour (re-)découvrir le Gwoka
             <br>(une musique traditionnelle<br>Guadeloupéenne)
@@ -73,22 +75,25 @@
       <br>
       <br>
       <br>
-      <h3 class="song_title" id="title" style="width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%;">
+      <h3 class="song_title" id="title" style="width: 40%;padding-bottom: 1%; margin-left: 30%;">
         Album Eritaj (Extrait)
       </h3>
       <br>
-      <div class="myCanvas">
-        <img class="img" id="img" src="../assets/img/bargraph.gif" alt="graph"/>
-        <canvas class="canvas" id='canvas' width="800" height="350" style="background-image: url('../assets/img/album cover/Eritaj.jpg');background-size: cover;"></canvas>
+      <div class="global-player-aud">
+        <div class="myCanvas">
+          <img class="img" id="img" src="../assets/img/bargraph.gif" alt="graph"/>
+          <canvas class="canvas" id='canvas' width="500" height="350" style="background-image: url('../assets/img/album cover/Eritaj.jpg');"></canvas>
+        </div>
+        <br><br>
+        <canvas id='progress-bar' width="800" height="20">canvas not supported</canvas>
+        <br><br>
       </div>
-      <br>
-      <canvas id='progress-bar' width="800" height="20" style="border:1px solid green;">canvas not supported</canvas>
-      <br>
-      <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">
+      <div class="song_title" id="song_title" style="border:2px solid #000;width: 40%;padding-bottom: 1%; margin-left: 30%; background-color: #D88851;">
         ► Chanson 01 - A prèzan
       </div>
       <br><br>
       <?php include("aud-player.php") ?>
+      <br>
       <?php include("raccourcis horizontaux.php") ?>
       <br><br>
       <p class="description" id="obtension" style="border:2px solid #000;width: 37%;padding-bottom: 1%; margin-left: auto; margin-right: auto; background-color: rgba(255,165,0,.5);">
@@ -105,6 +110,10 @@
         93400  Saint-Ouen<br><br>
         Il est possible de commander en ligne l'album sur le : <br><a href=https://blazingmusicshop.com/products/philippe-blaze-eritaj target="_blank" style="color:black;">site web de Blazing Music</a>
       </p>
+      <br>
+      <div class="song_title" id="title" style="height:auto; font-size:20pt;width: 40%;padding-top: 1%;padding-bottom: 1%; margin-left: 30%;">
+        Liste des chansons de l'album (cliquez ci-dessus pour écouter un autre <br>extrait de l'album)
+      </div>
       <br>
       <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">
         ► Chanson 01 - A prèzan

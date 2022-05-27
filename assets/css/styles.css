@@ -22,7 +22,7 @@ button:before {
 }
 
 video {
-  width: 80vw;
+  width: 60vw;
 }
 
 @media screen and (max-width: 1280px) and (orientation: portrait)
@@ -45,10 +45,11 @@ video {
   .subtitle_site {
     display: none;
   }
-  .hidden {
-    display: none;
+  .song_title {
+    font-size: 25pt !important;
+    height: auto  !important;
   }
-  .left_col {
+  .hidden {
     display: none;
   }
   .raccourcis-généraux {
@@ -92,9 +93,6 @@ video {
   .hidden {
     display: none;
   }
-  .left_col {
-    display: none;
-  }
   .description {
     display: none;
   }
@@ -108,6 +106,10 @@ video {
     height: 100%;
     width: 100%;
     margin-bottom: 50px;
+  }
+  .song_title {
+    font-size: 25pt !important;
+    height: auto !important;
   }
   .player {
     text-align: center;
@@ -173,45 +175,6 @@ video {
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-
-
-.left_col {
-  width:10%;
-  margin-left: 4%;
-  margin-right: 4%;
-  float: left;
-  height: 50vh;
-  position: absolute;
-  overflow-y: scroll;
-  background-color: #222;
-  border: 10px solid rgba(255, 165, 0, 0.95);
-}
-
-.left_col img {
-  width: 100%;
-}
-
-
-
-.left_col {
-  font-family: 'Lato', sans-serif;
-  font-size: 25pt;
-  color: rgba(255, 140, 0, 0.95);
-  text-shadow: 1px 1px 1px #000;
-}
-
-dd {
-  margin: 0;
-}
-
-dt {
-  margin: 0;
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  left: 0;
 }
 
 .raccourcis {
@@ -551,17 +514,30 @@ dt {
   margin-right: auto;
   font-weight: bold;
   font-style: normal;
-  font-size: 25pt;
-  color: 	#000;
+  font-size: 15pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
   text-align: left;
-  text-shadow: 1px 1px 1px #FFF;
   background-color: orange;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  display:block;
+  height: 50px;
+}
+
+#song_title {
+  text-align: center !important;
+  font-size: 25pt;
+  text-shadow: 1px 1px 1px #FFF !important;
+  padding-top: 1.5%;
+  height: 50px;
 }
 
 #title {
   text-align: center !important;
+  font-size: 25pt;
+  text-shadow: 1px 1px 1px #FFF !important;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .description {
@@ -573,7 +549,7 @@ dt {
   padding-right: 30px;
   font-family: "Gill Sans", sans-serif !important;
   font-style: normal;
-  font-size: 20pt;
+  font-size: 15pt;
   color: 	#000;
   text-align: justify;
   text-shadow: 0px 0px 0px #000;
