@@ -76,7 +76,7 @@
         <div class="miniature box" onmouseover="launchWait(0);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Avé Maria Antillais.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Avé Maria Antillais (vidéo)
           </h3>
           <div class="top"></div>
@@ -89,7 +89,7 @@
         <div class="miniature box" onmouseover="launchWait(1);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/DLO.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             DLO (vidéo)
           </h3>
           <div class="top"></div>
@@ -102,7 +102,7 @@
         <div class="miniature box" onmouseover="launchWait(2);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Ekzòd.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Ekzòd (vidéo)
           </h3>
           <div class="top"></div>
@@ -115,7 +115,7 @@
         <div class="miniature box" onmouseover="launchWait(3);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Fòs é kouraj.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Fòs é kouraj (vidéo)
           </h3>
           <div class="top"></div>
@@ -128,7 +128,7 @@
         <div class="miniature box" onmouseover="launchWait(4);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Pénélope.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Pénélope (vidéo)
           </h3>
           <div class="top"></div>
@@ -141,7 +141,7 @@
         <div class="miniature box" onmouseover="launchWait(5);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Piétònn'la (Philippe BLAZE).png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Piétònn'la (vidéo)
           </h3>
           <div class="top"></div>
@@ -154,7 +154,7 @@
         <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Sò a limanité.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Sò a limanité (vidéo)
           </h3>
           <div class="top"></div>
@@ -167,7 +167,7 @@
         <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Sonjé BINO (Philippe BLAZE).png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Sonjé BINO (vidéo)
           </h3>
           <div class="top"></div>
@@ -180,7 +180,7 @@
         <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/WIB.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             WIB (vidéo)
           </h3>
           <div class="top"></div>
@@ -193,7 +193,7 @@
         <div class="miniature box" onmouseover="launchWait(9);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Konjé bonifié.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Konjé bonifié (vidéo)
           </h3>
           <div class="top"></div>
@@ -206,7 +206,7 @@
         <div class="miniature box" onmouseover="launchWait(10);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Mal tèt.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Mal tèt (chanson)
           </h3>
           <div class="top"></div>
@@ -219,7 +219,7 @@
         <div class="miniature box" onmouseover="launchWait(11);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Eritaj.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Eritaj (Extrait de l'album)
           </h3>
           <div class="top"></div>
@@ -232,7 +232,7 @@
         <div class="miniature box" onmouseover="launchWait(12);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Misiyon.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Misiyon (album complet)
           </h3>
           <div class="top"></div>
@@ -245,7 +245,7 @@
         <div class="miniature box" onmouseover="launchWait(13);" onmouseout="cancelWait();">
           <img src="assets/img/miniatureV2/Konsyans.png" alt="" />
           <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="width:30px !important; height:30px !important;padding-right:15px;vertical-align: middle;" />
+            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
             Konsyans (album complet)
           </h3>
           <div class="top"></div>

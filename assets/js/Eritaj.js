@@ -10,9 +10,10 @@ function launchNewMusic(trackNumber) {
     document.getElementById(i).style.backgroundColor = "orange";
   }
 
-  document.getElementById(trackNumber).style.backgroundColor = "#D88851";
-
   audio.src = "../assets/audio/Eritaj/" + trackNumber + ".mp3";
+
+  var currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+  document.getElementById(currentTrack).style.backgroundColor = "#D88851";
 
   song.innerHTML=document.getElementById(trackNumber).innerHTML;
   audio.play();

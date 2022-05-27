@@ -1,6 +1,12 @@
 // (A) AUDIO OBJECT + HTML CONTROLS
 if (window.location.href.indexOf("Eritaj") > -1) {
   var audio = new Audio("../assets/audio/Eritaj/1.mp3"), // change to your own!
+  currentTrack = audio.getAttribute("src"),
+  totalTrack = "13",
+  skipPrevious = document.getElementById("skipPrevious"),
+  skipPreviousIco = document.getElementById("skipPreviousIco"),
+  skipNext = document.getElementById("skipNext"),
+  skipNext = document.getElementById("skipNextIco"),
   aPlay = document.getElementById("aPlay"),
   aPlayIco = document.getElementById("aPlayIco"),
   aNow = document.getElementById("aNow"),
@@ -12,6 +18,12 @@ if (window.location.href.indexOf("Eritaj") > -1) {
 
 if (window.location.href.indexOf("Konsyans") > -1) {
   var audio = new Audio("../assets/audio/Konsyans/1.mp3"), // change to your own!
+  currentTrack = audio.getAttribute("src"),
+  totalTrack = "7",
+  skipPrevious = document.getElementById("skipPrevious"),
+  skipPreviousIco = document.getElementById("skipPreviousIco"),
+  skipNext = document.getElementById("skipNext"),
+  skipNextIco = document.getElementById("skipNextIco"),
   aPlay = document.getElementById("aPlay"),
   aPlayIco = document.getElementById("aPlayIco"),
   aNow = document.getElementById("aNow"),
@@ -23,6 +35,12 @@ if (window.location.href.indexOf("Konsyans") > -1) {
 
 if (window.location.href.indexOf("Mal%20t%C3%A8t") > -1) {
   var audio = new Audio("../assets/audio/0.mp3"), // change to your own!
+  currentTrack = audio.getAttribute("src"),
+  totalTrack = "0",
+  skipPrevious = document.getElementById("skipPrevious"),
+  skipPreviousIco = document.getElementById("skipPreviousIco"),
+  skipNext = document.getElementById("skipNext"),
+  skipNextIco = document.getElementById("skipNextIco"),
   aPlay = document.getElementById("aPlay"),
   aPlayIco = document.getElementById("aPlayIco"),
   aNow = document.getElementById("aNow"),
@@ -34,6 +52,12 @@ if (window.location.href.indexOf("Mal%20t%C3%A8t") > -1) {
 
 if (window.location.href.indexOf("Misiyon") > -1) {
   var audio = new Audio("../assets/audio/Misiyon/1.mp3"), // change to your own!
+  currentTrack = audio.getAttribute("src"),
+  totalTrack = "12",
+  skipPrevious = document.getElementById("skipPrevious"),
+  skipPreviousIco = document.getElementById("skipPreviousIco"),
+  skipNext = document.getElementById("skipNext"),
+  skipNextIco = document.getElementById("skipNextIco"),
   aPlay = document.getElementById("aPlay"),
   aPlayIco = document.getElementById("aPlayIco"),
   aNow = document.getElementById("aNow"),
@@ -42,6 +66,27 @@ if (window.location.href.indexOf("Misiyon") > -1) {
   aVolume = document.getElementById("aVolume"),
   aVolIco = document.getElementById("aVolIco");
 }
+
+skipPrevious.onclick = () => {
+  currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+  if (Number(audio.currentTime) > 1) {
+    audio.currentTime=0;
+    launchNewMusic(currentTrack);
+  } else {
+    if (Number(currentTrack) > "1") {
+      var previousTrack = Number(currentTrack) - 1;
+      launchNewMusic(previousTrack);
+    }
+  }
+};
+
+skipNext.onclick = () => {
+  currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+  if (Number(currentTrack) < Number(totalTrack)) {
+    var nextTrack = Number(currentTrack) + 1;
+    launchNewMusic(nextTrack);
+  }
+};
 
 // (B) PLAY & PAUSE
 // (B1) CLICK TO PLAY/PAUSE
