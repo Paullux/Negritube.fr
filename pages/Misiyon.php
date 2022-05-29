@@ -95,7 +95,7 @@
       <?php include("raccourcis horizontaux.php") ?>
       <br><br>
       <div class="song_title" id="title" style="height:auto; font-size:20pt;width: 40%;padding-top: 1%;padding-bottom: 1%; margin-left: 30%;">
-        Liste des chansons de l'album (cliquez ci-dessus pour écouter un autre morceau)
+        Liste des chansons de l'album (cliquez ci-dessous pour écouter un autre morceau)
       </div>
       <br>
       <button class="song_title" id="1" onclick="launchNewMusic(1);" style="width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">

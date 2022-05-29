@@ -102,7 +102,7 @@
       <?php include("raccourcis horizontaux.php") ?>
       <br><br>
       <div class="song_title" id="title" style="height:auto; font-size:20pt;width: 40%;padding-top: 1%;padding-bottom: 1%; margin-left: 30%;">
-        Pour relancer la lecture de cette chanson cliquez ci-dessus
+        Pour relancer la lecture de cette chanson cliquez ci-dessous
       </div>
       <br>
       <button class="song_title" id="1" onclick="launchNewMusic();" style="background-color: #D88851; border:2px solid #000;width: 40%;cursor: pointer;padding-bottom: 1%;" type="button">

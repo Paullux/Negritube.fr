@@ -13,7 +13,8 @@ if (window.location.href.indexOf("Eritaj") > -1) {
   aTime = document.getElementById("aTime"),
   aSeek = document.getElementById("aSeek"),
   aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco");
+  aVolIco = document.getElementById("aVolIco"),
+  img = document.getElementById('img');
 }
 
 if (window.location.href.indexOf("Konsyans") > -1) {
@@ -30,7 +31,8 @@ if (window.location.href.indexOf("Konsyans") > -1) {
   aTime = document.getElementById("aTime"),
   aSeek = document.getElementById("aSeek"),
   aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco");
+  aVolIco = document.getElementById("aVolIco"),
+  img = document.getElementById('img');
 }
 
 if (window.location.href.indexOf("Mal%20t%C3%A8t") > -1) {
@@ -47,7 +49,8 @@ if (window.location.href.indexOf("Mal%20t%C3%A8t") > -1) {
   aTime = document.getElementById("aTime"),
   aSeek = document.getElementById("aSeek"),
   aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco");
+  aVolIco = document.getElementById("aVolIco"),
+  img = document.getElementById('img');
 }
 
 if (window.location.href.indexOf("Misiyon") > -1) {
@@ -64,7 +67,8 @@ if (window.location.href.indexOf("Misiyon") > -1) {
   aTime = document.getElementById("aTime"),
   aSeek = document.getElementById("aSeek"),
   aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco");
+  aVolIco = document.getElementById("aVolIco"),
+  img = document.getElementById('img');
 }
 
 skipPrevious.onclick = () => {
@@ -97,7 +101,7 @@ aPlay.onclick = () => {
 
 // (B2) SET PLAY/PAUSE ICON
 audio.onplay = () => { aPlayIco.innerHTML = "pause"; };
-audio.onpause = () => { aPlayIco.innerHTML = "play_arrow"; };
+audio.onpause = () => { aPlayIco.innerHTML = "play_arrow"; img.style.visibility = "hidden"; };
 
 // (C) TRACK PROGRESS & SEEK TIME
 // (C1) SUPPORT FUNCTION - FORMAT HH:MM:SS
