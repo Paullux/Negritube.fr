@@ -7,7 +7,7 @@ function launchWait(goodLink) {
   url = miniature[goodLink].parentNode.getAttribute('href');
   anim = setInterval(() => {
     launchMedia(url)
-  }, 3900);
+  }, 8000);
 }
 
 function cancelWait() {
