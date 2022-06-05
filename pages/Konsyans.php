@@ -90,11 +90,11 @@
           </a>
           <h2 class="subtitle_site">
             Pour (re-)découvrir le Gwoka
-            <br>(une musique traditionnelle<br>Guadeloupéenne)
+            <br>et autres musiques Guadeloupéennes
           </h2>
         </div>
         <div class="container" id="item">
-          <h1>Changement de Thème</h1>
+          <h3>Changement de Thème</h3>
           <label id="switch" class="switch">
             <input type="checkbox" onchange="toggleTheme()" id="slider">
             <span class="slider round"></span>
@@ -113,7 +113,7 @@
       <div class="global-player-aud">
         <div class="myCanvas">
           <img class="img" id="img" src="../assets/img/bargraph.gif" alt="graph"/>
-          <canvas class="canvas" id='canvas' width="500" height="350" style="background-image: url('../assets/img/album cover/philippe_konsyans.png');"></canvas>
+          <canvas class="canvas" id='canvas' width="500" height="350" style="background-image: url('../assets/img/album cover/Konsyans.jpg');"></canvas>
         </div>
         <br>
         <canvas id='progress-bar' width="800" height="20">canvas not supported</canvas>

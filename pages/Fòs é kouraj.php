@@ -87,7 +87,7 @@
           </a>
           <h2 class="subtitle_site">
             Pour (re-)découvrir le Gwoka
-            <br>(une musique traditionnelle<br>Guadeloupéenne)
+            <br>et autres musiques Guadeloupéennes
           </h2>
         </div>
         <div class="container" id="item">
@@ -103,9 +103,9 @@
       <br>
       <br>
       <br>
-      <div class="song_title" id="title">
-        Fòs é kouraj
-      </div>
+      <h3 class="song_title" id="title">
+        Une vidéo de Gwoka évolutif : Fòs é kouraj
+      </h3>
       <br>
       <br>
       <div class="hidden">

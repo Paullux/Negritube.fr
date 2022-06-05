@@ -12,6 +12,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 button:before {
   font-family: HeydingsControlsRegular;
   font-size: 20px;
@@ -23,6 +27,85 @@ button:before {
 
 video {
   width: 60vw;
+}
+
+section h2 {
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: italic;
+  text-align: center;
+  font-size: 40pt;
+  text-shadow: 2px 2px 2px #000;
+  color: var(--font-color);
+  background: var(--color-secondary);
+  opacity: .8;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.remonter {
+  font-family: "Gill Sans", sans-serif !important;
+  color: var(--font-color);
+  background: var(--color-secondary);
+  text-shadow: 1px 1px 1px #000;
+  opacity: .8;
+  width: 80vw;
+  margin-left: 10vw;
+  font-size: 25pt;
+  text-align: center;
+  display:block;
+  margin-bottom: 40px;
+}
+nav {
+  font-family: "Gill Sans", sans-serif !important;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 10vw;
+  max-width: 80vw;
+}
+
+nav li a {
+  text-align: center;
+  font-size: 25px;
+  width: 12vw;
+  text-decoration: none;
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px #000;
+}
+nav li {
+  position: relative;
+  background: var(--color-secondary);
+  opacity: .8;
+}
+nav li::before {
+  content: "";
+  position: absolute;
+  background-color: var(--font-color);
+  width: 180px;
+  height: 2px;
+  bottom: 0;
+}
+nav img {
+  width: 80px;
+}
+nav p {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px #000;
+  width: 80px;
+  padding-left: 20px;
+}
+.Bouton_Menu {
+  display: none;
+}
+#Menu_Cache {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 80vw;
+  column-gap: 80px;
 }
 
 @media screen and (max-width: 1280px) and (orientation: portrait)
@@ -38,6 +121,30 @@ video {
     display: none;
   }
   .subtitle_site {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-left: 0vw;
+  }
+  nav img {
+    width: 180px;
+    height: 180px;
+  }
+  nav p {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  nav li a {
+    font-size: 50px;
+    width: 150px;
+  }
+  .Bouton_Menu {
+    display: flex;
+  }
+  #Menu_Cache {
     display: none;
   }
   .song_title {
@@ -111,6 +218,30 @@ video {
 @media screen and (max-width: 1280px) and (orientation: landscape)
 {
   .subtitle_site {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-left: 0vw;
+  }
+  nav img {
+    width: 180px;
+    height: 180px;
+  }
+  nav p {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  nav li a {
+    font-size: 50px;
+    width: 150px;
+  }
+  .Bouton_Menu {
+    display: flex;
+  }
+  #Menu_Cache {
     display: none;
   }
   .hidden {
