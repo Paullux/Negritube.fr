@@ -90,7 +90,7 @@
           </a>
           <h2 class="subtitle_site">
             Pour (re-)découvrir le Gwoka
-            <br>et autres musiques Guadeloupéennes
+            <br>et autres musiques
           </h2>
         </div>
         <div class="container" id="item">

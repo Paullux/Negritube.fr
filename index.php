@@ -95,7 +95,7 @@
         </a>
         <h2 class="subtitle_site">
           Pour (re-)découvrir le Gwoka
-          <br>et autres musiques Guadeloupéennes
+          <br>et autres musiques
         </h2>
       </div>
       <div class="container" id="item">
@@ -134,7 +134,7 @@
             <img src="assets/img/miniatureV2/WIB.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              WIB (vidéo)
+              WIB (vidéo)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -147,7 +147,7 @@
             <img src="assets/img/miniatureV2/DLO.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              DLO (vidéo)
+              DLO (vidéo)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -160,7 +160,7 @@
             <img src="assets/img/miniatureV2/Fòs é kouraj.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Fòs é kouraj (vidéo)
+              Fòs é kouraj (vidéo)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -173,7 +173,7 @@
             <img src="assets/img/miniatureV2/Piétònn'la (Philippe BLAZE).png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Piétònn'la (vidéo)
+              Piétònn'la (vidéo)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -186,7 +186,7 @@
             <img src="assets/img/miniatureV2/Sò a limanité.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Sò a limanité (vidéo)
+              Sò a limanité (vidéo)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -199,7 +199,7 @@
             <img src="assets/img/miniatureV2/Sonjé BINO (Philippe BLAZE).png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Sonjé BINO (vidéo)
+              Sonjé BINO (vidéo)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -220,7 +220,7 @@
             <img src="assets/img/miniatureV2/Ekzòd.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Ekzòd (vidéo)
+              Ekzòd (vidéo)<br>Reggae
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -241,7 +241,7 @@
             <img src="assets/img/miniatureV2/Avé Maria Antillais.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Avé Maria Antillais (vidéo)
+              Avé Maria Antillais (vidéo)<br>Ballade Créole
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -262,7 +262,7 @@
             <img src="assets/img/miniatureV2/Pénélope.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Pénélope (vidéo)
+              Pénélope (vidéo)<br>Salsa
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -283,7 +283,7 @@
             <img src="assets/img/miniatureV2/Konjé bonifié.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Konjé bonifié (vidéo)
+              Konjé bonifié (vidéo)<br>Biguine
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -304,7 +304,7 @@
             <img src="assets/img/miniatureV2/Mal tèt.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Mal tèt (chanson)
+              Mal tèt (chanson)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -317,7 +317,7 @@
             <img src="assets/img/miniatureV2/Eritaj.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Eritaj (Extrait de l'album)
+              Eritaj (Extrait de l'album)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -330,7 +330,7 @@
             <img src="assets/img/miniatureV2/Misiyon.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Misiyon (album complet)
+              Misiyon (album complet)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
@@ -343,7 +343,7 @@
             <img src="assets/img/miniatureV2/Konsyans.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-              Konsyans (album complet)
+              Konsyans (album complet)<br>Gwoka évolutif
             </h3>
             <div class="top"></div>
             <div class="bottom"></div>
