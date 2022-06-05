@@ -36,7 +36,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
-  <script src="assets/js/menu.js" crossorigin="paulw"></script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
 
@@ -118,7 +117,7 @@
       <div id="Menu_Cache">
         <li><a href="#Gwoka_Evolutif">Les vidéos de Gwoka évolutif</a></li>
         <li><a href="#reggae">Une vidéo de Reggae</a></li>
-        <li><a href="#Ballade_créole">Une vidéo de Ballade créole</a></li>
+        <li><a href="#Ballade_créole">Une vidéo de Ballade Créole</a></li>
         <li><a href="#Salsa">Une vidéo de Salsa</a></li>
         <li><a href="#Biguine">Une vidéo de Biguine</a></li>
         <li><a href="#AudioGwokaEvolutif">Les Albums et autres Extraits audio de Gwoka évolutif</a></li>
@@ -131,7 +130,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/WIB.php">
-          <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(0);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/WIB.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -157,7 +156,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Fòs é kouraj.php">
-          <div class="miniature box" onmouseover="launchWait(3);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(2);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Fòs é kouraj.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -170,7 +169,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Piétònn'la (Philippe BLAZE).php">
-          <div class="miniature box" onmouseover="launchWait(5);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(3);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Piétònn'la (Philippe BLAZE).png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -183,7 +182,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Sò a limanité.php">
-          <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(4);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Sò a limanité.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -196,7 +195,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Sonjé BINO (Philippe BLAZE).php">
-          <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(5);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Sonjé BINO (Philippe BLAZE).png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -217,7 +216,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Ekzòd.php">
-          <div class="miniature box" onmouseover="launchWait(2);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Ekzòd.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -234,11 +233,11 @@
     </section>
     <section id="Ballade_créole">
       <h2>
-        Une vidéo de Ballade créole
+        Une vidéo de Ballade Créole
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Avé Maria Antillais.php">
-          <div class="miniature box" onmouseover="launchWait(0);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Avé Maria Antillais.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -259,7 +258,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Pénélope.php">
-          <div class="miniature box" onmouseover="launchWait(4);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Pénélope.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -369,4 +368,5 @@
   <br><br><br>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
 </footer>
+<script src="assets/js/menu.js" crossorigin="paulw"></script>
 </html>

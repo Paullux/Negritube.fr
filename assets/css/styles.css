@@ -33,13 +33,14 @@ section h2 {
   font-family: "Gill Sans", sans-serif !important;
   font-style: italic;
   text-align: center;
-  font-size: 40pt;
+  font-size: 25pt;
   text-shadow: 2px 2px 2px #000;
   color: var(--font-color);
   background: var(--color-secondary);
   opacity: .8;
   width: 80vw;
   margin-left: 10vw;
+  margin-top: 100px;
 }
 
 .remonter {
@@ -47,13 +48,15 @@ section h2 {
   color: var(--font-color);
   background: var(--color-secondary);
   text-shadow: 1px 1px 1px #000;
+  font-weight: lighter;
   opacity: .8;
   width: 80vw;
   margin-left: 10vw;
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   display:block;
   margin-bottom: 40px;
+  text-decoration: none;
 }
 nav {
   font-family: "Gill Sans", sans-serif !important;
@@ -123,6 +126,10 @@ nav p {
   .subtitle_site {
     display: none;
   }
+  section h2 {
+    font-size: 50px;
+    margin-top: 0;
+  }
   nav {
     flex-direction: column;
     margin-top: 2vh;
@@ -146,6 +153,9 @@ nav p {
   }
   #Menu_Cache {
     display: none;
+  }
+  .remonter {
+    font-size: 40px;
   }
   .song_title {
     font-size: 25pt !important;
@@ -187,8 +197,6 @@ nav p {
     width: 50%;
     margin-left: 0;
     margin-right: 0;
-    audio {
-    }
     width: 80% !important;
     zoom: 200%;
   }
@@ -220,6 +228,10 @@ nav p {
   .subtitle_site {
     display: none;
   }
+  section h2 {
+    font-size: 50px;
+    margin-top: 0
+  }
   nav {
     flex-direction: column;
     margin-top: 2vh;
@@ -243,6 +255,9 @@ nav p {
   }
   #Menu_Cache {
     display: none;
+  }
+  .remonter {
+    font-size: 50px;
   }
   .hidden {
     display: none;
