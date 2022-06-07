@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title>Negritube.fr - Ekzòd</title>
-  <meta name="description" content="L'une des chansons que j'ai écrites durant mes années vingtaine, période reggae. Le petit avec des nattes, c'est moi... Eh oui ! j'ai été petit !!!  :)">
+  <meta name="description" content="Une vidéo de Reggae : Ekzòd">
   <meta name="keywords" content="créole" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
@@ -14,7 +14,7 @@
   <meta property="og:url" content="https://negritube.fr/pages/Ekzòd.php">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Negritube.fr - Ekzòd">
-  <meta property="og:description" content="L'une des chansons que j'ai écrites durant mes années vingtaine, période reggae. Le petit avec des nattes, c'est moi... Eh oui ! j'ai été petit !!!  :)">
+  <meta property="og:description" content="Une vidéo de Reggae : Ekzòd">
   <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Ekzòd.png">
   <meta property="og:locale" content="fr_FR" />
 
@@ -23,7 +23,7 @@
   <meta property="twitter:domain" content="negritube.fr">
   <meta property="twitter:url" content="https://negritube.fr/pages/Ekzòd.php">
   <meta name="twitter:title" content="Negritube.fr - Ekzòd">
-  <meta name="twitter:description" content="L'une des chansons que j'ai écrites durant mes années vingtaine, période reggae. Le petit avec des nattes, c'est moi... Eh oui ! j'ai été petit !!!  :)">
+  <meta name="twitter:description" content="Une vidéo de Reggae : Ekzòd">
   <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Ekzòd.png">
   <meta name="twitter:image:alt" content="Negritube.fr" />
 
@@ -86,8 +86,8 @@
             </h1>
           </a>
           <h2 class="subtitle_site">
-            Pour (re-)découvrir le Gwoka
-            <br>et autres musiques
+            Pour (re-)découvrir le Gwoka,
+            <br>musique de Guadeloupe.
           </h2>
         </div>
         <div class="container" id="item">
