@@ -44,20 +44,24 @@ section h2 {
 }
 
 .remonter {
-  font-family: "Gill Sans", sans-serif !important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  margin-left: calc(100vw - 360px);
+  width:20vw;
+  font-family: "Gill Sans", sans-serif;
   color: var(--font-color);
   background: var(--color-secondary);
   text-shadow: 1px 1px 1px #000;
   font-weight: lighter;
-  opacity: .8;
-  width: 80vw;
-  margin-left: 10vw;
+  opacity: .95;
   font-size: 20pt;
   text-align: center;
-  display:block;
-  margin-bottom: 40px;
   text-decoration: none;
+  z-index: 999;
 }
+
 nav {
   font-family: "Gill Sans", sans-serif !important;
   display: flex;
@@ -156,6 +160,7 @@ nav p {
   }
   .remonter {
     font-size: 40px;
+    margin-left: calc(100vw - 360px);
   }
   .song_title {
     font-size: 25pt !important;
@@ -258,6 +263,7 @@ nav p {
   }
   .remonter {
     font-size: 50px;
+    margin-left: calc(100vw - 360px);
   }
   .hidden {
     display: none;

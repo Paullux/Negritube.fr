@@ -208,7 +208,6 @@
           </div>
         </a>
       </div>
-      <a class="remonter" href="#">⇧ remonter ⇧</a>
     </section>
     <section id="reggae">
       <h2>
@@ -229,7 +228,6 @@
           </div>
         </a>
       </div>
-      <a class="remonter" href="#">⇧ remonter ⇧</a>
     </section>
     <section id="Ballade_créole">
       <h2>
@@ -250,7 +248,6 @@
           </div>
         </a>
       </div>
-      <a class="remonter" href="#">⇧ remonter ⇧</a>
     </section>
     <section id="Salsa">
       <h2>
@@ -271,7 +268,6 @@
           </div>
         </a>
       </div>
-      <a class="remonter" href="#">⇧ remonter ⇧</a>
     </section>
     <section id="Biguine">
       <h2>
@@ -292,7 +288,6 @@
           </div>
         </a>
       </div>
-      <a class="remonter" href="#">⇧ remonter ⇧</a>
     </section>
     <section id="AudioGwokaEvolutif">
       <h2>
@@ -352,7 +347,6 @@
           </div>
         </a>
       </div>
-      <a class="remonter" href="#">⇧ remonter ⇧</a>
     </section>
     <center>
       <div class="visiteurs">
@@ -368,5 +362,6 @@
   <br><br><br>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
 </footer>
+<a class="remonter" href="#">⇧ remonter ⇧</a>
 <script src="assets/js/menu.js" crossorigin="paulw"></script>
 </html>
