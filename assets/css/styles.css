@@ -88,7 +88,7 @@ nav li::before {
   content: "";
   position: absolute;
   background-color: var(--font-color);
-  width: 180px;
+  width: 100px;
   height: 2px;
   bottom: 0;
 }

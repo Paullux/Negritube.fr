@@ -116,6 +116,7 @@
       </div>
       <div id="Menu_Cache">
         <li><a href="#Gwoka_Evolutif">Les vidéos de Gwoka évolutif</a></li>
+        <li><a href="#VideoLive">Vidéo en Live</a></li>
         <li><a href="#reggae">Une vidéo de Reggae</a></li>
         <li><a href="#Ballade_créole">Une vidéo de Ballade Créole</a></li>
         <li><a href="#Salsa">Une vidéo de Salsa</a></li>
@@ -209,13 +210,98 @@
         </a>
       </div>
     </section>
+    <section id="VideoLive">
+      <h2>
+        Les vidéos en Live
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/LILY.php">
+          <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
+            <img src="assets/img/miniatureV2/LILY.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Lily de Pierre PERRET
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Petite_Marie.php">
+          <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
+            <img src="assets/img/miniatureV2/Petite_Marie.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Petite Marie de Francis CABREL
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Nou_mélé_Philippe_BLAZE.php">
+          <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
+            <img src="assets/img/miniatureV2/Nou_mélé_Philippe_BLAZE.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Nou mélé (Philippe BLAZE)
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Chanson_Hommage_aux_Gwo_Mòdan.php">
+          <div class="miniature box" onmouseover="launchWait(9);" onmouseout="cancelWait();">
+            <img src="assets/img/miniatureV2/Chanson_Hommage_aux_Gwo_Mòdan.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Chanson hommage à 3 Gwo-Mòdan
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Philippe_BLAZE_piano_bar.php">
+          <div class="miniature box" onmouseover="launchWait(10);" onmouseout="cancelWait();">
+            <img src="assets/img/miniatureV2/Philippe_BLAZE_piano_bar.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Piano-bar
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Sèl_si_on_gran_chimen.php">
+          <div class="miniature box" onmouseover="launchWait(11);" onmouseout="cancelWait();">
+            <img src="assets/img/miniatureV2/Sèl_si_on_gran_chimen.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Sèl si on gran chimen
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
     <section id="reggae">
       <h2>
         Une vidéo de Reggae
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Ekzòd.php">
-          <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(12);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Ekzòd.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -235,7 +321,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Avé Maria Antillais.php">
-          <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(13);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Avé Maria Antillais.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -255,7 +341,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Pénélope.php">
-          <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(14);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Pénélope.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -275,7 +361,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Konjé bonifié.php">
-          <div class="miniature box" onmouseover="launchWait(9);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(15);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Konjé bonifié.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -295,7 +381,7 @@
       </h2>
       <div class="link_song">
         <a class="flex-row-item" href="pages/Mal tèt.php">
-          <div class="miniature box" onmouseover="launchWait(10);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(16);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Mal tèt.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -308,7 +394,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Eritaj.php">
-          <div class="miniature box" onmouseover="launchWait(11);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(17);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Eritaj.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -321,7 +407,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Misiyon.php">
-          <div class="miniature box" onmouseover="launchWait(12);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(18);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Misiyon.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
@@ -334,7 +420,7 @@
           </div>
         </a>
         <a class="flex-row-item" href="pages/Konsyans.php">
-          <div class="miniature box" onmouseover="launchWait(13);" onmouseout="cancelWait();">
+          <div class="miniature box" onmouseover="launchWait(19);" onmouseout="cancelWait();">
             <img src="assets/img/miniatureV2/Konsyans.png" alt="" />
             <h3 class="accueilH3">
               <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />

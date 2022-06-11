@@ -46,6 +46,41 @@
     </div>
 
     <div class="raccourcis-box">
+      <a href="../pages/LILY.php" style="text-decoration:none;">
+        <h2 class="liens-raccourcis">Lily de Pierre PERRET<br>Vidéo en Live</h2>
+        <img src="../assets/img/miniature/LILY.png" alt="" />
+      </a>
+    </div>
+
+    <div class="raccourcis-box">
+      <a href="../pages/Petite_Marie.php" style="text-decoration:none;">
+        <h2 class="liens-raccourcis">Petite Marie de CABREL<br>Vidéo en Live</h2>
+        <img src="../assets/img/miniature/Petite_Marie.png" alt="" />
+      </a>
+    </div>
+
+    <div class="raccourcis-box">
+      <a href="../pages/Nou_mélé_Philippe_BLAZE.php" style="text-decoration:none;">
+        <h2 class="liens-raccourcis">Nou mélé (Philippe BLAZE)<br>Vidéo en Live</h2>
+        <img src="../assets/img/miniature/Nou_mélé_Philippe_BLAZE.png" alt="" />
+      </a>
+    </div>
+
+    <div class="raccourcis-box">
+      <a href="../pages/Chanson_Hommage_aux_Gwo_Mòdan.php" style="text-decoration:none;">
+        <h2 class="liens-raccourcis">Hommage à 3 Gwo-Mòdan<br>Vidéo en Live</h2>
+        <img src="../assets/img/miniature/Chanson_Hommage_aux_Gwo_Mòdan.png" alt="" />
+      </a>
+    </div>
+
+    <div class="raccourcis-box">
+      <a href="../pages/Philippe_BLAZE_piano_bar.php" style="text-decoration:none;">
+        <h2 class="liens-raccourcis">Piano-bar<br>Vidéo en Live</h2>
+        <img src="../assets/img/miniature/Philippe_BLAZE_piano_bar.png" alt="" />
+      </a>
+    </div>
+
+    <div class="raccourcis-box">
       <a href="../pages/Ekzòd.php" style="text-decoration:none;">
         <h2 class="liens-raccourcis">Ekzòd (vidéo)<br>Reggae</h2>
         <img src="../assets/img/miniature/Ekzòd.png" alt="" />
