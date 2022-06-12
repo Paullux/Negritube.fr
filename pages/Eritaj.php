@@ -141,6 +141,17 @@
         93400  Saint-Ouen<br><br>
         Il est possible de commander en ligne l'album sur le : <br><a href=https://blazingmusicshop.com/products/philippe-blaze-eritaj target="_blank" style="color:black;">site web de Blazing Music</a>
       </p>
+      <!-- pubs horizontales -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2838504479669283"
+           data-ad-slot="9838847836"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <!-- End pubs horizontales -->
       <br>
       <div class="song_title" id="title" style="height:auto; font-size:20pt;width: 40%;padding-top: 1%;padding-bottom: 1%; margin-left: 30%;">
         Liste des chansons de l'album (cliquez ci-dessous pour écouter un autre <br>extrait de l'album)

@@ -1,6 +1,6 @@
 <script type="text/javascript" src="../assets/js/showMaskRaccourcis.js" crossorigin="paulw"></script>
 <div class="raccourcis-généraux">
-  <h1 class="raccourcis" id="raccourcisH1" onClick="showHidePlaylist()" style="cursor: pointer;">▲      Autres Musiques      ▲</h1>
+  <h1 class="raccourcis" id="raccourcisH1" onClick="showHidePlaylist()" style="cursor: pointer; text-align: center;">▲      Autres Musiques      ▲</h1>
   <div class="raccourcis-content" id="raccourcisContent" style="display: none;">
 
     <div class="raccourcis-box">

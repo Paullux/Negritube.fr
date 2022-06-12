@@ -137,6 +137,17 @@
           #Gwokaévolutif.<br>
           Voici les paroles que beaucoup d'entre vous m'ont demandées : Istwa-la fè nou vin' konsa. Pèp a Gwadloup-la. Béké, Nèg, Zendyen é Arab, Sé nou péyi-la. Sé nou Gwadloup-la. Tout' sòt' pèp té lib rivé-la, An ti pétyi-la. Lé sèl kè yo maré pou sa, Sété sé nèg-la. Pèp a Afrika. Jòdi-jou on lo nasiyon ka débaké pou fè zafè. Jan léwòp ka fèt, Sé osi pou tòtiyé, Pou nou mélé. Nou mélé. Pou sa nou mélé. Nou plis ki mélé. Nou mélé. Oti karayib, oti Arawak, o amérendiyen. Nou mélé. Pa ni chanjman an istwa-la. Sé menm biten-la. Blan-la li ni lak a tè-la, é tout' sistèm-ma. I ni péyi-la. Zendiyen mèt' men a'y an tè-la; i esplwaté sa. Arab-la li pwan konmès-la; i té la pou sa; é nèg mawon-la. Jòdi-jou éwopéyen ka débaké pou fè zafè. Gè'y jan pèp an nou déklasé. Nou po fin' vwè jan nou mélé. Nou mélé. Pou sa nou mélé, Nou po fin' mélé. O jistis-la yé, o égalité. Nou mélé. Es sé on chans pou limanité vwè nou mélé. Gè'y jan nou mélé. Sé pap Bon Dié tou sèl ki savé. Nou mélé...
         </p>
+        <!-- pubs horizontales -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2838504479669283"
+             data-ad-slot="9838847836"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

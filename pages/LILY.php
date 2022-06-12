@@ -136,6 +136,17 @@
           #pierreperret<br>
           Une chanson de Pierre PERRET sortie en 1977 : son humanisme et sa grandeur d'âme lui ont valu le pilori. 43 ans après rien n'a changé, les choses ont empiré, le racisme s'affiche partout au grand jour, et se banalise.
         </p>
+        <!-- pubs horizontales -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2838504479669283"
+             data-ad-slot="9838847836"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

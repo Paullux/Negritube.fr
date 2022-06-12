@@ -135,6 +135,17 @@
         <p class="description">
           Un hommage, un clin d'oeil à ces Gwo Mòdan (lions) qui nous ont quittés ces jours-ci : #ManuDIBANGO dont je chante ici le refrain de sa chanson #SOULMAKOSSA , #PapeDIOUF personnalité du foot, Sarah MALDOROR d'origine marie-galantaise, cinéaste pionnière du cinéma panafricain, #CHRISTOPHE dont j'interprète ici la chanson Aline. Hommage aussi à tous les autres qui ont tiré leur révérence, victimes de la petite bête.
         </p>
+        <!-- pubs horizontales -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2838504479669283"
+             data-ad-slot="9838847836"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

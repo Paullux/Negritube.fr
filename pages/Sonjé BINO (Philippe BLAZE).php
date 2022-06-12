@@ -140,6 +140,17 @@
           Mai 1802 ok. Mai 67 ok. Mais n'oublions surtout pas le dernier militant ayant perdu sa vie pour le peuple guadeloupéen,
           lors de la mobilisation en janvier-février 2009. Sonjé BINO .Extrait de l'abum "MISYON" du groupe "JÒD'LA" publié en 2011.
         </p>
+        <!-- pubs horizontales -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2838504479669283"
+             data-ad-slot="9838847836"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

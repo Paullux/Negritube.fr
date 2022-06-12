@@ -136,6 +136,17 @@
           L'une des chansons que j'ai écrites durant mes années"vingtaine", période reggae.
           Le petit avec des nattes, c'est moi... Eh oui ! j'ai été petit !!!  :)
         </p>
+        <!-- pubs horizontales -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2838504479669283"
+             data-ad-slot="9838847836"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

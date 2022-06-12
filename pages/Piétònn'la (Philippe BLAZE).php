@@ -139,6 +139,17 @@
         <p class="description">
           #GWOKA.  Piétònn'la : Un des 13 titres de mon dernier album nommé Eritaj qui comporte des chansons et des instrumentaux. #confinement oblige, je vous ai filmé ce titre en live
         </p>
+        <!-- pubs horizontales -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2838504479669283"
+             data-ad-slot="9838847836"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

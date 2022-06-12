@@ -126,7 +126,19 @@
       <?php include("aud-player.php") ?>
       <br>
       <?php include("raccourcis horizontaux.php") ?>
-      <br><br>
+      <br>
+      <!-- pubs horizontales -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2838504479669283"
+           data-ad-slot="9838847836"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <!-- End pubs horizontales -->
+      <br>
       <div class="song_title" id="title" style="height:auto; font-size:20pt;width: 40%;padding-top: 1%;padding-bottom: 1%; margin-left: 30%;">
         Pour relancer la lecture de cette chanson cliquez ci-dessous
       </div>
