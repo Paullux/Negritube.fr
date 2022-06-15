@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title>Negritube.fr - Nou mélé (Philippe BLAZE)</title>
@@ -37,7 +36,6 @@
   <script src="../assets/js/switchThemePages.js" crossorigin="paulw"></script>
 
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07Z7YG6ZX"></script>
@@ -72,7 +70,7 @@
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
-<body on load="display();">
+<body>
   <div class="my_page">
     <div class="video_page">
       <div class="big-title">
@@ -137,17 +135,6 @@
           #Gwokaévolutif.<br>
           Voici les paroles que beaucoup d'entre vous m'ont demandées : Istwa-la fè nou vin' konsa. Pèp a Gwadloup-la. Béké, Nèg, Zendyen é Arab, Sé nou péyi-la. Sé nou Gwadloup-la. Tout' sòt' pèp té lib rivé-la, An ti pétyi-la. Lé sèl kè yo maré pou sa, Sété sé nèg-la. Pèp a Afrika. Jòdi-jou on lo nasiyon ka débaké pou fè zafè. Jan léwòp ka fèt, Sé osi pou tòtiyé, Pou nou mélé. Nou mélé. Pou sa nou mélé. Nou plis ki mélé. Nou mélé. Oti karayib, oti Arawak, o amérendiyen. Nou mélé. Pa ni chanjman an istwa-la. Sé menm biten-la. Blan-la li ni lak a tè-la, é tout' sistèm-ma. I ni péyi-la. Zendiyen mèt' men a'y an tè-la; i esplwaté sa. Arab-la li pwan konmès-la; i té la pou sa; é nèg mawon-la. Jòdi-jou éwopéyen ka débaké pou fè zafè. Gè'y jan pèp an nou déklasé. Nou po fin' vwè jan nou mélé. Nou mélé. Pou sa nou mélé, Nou po fin' mélé. O jistis-la yé, o égalité. Nou mélé. Es sé on chans pou limanité vwè nou mélé. Gè'y jan nou mélé. Sé pap Bon Dié tou sèl ki savé. Nou mélé...
         </p>
-        <!-- pubs horizontales -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-2838504479669283"
-             data-ad-slot="9838847836"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title>Negritube.fr</title>
@@ -36,8 +35,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07Z7YG6ZX"></script>
@@ -81,7 +78,7 @@
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
-<body on load="display();">
+<body>
   <div class="index" style="align-items:center;">
     <div class="big-title">
       <div id="item">
@@ -126,18 +123,6 @@
       </div>
     </nav>
     <br>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
-    <!-- pubs horizontales -->
-    <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2838504479669283"
-    data-ad-slot="9838847836"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <!-- End pubs horizontales -->
     <section id="Gwoka_Evolutif">
       <h2>
         Les vidéos de Gwoka évolutif
@@ -169,325 +154,293 @@
             <div class="right"></div>
           </div>
         </a>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="fluid"
-        data-ad-layout-key="-7b+f1-19-54+dx"
-        data-ad-client="ca-pub-2838504479669283"
-        data-ad-slot="7093835818">
-      </ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      <a class="flex-row-item" href="pages/Fòs é kouraj.php">
-        <div class="miniature box" onmouseover="launchWait(2);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Fòs é kouraj.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Fòs é kouraj (vidéo)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
+        <a class="flex-row-item" href="pages/Fòs é kouraj.php">
+          <div class="miniature box" onmouseover="launchWait(2);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Fòs é kouraj.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Fòs é kouraj (vidéo)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Piétònn'la (Philippe BLAZE).php">
+          <div class="miniature box" onmouseover="launchWait(3);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Piétònn'la (Philippe BLAZE).png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Piétònn'la (vidéo)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Sò a limanité.php">
+          <div class="miniature box" onmouseover="launchWait(4);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Sò a limanité.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Sò a limanité (vidéo)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Sonjé BINO (Philippe BLAZE).php">
+          <div class="miniature box" onmouseover="launchWait(5);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Sonjé BINO (Philippe BLAZE).png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Sonjé BINO (vidéo)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="VideoLive">
+      <h2>
+        Les vidéos en Live
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/LILY.php">
+          <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/LILY.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Lily de Pierre PERRET
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Petite_Marie.php">
+          <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Petite_Marie.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Petite Marie de Francis CABREL
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Nou_mélé_Philippe_BLAZE.php">
+          <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Nou_mélé_Philippe_BLAZE.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Nou mélé (Philippe BLAZE)
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Chanson_Hommage_aux_Gwo_Mòdan.php">
+          <div class="miniature box" onmouseover="launchWait(9);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Chanson_Hommage_aux_Gwo_Mòdan.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Chanson hommage à 3 Gwo-Mòdan
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Philippe_BLAZE_piano_bar.php">
+          <div class="miniature box" onmouseover="launchWait(10);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Philippe_BLAZE_piano_bar.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Piano-bar
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Sèl_si_on_gran_chimen.php">
+          <div class="miniature box" onmouseover="launchWait(11);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Sèl_si_on_gran_chimen.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Vidéo en Live<br>Sèl si on gran chimen
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="reggae">
+      <h2>
+        Une vidéo de Reggae
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/Ekzòd.php">
+          <div class="miniature box" onmouseover="launchWait(12);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Ekzòd.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Ekzòd (vidéo)<br>Reggae
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="Ballade_créole">
+      <h2>
+        Une vidéo de Ballade Créole
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/Avé Maria Antillais.php">
+          <div class="miniature box" onmouseover="launchWait(13);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Avé Maria Antillais.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Avé Maria Antillais (vidéo)<br>Ballade Créole
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="Salsa">
+      <h2>
+        Une vidéo de Salsa
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/Pénélope.php">
+          <div class="miniature box" onmouseover="launchWait(14);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Pénélope.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Pénélope (vidéo)<br>Salsa
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="Biguine">
+      <h2>
+        Une vidéo de Biguine
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/Konjé bonifié.php">
+          <div class="miniature box" onmouseover="launchWait(15);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Konjé bonifié.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Konjé bonifié (vidéo)<br>Biguine
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="AudioGwokaEvolutif">
+      <h2>
+        Les Albums et autres Extraits audio de Gwoka évolutif
+      </h2>
+      <div class="link_song">
+        <a class="flex-row-item" href="pages/Mal tèt.php">
+          <div class="miniature box" onmouseover="launchWait(16);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Mal tèt.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Mal tèt (chanson)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Eritaj.php">
+          <div class="miniature box" onmouseover="launchWait(17);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Eritaj.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Eritaj (Extrait de l'album)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Misiyon.php">
+          <div class="miniature box" onmouseover="launchWait(18);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Misiyon.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Misiyon (album complet)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+        <a class="flex-row-item" href="pages/Konsyans.php">
+          <div class="miniature box" onmouseover="launchWait(19);" onmouseout="cancelWait();">
+            <img src="assets/img/miniature/Konsyans.png" alt="" />
+            <h3 class="accueilH3">
+              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
+              Konsyans (album complet)<br>Gwoka évolutif
+            </h3>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <center>
+      <div class="visiteurs">
+        Nombre de visiteurs sur le site :
+      </div>
+      <a class="compteur" href="https://www.mon-compteur.fr">
+        <img src="https://www.mon-compteur.fr/html_c01genv2-235526-6" border="0" />
       </a>
-      <a class="flex-row-item" href="pages/Piétònn'la (Philippe BLAZE).php">
-        <div class="miniature box" onmouseover="launchWait(3);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Piétònn'la (Philippe BLAZE).png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Piétònn'la (vidéo)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Sò a limanité.php">
-        <div class="miniature box" onmouseover="launchWait(4);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Sò a limanité.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Sò a limanité (vidéo)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Sonjé BINO (Philippe BLAZE).php">
-        <div class="miniature box" onmouseover="launchWait(5);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Sonjé BINO (Philippe BLAZE).png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Sonjé BINO (vidéo)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section id="VideoLive">
-    <h2>
-      Les vidéos en Live
-    </h2>
-    <div class="link_song">
-      <a class="flex-row-item" href="pages/LILY.php">
-        <div class="miniature box" onmouseover="launchWait(6);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/LILY.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Vidéo en Live<br>Lily de Pierre PERRET
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-format="fluid"
-      data-ad-layout-key="-7b+f1-19-54+dx"
-      data-ad-client="ca-pub-2838504479669283"
-      data-ad-slot="7093835818"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      <a class="flex-row-item" href="pages/Petite_Marie.php">
-        <div class="miniature box" onmouseover="launchWait(7);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Petite_Marie.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Vidéo en Live<br>Petite Marie de Francis CABREL
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Nou_mélé_Philippe_BLAZE.php">
-        <div class="miniature box" onmouseover="launchWait(8);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Nou_mélé_Philippe_BLAZE.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Vidéo en Live<br>Nou mélé (Philippe BLAZE)
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Chanson_Hommage_aux_Gwo_Mòdan.php">
-        <div class="miniature box" onmouseover="launchWait(9);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Chanson_Hommage_aux_Gwo_Mòdan.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Vidéo en Live<br>Chanson hommage à 3 Gwo-Mòdan
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Philippe_BLAZE_piano_bar.php">
-        <div class="miniature box" onmouseover="launchWait(10);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Philippe_BLAZE_piano_bar.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Vidéo en Live<br>Piano-bar
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Sèl_si_on_gran_chimen.php">
-        <div class="miniature box" onmouseover="launchWait(11);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Sèl_si_on_gran_chimen.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Vidéo en Live<br>Sèl si on gran chimen
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section id="reggae">
-    <h2>
-      Une vidéo de Reggae
-    </h2>
-    <div class="link_song">
-      <a class="flex-row-item" href="pages/Ekzòd.php">
-        <div class="miniature box" onmouseover="launchWait(12);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Ekzòd.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Ekzòd (vidéo)<br>Reggae
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section id="Ballade_créole">
-    <h2>
-      Une vidéo de Ballade Créole
-    </h2>
-    <div class="link_song">
-      <a class="flex-row-item" href="pages/Avé Maria Antillais.php">
-        <div class="miniature box" onmouseover="launchWait(13);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Avé Maria Antillais.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Avé Maria Antillais (vidéo)<br>Ballade Créole
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section id="Salsa">
-    <h2>
-      Une vidéo de Salsa
-    </h2>
-    <div class="link_song">
-      <a class="flex-row-item" href="pages/Pénélope.php">
-        <div class="miniature box" onmouseover="launchWait(14);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Pénélope.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Pénélope (vidéo)<br>Salsa
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-format="fluid"
-      data-ad-layout-key="-7b+f1-19-54+dx"
-      data-ad-client="ca-pub-2838504479669283"
-      data-ad-slot="7093835818"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  </section>
-  <section id="Biguine">
-    <h2>
-      Une vidéo de Biguine
-    </h2>
-    <div class="link_song">
-      <a class="flex-row-item" href="pages/Konjé bonifié.php">
-        <div class="miniature box" onmouseover="launchWait(15);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Konjé bonifié.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Konjé bonifié (vidéo)<br>Biguine
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section id="AudioGwokaEvolutif">
-    <h2>
-      Les Albums et autres Extraits audio de Gwoka évolutif
-    </h2>
-    <div class="link_song">
-      <a class="flex-row-item" href="pages/Mal tèt.php">
-        <div class="miniature box" onmouseover="launchWait(16);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Mal tèt.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Mal tèt (chanson)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Eritaj.php">
-        <div class="miniature box" onmouseover="launchWait(17);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Eritaj.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Eritaj (Extrait de l'album)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Misiyon.php">
-        <div class="miniature box" onmouseover="launchWait(18);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Misiyon.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Misiyon (album complet)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-      <a class="flex-row-item" href="pages/Konsyans.php">
-        <div class="miniature box" onmouseover="launchWait(19);" onmouseout="cancelWait();">
-          <img src="assets/img/miniature/Konsyans.png" alt="" />
-          <h3 class="accueilH3">
-            <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />
-            Konsyans (album complet)<br>Gwoka évolutif
-          </h3>
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <center>
-    <div class="visiteurs">
-      Nombre de visiteurs sur le site :
-    </div>
-    <a class="compteur" href="http://www.mon-compteur.fr">
-      <img src="http://www.mon-compteur.fr/html_c01genv2-235526-6" border="0" />
-    </a>
-  </center>
-</div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283"crossorigin="anonymous"></script>
+    </center>
+  </div>
 </body>
 <footer>
   <br><br><br>

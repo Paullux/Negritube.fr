@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title>Negritube.fr - Ekzòd</title>
@@ -37,7 +36,6 @@
   <script src="../assets/js/switchThemePages.js" crossorigin="paulw"></script>
 
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283" crossorigin="anonymous"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07Z7YG6ZX"></script>
@@ -72,7 +70,7 @@
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
-<body on load="display();">
+<body>
   <div class="my_page">
     <div class="video_page">
       <div class="big-title">
@@ -136,17 +134,6 @@
           L'une des chansons que j'ai écrites durant mes années"vingtaine", période reggae.
           Le petit avec des nattes, c'est moi... Eh oui ! j'ai été petit !!!  :)
         </p>
-        <!-- pubs horizontales -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-2838504479669283"
-             data-ad-slot="9838847836"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <!-- End pubs horizontales -->
         <div style="height:6px;font-size:6px;">&nbsp;</div>
       </div>
     </div>
