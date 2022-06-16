@@ -168,7 +168,8 @@ nav p {
   }
   .song_title {
     font-size: 25pt !important;
-    height: auto  !important;
+    height: auto !important;
+    min-height: 4em !important;
   }
   .hidden {
     display: none;
