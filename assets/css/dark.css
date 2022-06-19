@@ -1,9 +1,15 @@
 body {
+  animation: changeBg 30s infinite;
   background-color: #111;
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(5px);
   margin: 0;
+}
+
+@keyframes changeBg{
+  0%,100%  {background-image: url('../img/ConcertPhilippe1.png');}
+  50% {background-image: url('../img/ConcertPhilippe2.png');}
 }
 
 .accueilH3 img {

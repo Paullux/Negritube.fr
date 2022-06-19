@@ -89,7 +89,7 @@
           </h2>
         </div>
         <div class="container" id="item">
-          <h1>Changement de Thème</h1>
+          <h3>Changement de Thème</h3>
           <label id="switch" class="switch">
             <input type="checkbox" onchange="toggleTheme()" id="slider">
             <span class="slider round"></span>
