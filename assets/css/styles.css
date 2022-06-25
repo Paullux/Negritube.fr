@@ -134,6 +134,7 @@ nav p {
     display: none;
   }
   .presentationClip {
+    height: 57vh !important;
     display: flex !important;
     flex-direction: column !important;
   }
@@ -929,7 +930,7 @@ nav p {
 }
 
 .presentationClip {
-  height: 75vh;
+  height: 65vh;
   display: flex;
   flex-direction: row;
   gap: 50px;

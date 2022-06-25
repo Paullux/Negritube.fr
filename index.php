@@ -106,20 +106,20 @@
         <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
       </div>
     </div>
-    <nav>
-      <div class="Bouton_Menu" onclick="open_menu();">
-        <img id="lebouton" src="assets/img/Menu.png" alt="Menu">
-        <p>
-          Menu
-        </p>
-      </div>
-      <div id="Menu_Cache">
-        <li><a href="pages/VideoFile.php">Les Clips</a></li>
-        <li><a href="pages/AudioFile.php">Les Albums</a></li>
-        <li><a href="pages/contact.php">Negritube.fr - Prise de Contact</a></li>
-      </div>
-    </nav>
     <div class="presentationIndex">
+      <nav>
+        <div class="Bouton_Menu" onclick="open_menu();">
+          <img id="lebouton" src="assets/img/Menu.png" alt="Menu">
+          <p>
+            Menu
+          </p>
+        </div>
+        <div id="Menu_Cache">
+          <li><a href="pages/VideoFile.php">Les Clips</a></li>
+          <li><a href="pages/AudioFile.php">Les Albums</a></li>
+          <li><a href="pages/contact.php">Negritube.fr - Prise de Contact</a></li>
+        </div>
+      </nav>
       <div class="link_song miniatureandcover">
         <a class="miniature box" href="pages/VideoFile.php" onmouseover="launchWait(0);" onmouseout="cancelWait();">
             <!--<h3 class="accueilH3">
