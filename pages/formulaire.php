@@ -3,8 +3,6 @@ if (isset($_POST["submit"])) {
     $email = filter_var($_POST["email"],FILTER_SANITIZE_EMAIL);
     $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH | FILTER_FLAG_STRIP_LOW);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH | FILTER_FLAG_STRIP_LOW);
-    $configs = include('config.php');
-    $url = $configs['url'];
     $messageWarning = "";
     $colorMessageWarning = "white";
     $nameTextAdded = "";
@@ -39,7 +37,7 @@ if (isset($_POST["submit"])) {
         $messageWarning='Veuillez remplir correctement le formulaire';
         $colorMessageWarning="red";
         if (empty($name)||$name=="HenryFrile") {
-            $nameManquant = "border:red 1px solid;border-radius: 30px; border-collapse: separate;";
+            $nameManquant = "border:red 3px solid;border-radius: 0.375rem; border-collapse: separate;";
             $nameTextAdded = " mal renseigné";
             $nameLabelColor = "color: red";
         } else {
@@ -49,7 +47,7 @@ if (isset($_POST["submit"])) {
         }
 
         if (empty($email)) {
-            $emailManquant = "border:red 1px solid;border-radius: 30px; border-collapse: separate;";
+            $emailManquant = "border:red 3px solid;border-radius: 0.375rem; border-collapse: separate;";
 	        $emailTextAdded = " mal renseigné";
             $emailLabelColor = "color: red";
         } else {
@@ -59,13 +57,22 @@ if (isset($_POST["submit"])) {
         }
 
         if (empty($message)) {
-            $messageManquant = "border:red 1px solid;border-radius: 30px; border-collapse: separate;";
+            $messageManquant = "border:red 3px solid;border-radius: 0.375rem; border-collapse: separate;";
 	        $messageTextAdded = " mal renseigné";
             $messageLabelColor = "color: red";
         } else {
             $messageManquant = "";
 	        $MessageTextAdded = "";
             $messageLabelColor = "";
+        }
+        if (empty($captcha)) {
+            $captchaManquant = "border:red 3px solid;border-radius: 0.375rem; border-collapse: separate;";
+	        $captchaTextAdded = " mal renseigné";
+            $captchaLabelColor = "color: red";
+        } else {
+            $captchaManquant = "";
+	        $captchaTextAdded = "";
+            $captchaLabelColor = "";
         }
     }
 }

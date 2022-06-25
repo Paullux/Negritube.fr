@@ -1,10 +1,11 @@
 
-var miniature = document.getElementsByClassName('miniature');
+var box = document.getElementsByClassName('box');
+
 var anim = setInterval("",0);
 var url = "index.php";
 
 function launchWait(goodLink) {
-  url = miniature[goodLink].parentNode.getAttribute('href');
+  url = box[goodLink].getAttribute('href');
   anim = setInterval(() => {
     launchMedia(url)
   }, 8000);

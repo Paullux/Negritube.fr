@@ -75,7 +75,8 @@ require_once ( 'formulaire.php' );
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
-<body>
+<body style="overflow: scroll;">
+  <div id="turnDeviceNotification"></div>
   <div class="my_page">
     <div class="big-title">
       <div id="item">
@@ -101,22 +102,11 @@ require_once ( 'formulaire.php' );
         <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br>
     <h3 class="song_title" id="title">
       Pour prendre contact avec nous,
     </h3>
-    <br>
-    <br>
-    <div class="hidden">
-      <div style="height:10px;font-size:10px;">&nbsp;</div>
-    </div>
-    <div style="height:10px;font-size:10px;">&nbsp;</div>
-
     <form id="contact-form" method="post" autocomplete="off">
-      <h2></h2>
       <div class="card-body p-0 my-3">
         <div class="row">
           <label style="color:<?php echo $colorMessageWarning; ?>" > <?php echo $messageWarning; ?> </label>
@@ -140,8 +130,8 @@ require_once ( 'formulaire.php' );
           </div>
         </div>
         <div class="captcha">
-          <label>Entrer le texte dans l'image</label>
-          <input name="captcha" type="text" class="form-control">
+          <label style="<?php echo $captchaLabelColor; ?>">Entrer le texte dans l'image  <?php echo $captchaTextAdded; ?></label>
+          <input name="captcha captchaInput" type="text" class="form-control" placeholder="Entrez le Captcha" style="<?php echo $captchaManquant; ?>">
           <img src="./captcha.php" style="vertical-align: middle;"/>
           <label style="<?php echo $messageCaptchaColor; ?>" >
             <?php
@@ -159,19 +149,13 @@ require_once ( 'formulaire.php' );
       </div>
     </div>
   </form>
-
-  <p class="description" style="text-align: center;">
+  <p class="song_title" style="text-align: center;">
     La musique vous plait venez à notre rencontre.
   </p>
-
-  <div style="height:10px;font-size:10px;">&nbsp;</div>
-  <?php include("raccourcis horizontaux.php") ?>
-
-  <div style="height:6px;font-size:6px;">&nbsp;</div>
 </div>
 </body>
 <footer>
-  <div style="height:30px;font-size:30px;">&nbsp;</div>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
 </footer>
+<script src="../assets/js/landscapeWarning.js" crossorigin="paulw"></script>
 </html>

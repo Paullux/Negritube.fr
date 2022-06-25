@@ -4,23 +4,66 @@
   color: #efff6a;
 }
 
+#song_title_audio {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  text-align: left !important;
+  text-shadow: none !important;
+  padding-top: auto;
+  padding-bottom: auto;
+  background: none !important;
+}
+
+#song_title_audio p {
+  padding-left: 20px;
+}
+
+#song_title_audio img {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+}
+
 /* (B) WRAPPER */
 #aWrap {
+  /*position: -webkit-sticky; /* Safari */
+  /*position: sticky; */
+  border-top: 2px solid var(--my-color);
+  height: 8vh;
   font-family: arial, sans-serif;
-  display:flex;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  box-sizing: border-box;
-  margin-left: calc(100vw - 70%);
-  margin-right: calc(100vw - 70%);
+  width: 100%;
   max-width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  background: #484848;
+  overflow: hidden;
+  background-color: rgba(72, 72, 72, .8);
+  backdrop-filter: blur(1vmax) !important;
+  bottom: 0;
 }
+
+#aWrap .Titre {
+  margin-left: 20px;
+}
+/*
+#aWrap:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(72, 72, 72, .8);
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(.5vmax);
+}
+*/
 
 /* (C) PREVIOUS BUTTON */
 #skipPrevious {
-  padding: 0;
+  padding: 0 0 0 10px;
   margin: 0;
   background: 0;
   border: 0;
@@ -29,7 +72,7 @@
 
 /* (E) PLAY/PAUSE BUTTON */
 #aPlay {
-  padding: 0;
+  padding: 0 0 0 10px;
   margin: 0;
   background: 0;
   border: 0;
@@ -38,22 +81,40 @@
 
 /* (D) NEXT BUTTON */
 #skipNext {
-  padding: 0;
+  padding: 0 0 0 10px;
   margin: 0;
   background: 0;
   border: 0;
   cursor: pointer;
 }
 
-/* (F) TIME */
+/* (E) AUTORENEW BUTTON */
+#autorenew {
+  padding: 0 0 0 10px;
+  margin: 0;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+/* (F) RANDOM BUTTON */
+#shuffle {
+  padding: 0 0 0 10px;
+  margin: 0;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+/* (G) TIME */
 #aCron {
   font-size: 14px;
   color: #cbcbcb;
   margin: 0 10px;
 }
 
-/* (G) RANGE SLIDERS */
-/* (G1) HIDE DEFAULT */
+/* (H) RANGE SLIDERS */
+/* (H1) HIDE DEFAULT */
 #aWrap input[type="range"] {
   box-sizing: border-box;
   appearance: none;
@@ -69,7 +130,7 @@
   appearance: none;
 }
 
-/* (G2) CUSTOM SLIDER TRACK */
+/* (H2) CUSTOM SLIDER TRACK */
 #aWrap input[type=range]::-webkit-slider-runnable-track {
   background: #626262;
 }
@@ -77,7 +138,7 @@
   background: #626262;
 }
 
-/* (G3) CUSTOM SLIDER BUTTON */
+/* (H3) CUSTOM SLIDER BUTTON */
 #aWrap input[type=range]::-webkit-slider-thumb {
   width: 16px; height: 16px;
   border-radius: 50%;
@@ -91,7 +152,7 @@
   background: #fff;
 }
 
-/* (H) VOLUME */
+/* (I) VOLUME */
 #aVolIco {
   margin: 0 10px;
 }
@@ -99,39 +160,51 @@
 @media screen and (max-width: 1280px) and (orientation: landscape) {
   #aWrap {
     font-family: arial, sans-serif;
-    display:flex;
     align-items: center;
-    box-sizing: border-box;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 80vw;
-    padding: 10px;
-    border-radius: 10px;
-    background: #484848;
-    height: 10%;
+    width: 100%;
   }
+  #aSeek {
+    display: none;
+  }
+  #aVolume {
+    width: 10%;
+  }
+  .presentation {
+    flex-direction: column-reverse;
+    font-size: 10pt;;
+  }
+  .aMasquer {
+    display: none !important;
+  } 
 }
 @media screen and (max-width: 1280px) and (orientation: portrait) {
   #aCron {
     font-size: 28px;
     color: #cbcbcb;
-    margin: 0 10px;
+    height: 200px !important;
   }
+
   .material-icons {
     font-size: 58px !important;
     color: #efff6a;
   }
+  #aSeek {
+    display: none;
+  }
   #aWrap {
     font-family: arial, sans-serif;
     display:flex;
+    font-size: 30px;
     align-items: center;
     box-sizing: border-box;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 80vw;
-    padding: 10px;
-    border-radius: 10px;
-    background: #484848;
-    height: 4vh !important;
+    width: 100%;
+    height: 500px;
   }
+  .presentation {
+    flex-direction: column;
+    font-size: 10pt;;
+  }
+  .aMasquer {
+    display: none !important;
+  } 
 }

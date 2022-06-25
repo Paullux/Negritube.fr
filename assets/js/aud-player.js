@@ -1,75 +1,24 @@
 // (A) AUDIO OBJECT + HTML CONTROLS
-if (window.location.href.indexOf("Eritaj") > -1) {
-  var audio = new Audio("../assets/audio/Eritaj/1.mp3"), // change to your own!
-  currentTrack = audio.getAttribute("src"),
-  totalTrack = "13",
-  skipPrevious = document.getElementById("skipPrevious"),
-  skipPreviousIco = document.getElementById("skipPreviousIco"),
-  skipNext = document.getElementById("skipNext"),
-  skipNext = document.getElementById("skipNextIco"),
-  aPlay = document.getElementById("aPlay"),
-  aPlayIco = document.getElementById("aPlayIco"),
-  aNow = document.getElementById("aNow"),
-  aTime = document.getElementById("aTime"),
-  aSeek = document.getElementById("aSeek"),
-  aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco"),
-  img = document.getElementById('img');
-}
-
-if (window.location.href.indexOf("Konsyans") > -1) {
-  var audio = new Audio("../assets/audio/Konsyans/1.mp3"), // change to your own!
-  currentTrack = audio.getAttribute("src"),
-  totalTrack = "7",
-  skipPrevious = document.getElementById("skipPrevious"),
-  skipPreviousIco = document.getElementById("skipPreviousIco"),
-  skipNext = document.getElementById("skipNext"),
-  skipNextIco = document.getElementById("skipNextIco"),
-  aPlay = document.getElementById("aPlay"),
-  aPlayIco = document.getElementById("aPlayIco"),
-  aNow = document.getElementById("aNow"),
-  aTime = document.getElementById("aTime"),
-  aSeek = document.getElementById("aSeek"),
-  aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco"),
-  img = document.getElementById('img');
-}
-
-if (window.location.href.indexOf("Mal%20t%C3%A8t") > -1) {
-  var audio = new Audio("../assets/audio/0.mp3"), // change to your own!
-  currentTrack = audio.getAttribute("src"),
-  totalTrack = "0",
-  skipPrevious = document.getElementById("skipPrevious"),
-  skipPreviousIco = document.getElementById("skipPreviousIco"),
-  skipNext = document.getElementById("skipNext"),
-  skipNextIco = document.getElementById("skipNextIco"),
-  aPlay = document.getElementById("aPlay"),
-  aPlayIco = document.getElementById("aPlayIco"),
-  aNow = document.getElementById("aNow"),
-  aTime = document.getElementById("aTime"),
-  aSeek = document.getElementById("aSeek"),
-  aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco"),
-  img = document.getElementById('img');
-}
-
-if (window.location.href.indexOf("Misiyon") > -1) {
-  var audio = new Audio("../assets/audio/Misiyon/1.mp3"), // change to your own!
-  currentTrack = audio.getAttribute("src"),
-  totalTrack = "12",
-  skipPrevious = document.getElementById("skipPrevious"),
-  skipPreviousIco = document.getElementById("skipPreviousIco"),
-  skipNext = document.getElementById("skipNext"),
-  skipNextIco = document.getElementById("skipNextIco"),
-  aPlay = document.getElementById("aPlay"),
-  aPlayIco = document.getElementById("aPlayIco"),
-  aNow = document.getElementById("aNow"),
-  aTime = document.getElementById("aTime"),
-  aSeek = document.getElementById("aSeek"),
-  aVolume = document.getElementById("aVolume"),
-  aVolIco = document.getElementById("aVolIco"),
-  img = document.getElementById('img');
-}
+var audio = new Audio("../assets/audio/AllAlbums/1.mp3"), // change to your own!
+currentTrack = audio.getAttribute("src"),
+totalTrack = "33",
+skipPrevious = document.getElementById("skipPrevious"),
+skipPreviousIco = document.getElementById("skipPreviousIco"),
+skipNext = document.getElementById("skipNext"),
+skipNext = document.getElementById("skipNextIco"),
+aPlay = document.getElementById("aPlay"),
+aPlayIco = document.getElementById("aPlayIco"),
+autorenew = document.getElementById("autorenew"),
+autorenewBool = new Boolean(false),
+autorenewIco = document.getElementById("autorenewIco"),
+shuffle = document.getElementById("shuffle"),
+shuffleIco = document.getElementById("shuffleIco"),
+shuffleBool = new Boolean(false),
+aNow = document.getElementById("aNow"),
+aTime = document.getElementById("aTime"),
+aSeek = document.getElementById("aSeek"),
+aVolume = document.getElementById("aVolume"),
+aVolIco = document.getElementById("aVolIco");
 
 skipPrevious.onclick = () => {
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
@@ -101,7 +50,40 @@ aPlay.onclick = () => {
 
 // (B2) SET PLAY/PAUSE ICON
 audio.onplay = () => { aPlayIco.innerHTML = "pause"; };
-audio.onpause = () => { aPlayIco.innerHTML = "play_arrow"; img.style.visibility = "hidden"; };
+audio.onpause = () => { aPlayIco.innerHTML = "play_arrow"; };
+
+// (C) LOOP
+if (autorenewBool) {
+  autorenewIco.style.color = "#efff6a";
+} else {
+  autorenewIco.style.color = "grey";
+}
+
+autorenew.onclick = () => {
+  if (!autorenewBool) {
+    autorenewIco.style.color = "#efff6a";
+    autorenewBool = true;
+  } else {
+    autorenewIco.style.color = "grey";
+    autorenewBool = false;
+  }
+}
+// (C) RANDOM
+if (shuffleBool) {
+  shuffleIco.style.color = "#efff6a";
+} else {
+  shuffleIco.style.color = "grey";
+}
+
+shuffle.onclick = () => {
+  if (!shuffleBool) {
+    shuffleIco.style.color = "#efff6a";
+    shuffleBool = true;
+  } else {
+    shuffleIco.style.color = "grey";
+    shuffleBool = false;
+  }
+}
 
 // (C) TRACK PROGRESS & SEEK TIME
 // (C1) SUPPORT FUNCTION - FORMAT HH:MM:SS
@@ -206,19 +188,20 @@ if (!isMobile.any()) {
 
     // we're ready to receive some data!
     var canvas = document.getElementById('canvas'),
-    cwidth = canvas.width,
+    cwidth = canvas.width, //parseFloat(window.getComputedStyle(canvas).getPropertyValue("width")),
     cheight = canvas.height - 2,
     meterWidth = 1, //width of the meters in the spectrum
     gap = 1, //gap between meters
-    capHeight = 2,
+    capHeight = 1,
     capStyle = '#fff',
-    meterNum = 1600 / (1 + 1), //count of the meters
+    meterNum = cwidth, // / (1 + 1), //count of the meters
     capYPositionArray = []; ////store the vertical position of hte caps for the preivous frame
     ctx = canvas.getContext('2d'),
-    gradient = ctx.createLinearGradient(0, 0, 0, 300);
-    gradient.addColorStop(1, '#FF8F00');
-    gradient.addColorStop(0.5, '#ff0');
-    gradient.addColorStop(0, '#f00');
+    gradient = ctx.createLinearGradient(0, 0, 0, 100);
+    gradient.addColorStop(1, '#A0E6E3');
+    gradient.addColorStop(0.5, '#447DD0');
+    gradient.addColorStop(0, '#1027E3');
+
     // loop
     function renderFrame() {
       var array = new Uint8Array(analyser.frequencyBinCount);
@@ -249,46 +232,27 @@ if (!isMobile.any()) {
   start();
 }
 
-progressBar = document.getElementById('progress-bar');
-canvas = document.getElementById('progress-bar');
-
-canvas.addEventListener("click", function(e) {
-
-  var canvas = document.getElementById('progress-bar');
-
-  if (!e) {
-    e = window.event;
-  } //get the latest windows event if it isn't set
-  try {
-    //calculate the current time based on position of mouse cursor in canvas box
-    audio.currentTime = audio.duration * (e.offsetX / canvas.clientWidth);
-  }
-  catch (err) {
-    // Fail silently but show in F12 developer tools console
-    if (window.console && console.error("Error:" + err));
-  }
-}, true);
-
 audio.addEventListener('timeupdate', updateProgressBar, false);
 
 function updateProgressBar() {
   //get current time in seconds
   var elapsedTime = Math.round(audio.currentTime);
+  var progressBar = document.getElementById('progressBar');
   //update the progress bar
-  if (canvas.getContext) {
-    var ctx = canvas.getContext("2d");
+  if (progressBar.getContext) {
+    var ctx = progressBar.getContext("2d");
     //clear canvas before painting
-    ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+    ctx.clearRect(0, 0, progressBar.clientWidth, progressBar.clientHeight);
     ctx.fillStyle = "rgb(255,0,0)";
-    var fWidth = (elapsedTime / audio.duration) * (canvas.clientWidth);
+    var fWidth = (elapsedTime / audio.duration) * (progressBar.width);
     if (fWidth > 0) {
-      ctx.fillRect(0, 0, fWidth, canvas.clientHeight);
+      ctx.fillRect(0, 0, fWidth, progressBar.clientHeight);
     }
   }
 }
 
 window.addEventListener("load", function(event) {
   if (!isMobile.any()) {
-    playAud();
+    launchNewMusic(1);
   }
 });

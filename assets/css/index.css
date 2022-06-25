@@ -1,0 +1,89 @@
+.miniature {
+  animation: changeMiniature 30s infinite;
+  height: 40vh !important;
+  width: 68vh !important;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 2px solid var(--my-color);
+  color: #FFF;
+  background-size: cover;
+  background-image: url('../img/miniature/WIB.png');
+}
+
+@keyframes changeMiniature {
+  0%,100%  {background-image: url('../img/miniature/WIB.png');}
+  6.25% {background-image: url('../img/miniature/DLO.png');}
+  12.5%  {background-image: url('../img/miniature/Fòs é kouraj.png');}
+  18.75% {background-image: url('../img/miniature/Piétònn la (Philippe BLAZE).png');}
+  25%  {background-image: url('../img/miniature/Sò a limanité.png');}
+  31.25% {background-image: url('../img/miniature/Sonjé BINO (Philippe BLAZE).png');}
+  37.5%  {background-image: url('../img/miniature/LILY.png');}
+  43.75% {background-image: url('../img/miniature/Petite_Marie.png');}
+  50%  {background-image: url('../img/miniature/Nou_mélé_Philippe_BLAZE.png');}
+  56.25% {background-image: url('../img/miniature/Chanson_Hommage_aux_Gwo_Mòdan.png');}
+  62.5%  {background-image: url('../img/miniature/Philippe_BLAZE_piano_bar.png');}
+  68.75% {background-image: url('../img/miniature/Sèl_si_on_gran_chimen.png');}
+  75%  {background-image: url('../img/miniature/Ekzòd.png');}
+  81.25% {background-image: url('../img/miniature/Avé Maria Antillais.png');}
+  87.5%  {background-image: url('../img/miniature/Pénélope.png');}
+  93.75% {background-image: url('../img/miniature/Konjé bonifié.png');}
+}
+
+.albumCover {
+  animation: changeAlbumCover 10s infinite;
+  height: 40vh !important;
+  width: 40vh !important;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 2px solid var(--my-color);
+  color: #FFF;
+  background-size: cover;
+  background-image: url('../img/album cover/Mal_tèt.jpeg');
+}
+
+@keyframes changeAlbumCover {
+  0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpeg');}
+  25%  {background-image: url('../img/album cover/Konsyans.jpg');}
+  50%  {background-image: url('../img/album cover/Eritaj.jpg');}
+  75%  {background-image: url('../img/album cover/Misiyon.jpg');}
+}
+
+.miniatureandcover {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10vw;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1558px)
+{
+  .miniature {
+    height: 30vh !important;
+    width: 50vh !important;
+  }
+  .albumCover {
+    height: 30vh !important;
+    width: 30vh !important;
+  }
+}
+
+@media screen and (max-width: 1280px) and (orientation: portrait)
+{
+  .miniature {
+    height: 37vw !important;
+    width: 70vw !important;
+  }
+  .albumCover {
+    height: 30vw !important;
+    width: 30vw !important;
+  }
+  .typeOfContent {
+    font-size: 35pt;
+  }
+  .presentationIndex {
+    display: flex;
+    flex-direction: column;
+  }
+}

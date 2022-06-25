@@ -31,3 +31,4 @@ window.addEventListener("load", function() {
     document.getElementById('stylesheet').setAttribute('href', '../assets/css/light.css');
   }
 });
+

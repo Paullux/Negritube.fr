@@ -12,8 +12,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  height: 100vh;
+  overflow: hidden;
 }
 
 button:before {
@@ -26,7 +29,9 @@ button:before {
 }
 
 video {
-  width: 60vw;
+  width: 40vw;
+  border-radius: 25px;
+  border: 2px solid var(--my-color);
 }
 
 section h2 {
@@ -41,29 +46,6 @@ section h2 {
   width: 80vw;
   margin-left: 10vw;
   margin-top: 100px;
-}
-
-.remonter {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  bottom: 0.5rem;
-  left: 0.5rem;
-  margin-left: calc(100vw - 360px);
-  width:20vw;
-  font-family: "Gill Sans", sans-serif;
-  color: var(--font-color);
-  background: var(--color-secondary);
-  text-shadow: 1px 1px 1px #000;
-  font-weight: lighter;
-  opacity: .95;
-  font-size: 20pt;
-  text-align: center;
-  text-decoration: none;
-  z-index: 999;
-}
-
-.remonter:hover {
-  color: var(--my-color);
 }
 
 nav {
@@ -118,6 +100,21 @@ nav p {
   max-width: 80vw;
   column-gap: 80px;
 }
+.coverV {
+  width: 320px !important;
+  height: 50px !important;
+}
+#turnDeviceNotification {
+  position:fixed;
+  top: 0;
+  left:0;
+  height:100vh;
+  width:100vw;
+  z-index: 15;
+  display: none;
+  background-image:url('../img/sValK.png');
+  background-size:cover;
+}
 
 @media screen and (max-width: 1280px) and (orientation: portrait)
 {
@@ -125,14 +122,29 @@ nav p {
     height:100%;
   }
   .my_page {
-    height: 100%;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100%;
   }
   .raccourcis-généraux {
     display: none;
   }
   .subtitle_site {
     display: none;
+  }
+  .presentationClip {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .presentation {
+    margin-top: 40px;
+  }
+  .choixTitre {
+    height: 20vh !important;
+  }
+  #description {
+    display: none !important;
   }
   section h2 {
     font-size: 50px;
@@ -156,20 +168,46 @@ nav p {
     font-size: 50px;
     width: 150px;
   }
+  video {
+    width:90vw;
+  }
   .Bouton_Menu {
     display: flex;
   }
   #Menu_Cache {
     display: none;
   }
-  .remonter {
-    font-size: 40px;
-    margin-left: calc(100vw - 360px);
-  }
   .song_title {
-    font-size: 25pt !important;
+    font-size: 40pt !important;
     height: auto !important;
-    min-height: 4em !important;
+    width: 90vw !important;
+  }
+  .button_song {
+    width: 90vw !important;
+  }
+  .cover {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .coverV {
+    width: 320px !important;
+    height: 50px !important;
+  }
+  .infoMusic {
+    height: 50vh;
+  }
+  .Titre {
+    font-size: 50px !important;
+    flex-direction: column !important;
+  }
+  .Auteur {
+    font-size: 40px !important;
+  }
+  .Album {
+    font-size: 30px !important;
+  }
+  .infoMusic {
+    height: auto !important;
   }
   .hidden {
     display: none;
@@ -197,18 +235,6 @@ nav p {
     height: 100%;
     width: 100%;
     margin-bottom: 50px;
-
-  }
-  .player {
-    text-align: center;
-  }
-
-  .player:after {
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0;
-    width: 80% !important;
-    zoom: 200%;
   }
   #item {
     flex: 50%;
@@ -219,22 +245,60 @@ nav p {
   }
   .big-title {
     gap: 0% !important;
+    height: auto !important;
   }
   .title_site {
     font-size: 70pt !important;
     margin-right: 10%;
   }
-  .visiteurs {
-    font-size: 40pt !important;
+  .visiteurs, .compteur {
+    display: none !important;
   }
   .compteur img {
     width: 350px !important;
     height: auto !important;
   }
+  .monAudioPlayer {
+    display: none;
+  }
+  .miniatureandcover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-width: 1280px) and (orientation: landscape)
+/*@media screen and (max-width: 1280px) and (orientation: landscape)
 {
+  body
+  {
+    height: 300vh !important;
+  }
+  .my_page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300vh !important;
+  }
+  .index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .big-title {
+    height: 100vh;
+  }
+  .presentation {
+    flex-direction: column !important;
+    gap: 20px !important;
+    height: 200vh;
+  }
+  .basDePage {
+    display: none;
+  }
+  .choixTitre {
+    height: 200px;
+  }
   .subtitle_site {
     display: none;
   }
@@ -266,15 +330,18 @@ nav p {
   #Menu_Cache {
     display: none;
   }
-  .remonter {
-    font-size: 50px;
-    margin-left: calc(100vw - 360px);
+  video {
+    width: 90vw !important;
+    height: 80vh !important;
   }
   .hidden {
     display: none;
   }
   .description {
     display: none;
+  }
+  .infoMusic {
+    height: 80% !important;
   }
   footer {
     display: none;
@@ -287,7 +354,7 @@ nav p {
     height: 60px !important;
   }
   .link_song > .flex-row-item {
-    flex: 33% !important; /*grow | shrink | basis */
+    flex: 33% !important;
     flex-basis: 25%;
     flex-grow: 0;
     height: 100%;
@@ -295,21 +362,21 @@ nav p {
     margin-bottom: 50px;
   }
   .song_title {
-    font-size: 25pt !important;
+    font-size: 90% !important;
     height: auto !important;
+    width: 40vw !important;
   }
+  .button_song {
+    width: 90vw !important;
+  }
+
   .player {
     text-align: center;
   }
-
   .player:after {
     width: 50%;
     margin-left: 0;
     margin-right: 0;
-  }
-  audio {
-    width: 80% !important;
-    zoom: 150%;
   }
   #item {
     flex: 50%;
@@ -320,6 +387,7 @@ nav p {
   }
   .big-title {
     gap: 0% !important;
+    height: auto;
   }
   .title_site {
     font-size: 70pt !important;
@@ -332,16 +400,17 @@ nav p {
     width: 350px !important;
     height: auto !important;
   }
-}
+} */
 
 .big-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  height:auto;
+  height:21vh;
   width: 100%;
   text-align: center;
+  top: 0;
 }
 
 #item {
@@ -350,8 +419,9 @@ nav p {
 }
 
 .logo {
-  height: 12vw;
-  width: 12vw;
+  height: 10vw;
+  width: 10vw;
+  top: 0;
 }
 
 .title_site {
@@ -376,7 +446,7 @@ nav p {
   font-family: "Gill Sans", sans-serif !important;
   font-style: italic;
   text-align: center;
-  font-size: 30pt;
+  font-size: auto !important;
   text-align: left;
   text-shadow: 2px 2px 2px #000;
   color: var(--font-color);
@@ -464,15 +534,6 @@ nav p {
   width: 100%;
 }
 
-.link_song  .miniature {
-  height: 100%;
-  width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #fff;
-  background-color: #000;
-
-}
 .accueilH3 {
   font-family: 'Lato', sans-serif;
   text-decoration-color: #fff;
@@ -725,16 +786,58 @@ nav p {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid var(--my-color);
+  text-align: center !important;
   font-weight: bold;
   font-style: normal;
   font-size: 15pt;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   color: #000;
   text-align: left;
-  background-color: orange;
+  background:rgba(192,192,192, 0.5);
   display:block;
+  height: auto;
+  width: 30vw;
+}
+
+.button_song {
+  background:rgba(192,192,192, 0.5);
+  border:2px solid var(--my-color);
+  border-radius: 25px;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.button_song img {
+  width: 50px;
   height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.button_songV img {
+  width: 70px !important;
+}
+
+.button_song h3 {
+  padding-top: 5px;
+  padding-left: 20px;
+  text-align: left !important;
+}
+
+.button_song p {
+  padding-top: 5px;
+  padding-left: 20px;
+  text-align: left !important;
 }
 
 #song_title {
@@ -745,12 +848,22 @@ nav p {
   height: 50px;
 }
 
+#song_title_audio {
+  text-align: center !important;
+  font-size: 15pt;
+  text-shadow: 1px 1px 1px #FFF !important;
+  padding-top: auto;
+  padding-bottom: auto;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+
 #title {
   text-align: center !important;
   font-size: 25pt;
-  text-shadow: 1px 1px 1px #FFF !important;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  margin-top: 0;
 }
 
 .description {
@@ -774,13 +887,114 @@ nav p {
   font-family: "Gill Sans", sans-serif !important;
   font-weight: bold;
   font-style: normal;
-  font-size: 20pt;
+  font-size: 15pt;
   color: var(--my-color);
   text-align: center;
-  padding-bottom: 20px;
 }
 
-footer p {
+.listMusic {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.Titre {
+  display: flex;
+  flex-direction: row;
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+}
+.Auteur {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.Album {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.presentation {
+  height: 55vh;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.presentationClip {
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.presentationIndex {
+  padding-top: 2%;
+  height: 55vh;
+}
+
+.miniatureandcover {
+  padding-top: 2%;
+}
+.infoMusic {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  overflow-y:auto;
+}
+
+.choixTitre {
+  height: 100%;
+  overflow: hidden;
+  overflow-y:auto;
+}
+
+.Music {
+  height: 100%;
+}
+
+.descriptionPhilippe {
+  height: 95%;
+  font-size: auto;
+  overflow: hidden;
+  overflow-y:auto;
+}
+.typeOfContent {
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: normal;
+  font-size: 15pt;
+  color: 	#000;
+  text-align: justify;
+  background-color: #A78D6A;
+  width: auto;
+}
+
+.basDePage {
+  height: 24vh;
+  bottom: 0;
+}
+.basDePageClip {
+  height: 4vh;
+}
+.basDePageIndex {
+  padding-top: 4%;
+  height: 14vh;
+  bottom: 0;
+}
+
+footer {
   position: relative;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -788,8 +1002,35 @@ footer p {
   font-size: 10pt;
   color: #fff;
   text-align: center;
+  height: 2vh;
   text-shadow: 1px 1px 1px #000;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
+  padding-top: 9vh;
+}
+
+.footerIndex {
+  padding-top: 1% !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: rgba(72, 72, 72, 0.8) !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  opacity: 0.65;
+  border: 1px solid rgba(222, 222, 222, 0.8);
+  background: rgba(72, 72, 72, 0.8) !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(222, 222, 222, 0.8);
+  border-radius: 10px;
+  border: 1px solid var(--my-color);
 }
