@@ -6,122 +6,29 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>https://negritube.fr/</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://negritube.fr/</loc>
+<lastmod>2022-06-26T09:15:20+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://negritube.fr/index.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://negritube.fr/index.php</loc>
+<lastmod>2022-06-26T09:15:20+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://negritube.fr/pages/contact.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://negritube.fr/pages/VideoFile.php</loc>
+<lastmod>2022-06-26T09:15:20+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://negritube.fr/pages/WIB.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://negritube.fr/pages/AudioFile.php</loc>
+<lastmod>2022-06-26T09:15:20+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://negritube.fr/pages/DLO.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://negritube.fr/pages/contact.php</loc>
+<lastmod>2022-06-26T09:15:20+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-<url>
-  <loc>https://negritube.fr/pages/F%C3%B2s%20%C3%A9%20kouraj.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Pi%C3%A9t%C3%B2nn'la%20(Philippe%20BLAZE).php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/S%C3%B2%20a%20limanit%C3%A9.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Sonj%C3%A9%20BINO%20(Philippe%20BLAZE).php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/LILY.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Petite_Marie.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Nou_m%C3%A9l%C3%A9_Philippe_BLAZE.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Chanson_Hommage_aux_Gwo_M%C3%B2dan.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Philippe_BLAZE_piano_bar.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/S%C3%A8l_si_on_gran_chimen.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Ekz%C3%B2d.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Av%C3%A9%20Maria%20Antillais.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/P%C3%A9n%C3%A9lope.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Konj%C3%A9%20bonifi%C3%A9.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Mal%20t%C3%A8t.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Eritaj.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Misiyon.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://negritube.fr/pages/Konsyans.php</loc>
-  <lastmod>2022-06-12T19:02:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
 </urlset>

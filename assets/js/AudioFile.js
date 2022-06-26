@@ -152,35 +152,6 @@ let params = new URLSearchParams(document.location.search);
 var track = params.get("track");
 console.log("track value: " + track)
 
-//audio.src = "../videos/AllAlbums/" + trackNumber + ".mp3";
-fetch('../assets/csv/audio.csv')
-.then((response) => {
-    return response.text();
-})
-.then((text) => {
-    trackArray = CSVToJSON(text,',');
-    var ogTitle = "Negritube.fr - " + trackArray[track]['Artiste'] + " : " + trackArray[track]['Titre'];
-    var ogImage = trackArray[track]['pochette'];
-
-    var link = document.createElement("a");
-    link.href = ogImage;
-    var ogLink = link.protocol+"//"+link.host+link.pathname+link.search+link.hash;
-
-    var metaTag = document.getElementsByTagName('meta');
-    for (var i=0; i < metaTag.length; i++) {
-      if (metaTag[i].getAttribute("name")=='og:title')
-        metaTag[i].content = ogTitle;
-      if (metaTag[i].getAttribute("name")=='og:image')
-        metaTag[i].content = ogLink;
-      if (metaTag[i].getAttribute("name")=='twitter:title')
-        metaTag[i].content = ogTitle;
-      if (metaTag[i].getAttribute("name")=='twitter:image')
-        metaTag[i].content = ogLink;
-    }
-    console.log("titre = " + ogTitle);
-    console.log("pochette = " + ogLink);
-});
-
 
 window.addEventListener("load", function(event) {
   //if (!isMobile.any()) {
@@ -191,17 +162,3 @@ window.addEventListener("load", function(event) {
     }
   //}
 });
-
-const CSVToJSON = (data, delimiter = ',') => {
-  const titles = data.slice(0, data.indexOf('\n')).split(delimiter);
-  return data
-    .slice(data.indexOf('\n') + 1)
-    .split('\n')
-    .map(v => {
-      const values = v.split(delimiter);
-      return titles.reduce(
-        (obj, title, index) => ((obj[title] = values[index]), obj),
-        {}
-      );
-    });
-};

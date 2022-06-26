@@ -7,13 +7,78 @@ function read($csv){
   fclose($file);
   return $line;
 }
+
+function rel2abs( $rel, $base )
+{
+    /* return if already absolute URL */
+    if( parse_url($rel, PHP_URL_SCHEME) != '' )
+        return( $rel );
+
+    /* queries and anchors */
+    if( $rel[0]=='#' || $rel[0]=='?' )
+        return( $base.$rel );
+
+    /* parse base URL and convert to local variables:
+       $scheme, $host, $path */
+    extract( parse_url($base) );
+
+    /* remove non-directory element from path */
+    $path = preg_replace( '#/[^/]*$#', '', $path );
+
+    /* destroy path if relative url points to root */
+    if( $rel[0] == '/' )
+        $path = '';
+
+    /* dirty absolute URL */
+    $abs = '';
+
+    /* do we have a user in our URL? */
+    if( isset($user) )
+    {
+        $abs.= $user;
+
+        /* password too? */
+        if( isset($pass) )
+            $abs.= ':'.$pass;
+
+        $abs.= '@';
+    }
+
+    $abs.= $host;
+
+    /* did somebody sneak in a port? */
+    if( isset($port) )
+        $abs.= ':'.$port;
+
+    $abs.=$path.'/'.$rel;
+
+    /* replace '//' or '/./' or '/foo/../' with '/' */
+    $re = array('#(/\.?/)#', '#/(?!\.\.)[^/]+/\.\./#');
+    for( $n=1; $n>0; $abs=preg_replace( $re, '/', $abs, -1, $n ) ) {}
+
+    /* absolute URL is ready! */
+    return( $scheme.'://'.$abs );
+}
+
+$csv = '../assets/csv/video.csv';
+$csv = read($csv);
+
+if (isset($_GET['track']) && $_GET['track'] <= 16){
+  $track = htmlspecialchars($_GET["track"]) + 1;
+} else {
+  $track = 1;
+}
+
+$ogTitle = "Negritube.fr - " . $csv[$track][2] . " : " . $csv[$track][1];
+$ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
-  <title>Negritube.fr - Albums</title>
+  <title><?php echo $ogTitle ?></title>
   <meta name="description" content="Les Clips">
   <meta name="keywords" content="créole" />
   <meta name="author" content="Philippe Blaze" />
@@ -22,18 +87,18 @@ function read($csv){
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://negritube.fr/pages/VideoFile.php">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Negritube.fr - Clips">
+  <meta property="og:title" content="<?php echo $ogTitle ?>">
   <meta property="og:description" content="Musique Issues des Clips">
-  <meta property="og:image" content="https://negritube.fr/assets/img/miniature/DLO.png">
+  <meta property="og:image" content="<?php echo $ogLink ?>">
   <meta property="og:locale" content="fr_FR" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:domain" content="negritube.fr">
   <meta property="twitter:url" content="https://negritube.fr/pages/VideoFile.php">
-  <meta name="twitter:title" content="Negritube.fr - Clips">
+  <meta name="twitter:title" content="<?php echo $ogTitle ?>">
   <meta name="twitter:description" content="Clips">
-  <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/DLO.png">
+  <meta name="twitter:image" content="<?php echo $ogLink ?>">
   <meta name="twitter:image:alt" content="Negritube.fr" />
 
   <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
@@ -125,9 +190,6 @@ function read($csv){
       </div>
       <div class="choixTitre">
         <?php
-        // Définir le chemin d'accès au fichier CSV
-        $csv = '../assets/csv/video.csv';
-        $csv = read($csv);
         for ($i = 1; $i <= 16; $i++) {
           echo "<button class='song_title button_songV button_song' id='" . $csv[$i][0] . "' onclick='launchNewClip(" . $csv[$i][0] . ");' type='button'>
           <img class='coverV' src='" . $csv[$i][4] . "' alt='miniature'>
