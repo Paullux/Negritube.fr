@@ -233,7 +233,7 @@ nav p {
     height: 60px !important;
   }
   .link_song > .flex-row-item {
-    flex: 50% !important; /*grow | shrink | basis */
+    flex: 50% !important;
     flex-basis: 25%;
     flex-grow: 0;
     height: 100%;
@@ -327,16 +327,6 @@ nav p {
   padding-right: 15px;
 }
 
-.liens-playlist {
-  font-family: 'Lato', sans-serif;
-  font-size: 20pt;
-  color: rgba(255, 140, 0, 0.95);
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000;
-}
-
 .link_song {
   display: flex;
   flex-wrap: wrap;
@@ -351,7 +341,7 @@ nav p {
 }
 
 .link_song > .flex-row-item {
-  flex: 1 1 25%; /*grow | shrink | basis */
+  flex: 1 1 25%; 
   flex-basis: 25%;
   flex-grow: 0;
   height: 100%;
@@ -363,17 +353,6 @@ nav p {
   width: 100%;
 }
 
-.accueilH3 {
-  font-family: 'Lato', sans-serif;
-  text-decoration-color: #fff;
-  padding-left: 5%;
-  display: flex;
-  flex-direction: row;
-}
-.accueilH3 img {
-  width: 30px;
-  height: 30px;
-}
 @media screen and (min-width: 1280px)
 {
 
@@ -423,138 +402,140 @@ nav p {
     -webkit-animation-name: top;
     animation-name: top;
   }
-  @-webkit-keyframes top {
-    25% {
-      width: 0;
-      background: red;
-    }
-    38% {
-      width: calc(101%);
-      background: red;
-    }
-    50% {
-      background: red;
-    }
-    62% {
-      background: red;
-    }
-    75% {
-      width: calc(101%);
-      background: red;
-    }
-    88% {
-      left: auto;
-      right: -3px;
-      width: 0;
-      background: red;
-    }
+}
+@-webkit-keyframes top {
+  25% {
+    width: 0;
+    background: red;
   }
-
-  .bottom {
-    bottom: -3px;
+  38% {
+    width: calc(101%);
+    background: red;
+  }
+  50% {
+    background: red;
+  }
+  62% {
+    background: red;
+  }
+  75% {
+    width: calc(101%);
+    background: red;
+  }
+  88% {
+    left: auto;
     right: -3px;
-    height: 3px;
-    -webkit-animation-name: bottom;
-    animation-name: bottom;
-  }
-  @-webkit-keyframes bottom {
-    0% {
-      width: 0;
-    }
-    12% {
-      width: calc(101%);
-      background: red;
-    }
-    25% {
-      background: red;
-    }
-    38% {
-      background: red;
-    }
-    50% {
-      width: calc(101%);
-      background: red;
-    }
-    62% {
-      left: -3px;
-      width: 0;
-      background: red;
-    }
-    75% {
-      background: red;
-    }
-  }
-
-  .left {
-    bottom: -3px;
-    left: -3px;
-    width: 3px;
-    -webkit-animation-name: left;
-    animation-name: left;
-  }
-  @-webkit-keyframes left {
-    12% {
-      height: 0;
-      background: red;
-    }
-    25% {
-      height: calc(101%);
-      background: red;
-    }
-    38% {
-      background: red;
-    }
-    50% {
-      background: red;
-    }
-    62% {
-      height: calc(101%);
-      background: red;
-    }
-    75% {
-      top: -3px;
-      height: 0;
-      background: red;
-    }
-    88% {
-      background: red;
-    }
-  }
-
-  .right {
-    top: -3px;
-    right: -3px;
-    width: 3px;
-    -webkit-animation-name: right;
-    animation-name: right;
-  }
-  @-webkit-keyframes right {
-    38% {
-      height: 0;
-      background: red;
-    }
-    50% {
-      height: calc(101%);
-      background: red;
-    }
-    62% {
-      background: red;
-    }
-    75% {
-      background: red;
-    }
-    88% {
-      height: calc(101%);
-      background: red;
-    }
-    100% {
-      top: auto;
-      bottom: -3px;
-      height: 0;
-      background: red;
-    }
+    width: 0;
+    background: red;
   }
 }
+
+.bottom {
+  bottom: -3px;
+  right: -3px;
+  height: 3px;
+  -webkit-animation-name: bottom;
+  animation-name: bottom;
+}
+
+@-webkit-keyframes bottom {
+  0% {
+    width: 0;
+  }
+  12% {
+    width: calc(101%);
+    background: red;
+  }
+  25% {
+    background: red;
+  }
+  38% {
+    background: red;
+  }
+  50% {
+    width: calc(101%);
+    background: red;
+  }
+  62% {
+    left: -3px;
+    width: 0;
+    background: red;
+  }
+  75% {
+    background: red;
+  }
+}
+
+.left {
+  bottom: -3px;
+  left: -3px;
+  width: 3px;
+  -webkit-animation-name: left;
+  animation-name: left;
+}
+@-webkit-keyframes left {
+  12% {
+    height: 0;
+    background: red;
+  }
+  25% {
+    height: calc(101%);
+    background: red;
+  }
+  38% {
+    background: red;
+  }
+  50% {
+    background: red;
+  }
+  62% {
+    height: calc(101%);
+    background: red;
+  }
+  75% {
+    top: -3px;
+    height: 0;
+    background: red;
+  }
+  88% {
+    background: red;
+  }
+}
+
+.right {
+  top: -3px;
+  right: -3px;
+  width: 3px;
+  -webkit-animation-name: right;
+  animation-name: right;
+}
+@-webkit-keyframes right {
+  38% {
+    height: 0;
+    background: red;
+  }
+  50% {
+    height: calc(101%);
+    background: red;
+  }
+  62% {
+    background: red;
+  }
+  75% {
+    background: red;
+  }
+  88% {
+    height: calc(101%);
+    background: red;
+  }
+  100% {
+    top: auto;
+    bottom: -3px;
+    height: 0;
+    background: red;
+  }
+}
+
 .controls {
   visibility: hidden;
   opacity: 0.5;

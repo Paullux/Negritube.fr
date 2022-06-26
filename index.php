@@ -122,8 +122,6 @@
       </nav>
       <div class="link_song miniatureandcover">
         <a class="miniature box" href="pages/VideoFile.php" onmouseover="launchWait(0);" onmouseout="cancelWait();">
-            <!--<h3 class="accueilH3">
-              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />-->
           <h3 class="typeOfContent">
             Les Clips
           </h3>
@@ -133,8 +131,6 @@
           <div class="right"></div>
         </a>
         <a class="albumCover box" href="pages/AudioFile.php" onmouseover="launchWait(1);" onmouseout="cancelWait();">
-            <!--<h3 class="accueilH3">
-              <img src="assets/img/Philippe-.png" alt="" style="padding-right:15px;vertical-align: middle;" />-->
           <h3 class="typeOfContent">
             Les Albums
           </h3>
