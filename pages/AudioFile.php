@@ -176,7 +176,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
       </div>
     </div>
     <div class="presentation">
-      <div class="Music"  onclick="togglePlay()">
+      <div class="Music" onclick="togglePlay()">
         <h3 class="song_title" id="title">
           Chansons issues des Albums
         </h3>

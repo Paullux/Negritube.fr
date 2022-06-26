@@ -215,10 +215,6 @@ window.addEventListener("load", function(event) {
   //}
 });
 
-audio.addEventListener("playing",function(event) {
-  isPlaying;
-});
-
 function togglePlay() {
   console.log("passe par là");
   if (!isMobile.any()) {
