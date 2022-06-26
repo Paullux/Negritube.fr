@@ -250,9 +250,3 @@ function updateProgressBar() {
     }
   }
 }
-
-window.addEventListener("load", function(event) {
-  if (!isMobile.any()) {
-    launchNewMusic(1);
-  }
-});
