@@ -118,8 +118,9 @@ nav p {
 
 @media screen and (max-width: 1280px) and (orientation: portrait)
 {
+  html,
   body {
-    height:100%;
+    overflow: visible;
   }
   .my_page {
     display: flex;
@@ -127,22 +128,30 @@ nav p {
     height: 100vh;
     min-height: 100%;
   }
-  .raccourcis-généraux {
-    display: none;
-  }
   .subtitle_site {
     display: none;
   }
   .presentationClip {
-    height: 57vh !important;
+    height: 280vh !important;
     display: flex !important;
     flex-direction: column !important;
   }
   .presentation {
+    height: 500vh !important;
     margin-top: 40px;
   }
-  .choixTitre {
-    height: 20vh !important;
+  .infoMusic {
+    margin-top: 50px;
+    height: 60vh !important;
+    overflow: hidden !important;
+  }
+  .Music {
+    margin-top: 50px;
+    height: 40vh !important;
+    overflow: hidden !important;
+  }
+  #title {
+    margin-bottom: 0;
   }
   #description {
     display: none !important;
@@ -194,9 +203,6 @@ nav p {
     width: 320px !important;
     height: 50px !important;
   }
-  .infoMusic {
-    height: 50vh;
-  }
   .Titre {
     font-size: 50px !important;
     flex-direction: column !important;
@@ -206,9 +212,6 @@ nav p {
   }
   .Album {
     font-size: 30px !important;
-  }
-  .infoMusic {
-    height: auto !important;
   }
   .hidden {
     display: none;
@@ -269,140 +272,6 @@ nav p {
   }
 }
 
-/*@media screen and (max-width: 1280px) and (orientation: landscape)
-{
-  body
-  {
-    height: 300vh !important;
-  }
-  .my_page {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 300vh !important;
-  }
-  .index {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .big-title {
-    height: 100vh;
-  }
-  .presentation {
-    flex-direction: column !important;
-    gap: 20px !important;
-    height: 200vh;
-  }
-  .basDePage {
-    display: none;
-  }
-  .choixTitre {
-    height: 200px;
-  }
-  .subtitle_site {
-    display: none;
-  }
-  section h2 {
-    font-size: 50px;
-    margin-top: 0
-  }
-  nav {
-    flex-direction: column;
-    margin-top: 2vh;
-    margin-left: 0vw;
-  }
-  nav img {
-    width: 180px;
-    height: 180px;
-  }
-  nav p {
-    text-align: center;
-    font-size: 60px;
-    font-weight: bold;
-  }
-  nav li a {
-    font-size: 50px;
-    width: 150px;
-  }
-  .Bouton_Menu {
-    display: flex;
-  }
-  #Menu_Cache {
-    display: none;
-  }
-  video {
-    width: 90vw !important;
-    height: 80vh !important;
-  }
-  .hidden {
-    display: none;
-  }
-  .description {
-    display: none;
-  }
-  .infoMusic {
-    height: 80% !important;
-  }
-  footer {
-    display: none;
-  }
-  .accueilH3 {
-    font-size: 30pt !important;
-  }
-  .accueilH3 img {
-    width: 60px !important;
-    height: 60px !important;
-  }
-  .link_song > .flex-row-item {
-    flex: 33% !important;
-    flex-basis: 25%;
-    flex-grow: 0;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .song_title {
-    font-size: 90% !important;
-    height: auto !important;
-    width: 40vw !important;
-  }
-  .button_song {
-    width: 90vw !important;
-  }
-
-  .player {
-    text-align: center;
-  }
-  .player:after {
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #item {
-    flex: 50%;
-  }
-  .logo {
-    height: 40vw !important;
-    width: 40vw !important;
-  }
-  .big-title {
-    gap: 0% !important;
-    height: auto;
-  }
-  .title_site {
-    font-size: 70pt !important;
-    margin-right: 10%;
-  }
-  .visiteurs {
-    font-size: 40pt !important;
-  }
-  .compteur img {
-    width: 350px !important;
-    height: auto !important;
-  }
-} */
-
 .big-title {
   display: flex;
   flex-wrap: wrap;
@@ -456,47 +325,6 @@ nav p {
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.raccourcis {
-  font-family: 'Lato', sans-serif;
-  color: rgba(255, 140, 0, 0.95);
-  font-size: 25pt;
-  width: calc(80vw - 10px);
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid rgba(255, 165, 0, 0.95);
-  background: #111;
-}
-
-.raccourcis-content {
-  width: calc(80vw - 10px);
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  border: 5px solid rgba(255, 165, 0, 0.95);
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-}
-
-.raccourcis-box {
-  width: auto;
-  height: 100%;
-  border: 2px solid rgba(255, 165, 0, 0.95);
-  background: #111;
-}
-
-.raccourcis-box img {
-  max-width: 250px;
-}
-
-.liens-raccourcis {
-  font-family: 'Lato', sans-serif;
-  font-size: 15pt;
-  color: rgba(255, 140, 0, 0.95);
-  text-align: center;
-  text-shadow: 1px 1px 1px #000;
 }
 
 .liens-playlist {
@@ -958,8 +786,20 @@ nav p {
 
 .choixTitre {
   height: 100%;
-  overflow: hidden;
-  overflow-y:auto;
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: none;
+}
+
+.choixTitreAudio {
+  height: 100%;
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: none;
 }
 
 .Music {

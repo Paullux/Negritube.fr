@@ -176,14 +176,17 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
       </div>
     </div>
     <div class="presentation">
-      <div class="Music">
+      <div class="Music"  onclick="togglePlay()">
         <h3 class="song_title" id="title">
           Chansons issues des Albums
         </h3>
         <div class="song_title aMasquer">
           Pour relancer la lecture d'une chanson cliquez sur la partie droite
         </div>
-        <img id="cover">
+        <div class="imageContainer">
+          <img class="image" id="cover">
+          <img class="image imgIsPlaying" id="enCoursDeLecture">
+        </div>
       </div>
       <div class="song_title aMasquer descriptionPhilippe">
         Philippe BLAZE est un artiste guadeloupéen, il est musicien dont le style musical principal est le Gwoka Évolutif.
@@ -206,7 +209,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
         93400  Saint-Ouen<br><br>
         Il est possible de commander en ligne l'album sur le : <br><a href=https://blazingmusicshop.com/products/philippe-blaze-eritaj target="_blank" style="color:black;">site web de Blazing Music</a>
       </div>
-      <div class="choixTitre">
+      <div class="choixTitreAudio">
         <?php
         for ($i = 1; $i <= 33; $i++) {
           echo "<button class='song_title button_song' id='" . $csv[$i][0] . "' onclick='launchNewMusic(" . $csv[$i][0] . ");' type='button'>

@@ -4,6 +4,36 @@ var song = document.getElementById('song_title_audio');
 var canvas = document.getElementById('canvas');
 var trackNumber = 1;
 var currentTrack = 1;
+var enCoursDeLecture = document.getElementById('enCoursDeLecture');
+var isPlaying = false;
+var pausedOnDemand = false;
+
+var isMobile = {
+  Android: function() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function() {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function() {
+    return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+  },
+  any: function() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+if (!isMobile.any()) {
+  enCoursDeLecture.style.backgroundImage = "";
+} else {
+  enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerpause.png')";
+}
 
 function launchNewMusic(trackNumber) {
 
@@ -17,18 +47,18 @@ function launchNewMusic(trackNumber) {
   }
 
   if (trackNumber == 1) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Mal_tèt.jpeg')"
+    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Mal_tèt.jpeg')";
   }
   if (trackNumber > 1 && trackNumber <= 8) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Konsyans.jpg')"
+    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Konsyans.jpg')";
   }
   if (trackNumber > 8 && trackNumber <= 21) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Eritaj.jpg')"
+    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Eritaj.jpg')";
     clearInterval(k);
     k = setInterval("pauseAud()", 20000);
   }
   if (trackNumber > 21 && trackNumber <= 33) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Misiyon.jpg')"
+    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Misiyon.jpg')";
   }
 
   audio.src = "../assets/audio/AllAlbums/" + trackNumber + ".mp3";
@@ -43,10 +73,20 @@ function launchNewMusic(trackNumber) {
 
   audio.play();
 
+  if (!isMobile.any()) {
+    enCoursDeLecture.style.backgroundImage = "";
+  } else {
+    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerplay.png')";
+  }
 }
 
 function pauseAud() {
   audio.pause();
+  if (!isMobile.any()) {
+    enCoursDeLecture.style.backgroundImage = "";
+  } else {
+    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerpause.png')";
+  }
   audio.currentTime=0;
   song.style.backgroundColor = "#c7432e";
   song.innerHTML+=" - Fin de l'Extrait";
@@ -59,6 +99,12 @@ function playAud() {
     song.innerHTML = rmEnd(song.innerHTML, " - Fin de l'Extrait");
   }
   audio.play();
+
+  if (!isMobile.any()) {
+    enCoursDeLecture.style.backgroundImage = "";
+  } else {
+    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerplay.png')";
+  }
 
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
 
@@ -84,11 +130,18 @@ function nextSong() {
 
 audio.addEventListener('ended', (event) => {
   audio.currentTime = 0;
-  nextSong();
+  if (!pausedOnDemand) {
+    nextSong();
+  }
 });
 
 function pauseAud2() {
   audio.pause();
+  if (!isMobile.any()) {
+    enCoursDeLecture.style.backgroundImage = "";
+  } else {
+    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerpause.png')";
+  }
   audio.currentTime=0;
   clearInterval(k);
 }
@@ -150,7 +203,6 @@ function updateURLParameter(url, param, paramVal)
 
 let params = new URLSearchParams(document.location.search);
 var track = params.get("track");
-console.log("track value: " + track)
 
 
 window.addEventListener("load", function(event) {
@@ -162,3 +214,22 @@ window.addEventListener("load", function(event) {
     }
   //}
 });
+
+audio.addEventListener("playing",function(event) {
+  isPlaying;
+});
+
+function togglePlay() {
+  console.log("passe par là");
+  if (!isMobile.any()) {
+    enCoursDeLecture.style.backgroundImage = "";
+  } else {  
+    pausedOnDemand = !pausedOnDemand;
+    if (audio.currentTime > 0 && !audio.paused) {
+      pauseAud2();
+    } else {
+      currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+      launchNewMusic(currentTrack);
+    }  
+  }
+}

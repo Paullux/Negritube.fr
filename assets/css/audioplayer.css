@@ -53,11 +53,25 @@ a{
   width: 100%;
 }
 
-#cover {
-  width: 19vh;
-  height: 19vh;
-  background-size: cover;
+.imageContainer {
+  position: relative;
+  width: 25vh;
+  height: 25vh;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5%;
-  z-index: -99;
   border: 2px solid var(--my-color);
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.imgIsPlaying {
+  opacity: 0.6;
 }
