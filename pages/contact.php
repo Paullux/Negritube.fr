@@ -109,7 +109,7 @@ require_once ( 'formulaire.php' );
     <form id="contact-form" method="post" autocomplete="off">
       <div class="card-body p-0 my-3">
         <div class="row">
-          <label style="color:<?php echo $colorMessageWarning; ?>" > <?php echo $messageWarning; ?> </label>
+          <label style="background: transparent !important; color:<?php echo $colorMessageWarning; ?>" > <?php echo $messageWarning; ?> </label>
           <div class="col-md-6">
             <div class="input-group">
               <label style="<?php echo $nameLabelColor; ?>" >Votre Nom complet <?php echo $nameTextAdded; ?></label>

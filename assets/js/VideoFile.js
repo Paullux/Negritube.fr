@@ -10,6 +10,8 @@ var autorenewBool = new Boolean(true);
 
 function launchNewClip(trackNumber) {
 
+  window.history.replaceState('', '', updateURLParameter(window.location.href, "track", trackNumber));
+
   for (let i = 0; i <= 15; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
@@ -98,8 +100,92 @@ var isMobile = {
   }
 };
 
+function updateURLParameter(url, param, paramVal)
+{
+    var TheAnchor = null;
+    var newAdditionalURL = "";
+    var tempArray = url.split("?");
+    var baseURL = tempArray[0];
+    var additionalURL = tempArray[1];
+    var temp = "";
+
+    if (additionalURL) 
+    {
+        var tmpAnchor = additionalURL.split("#");
+        var TheParams = tmpAnchor[0];
+            TheAnchor = tmpAnchor[1];
+        if(TheAnchor)
+            additionalURL = TheParams;
+
+        tempArray = additionalURL.split("&");
+
+        for (var i=0; i<tempArray.length; i++)
+        {
+            if(tempArray[i].split('=')[0] != param)
+            {
+                newAdditionalURL += temp + tempArray[i];
+                temp = "&";
+            }
+        }        
+    }
+    else
+    {
+        var tmpAnchor = baseURL.split("#");
+        var TheParams = tmpAnchor[0];
+            TheAnchor  = tmpAnchor[1];
+
+        if(TheParams)
+            baseURL = TheParams;
+    }
+
+    if(TheAnchor)
+        paramVal += "#" + TheAnchor;
+
+    var rows_txt = temp + "" + param + "=" + paramVal;
+    return baseURL + "?" + newAdditionalURL + rows_txt;
+}
+
+let params = new URLSearchParams(document.location.search);
+var track = params.get("track");
+console.log("track value: " + track)
+
+//video.src = "../assets/videos/AllVideos/" + trackNumber + ".mp4";
+fetch('../assets/csv/video.csv')
+.then((response) => {
+    return response.text();
+})
+.then((text) => {
+    trackArray = CSVToJSON(text,';');
+    var ogTitle = "Negritube.fr - " + trackArray[track]['Artiste'] + " : " + trackArray[track]['Titre'];
+    var ogImage = trackArray[track]['miniature'];
+
+    var link = document.createElement("a");
+    link.href = ogImage;
+    var ogLink = link.protocol+"//"+link.host+link.pathname+link.search+link.hash;
+
+    document.title = ogTitle;
+    var metaTag = document.getElementsByTagName('meta');
+    for (var i=0; i < metaTag.length; i++) {
+      if (metaTag[i].getAttribute("name")=='og:title')
+        metaTag[i].content = ogTitle;
+      if (metaTag[i].getAttribute("name")=='og:image')
+        metaTag[i].content = ogLink;
+      if (metaTag[i].getAttribute("name")=='twitter:title')
+        metaTag[i].content = ogTitle;
+      if (metaTag[i].getAttribute("name")=='twitter:image')
+        metaTag[i].content = ogLink;
+    }
+    console.log("titre = " + ogTitle);
+    console.log("pochette = " + ogLink);
+});
+
+
 window.addEventListener("load", function(event) {
-  if (!isMobile.any()) {
-    launchNewClip(0);
-  }
+  //if (!isMobile.any()) {
+    if (track != null) {
+      launchNewClip(track);
+    } else {
+      launchNewClip(0);
+    }
+  //}
 });

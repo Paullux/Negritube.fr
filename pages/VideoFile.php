@@ -23,7 +23,7 @@ function read($csv){
   <meta property="og:url" content="https://negritube.fr/pages/VideoFile.php">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Negritube.fr - Clips">
-  <meta property="og:description" content="Musique Issues des Albums">
+  <meta property="og:description" content="Musique Issues des Clips">
   <meta property="og:image" content="https://negritube.fr/assets/img/miniature/DLO.png">
   <meta property="og:locale" content="fr_FR" />
 
@@ -112,7 +112,7 @@ function read($csv){
     </div>
     <div class="presentationClip">
       <div class="infoMusic">
-        <video id="video" controls playsinline controlsList="nodownload">
+        <video id="video" controls playsinline autoplay controlsList="nodownload">
           <source src="../assets/videos/AllVideos/0.mp4" type="video/mp4" />
           <source src="../assets/videos/AllVideos/0.mp4" type="video/webm" />
         </video>
