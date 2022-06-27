@@ -114,9 +114,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) and (orientation: portrait) {
   .container h3 {
-    font-size: 40pt;
+    font-size: 30pt;
     margin-right: 1%;
   }
   /* The switch - the box around the slider */
@@ -145,10 +145,19 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape)
+{
+  .container {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 1280px) and (orientation: landscape)
 {
   .container h3 {
-    font-size: 20pt;
+    padding-top: 0 !important;
+    margin-top: 0px !important;
+    font-size: 15pt;
     margin-right: 1%;
   }
   /* The switch - the box around the slider */
