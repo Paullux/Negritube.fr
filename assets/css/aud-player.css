@@ -46,20 +46,6 @@
 #aWrap .Titre {
   margin-left: 20px;
 }
-/*
-#aWrap:before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(72, 72, 72, .8);
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(.5vmax);
-}
-*/
 
 /* (C) PREVIOUS BUTTON */
 #skipPrevious {
@@ -169,10 +155,10 @@
   #aVolume {
     width: 10%;
   }
-  .presentation {
+  /*.presentation {
     flex-direction: column-reverse;
     font-size: 10pt;;
-  }
+  }*/
   .aMasquer {
     display: none !important;
   } 
