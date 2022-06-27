@@ -85,7 +85,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <meta name="theme-color" content="#f6b73c" />
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://negritube.fr/pages/AudioFile.php">
+  <meta property="og:url" content="<?php echo "https://negritube.fr/pages/AudioFile.php?track=" . $track ?>">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?php echo $ogTitle ?>">
   <meta property="og:description" content="Musique Issues des Albums">
@@ -95,12 +95,13 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:domain" content="negritube.fr">
-  <meta property="twitter:url" content="https://negritube.fr/pages/AudioFile.php">
+  <meta property="twitter:url" content="<?php echo "https://negritube.fr/pages/AudioFile.php?track=" . $track ?>">
   <meta name="twitter:title" content="<?php echo $ogTitle ?>">
   <meta name="twitter:description" content="Musique Issue des Albums">
   <meta name="twitter:image" content="<?php echo $ogLink ?>">
   <meta name="twitter:image:alt" content="Negritube.fr" />
 
+  <link rel="canonical" href="<?php echo "https://negritube.fr/pages/AudioFile.php?track=" . $track ?>"/>
   <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
   <link href="../assets/css/switchTheme.css" rel="stylesheet" />
