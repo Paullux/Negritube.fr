@@ -69,7 +69,7 @@ if (isset($_GET['track']) && $_GET['track'] <= 16){
   $track = 1;
 }
 
-$realTrack = $track -1
+$realTrack = $track -1;
 
 $ogTitle = "Negritube.fr - " . $csv[$track][2] . " : " . $csv[$track][1];
 $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
