@@ -6,13 +6,13 @@ var title = document.getElementById('title');
 var description = document.getElementById('description');
 var shuffleBool = new Boolean(true);
 var autorenewBool = new Boolean(true);
-
+var numberOfLine = 1;
 
 function launchNewClip(trackNumber) {
 
   window.history.replaceState('', '', updateURLParameter(window.location.href, "track", trackNumber));
 
-  for (let i = 0; i <= 15; i++) {
+  for (let i = 0; i <= numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
@@ -37,9 +37,9 @@ function launchNewClip(trackNumber) {
 
 function nextSong() {
   if (shuffleBool) {
-    trackNumber = getRandomIntInclusive(0, 15);
+    trackNumber = getRandomIntInclusive(0, numberOfLine);
   } else {
-    if (trackNumber < 15) {
+    if (trackNumber < numberOfLine) {
     } else {
       ++trackNumber;
       trackNumber = 0;
@@ -147,8 +147,6 @@ function updateURLParameter(url, param, paramVal)
 
 let params = new URLSearchParams(document.location.search);
 var track = params.get("track");
-console.log("track value: " + track)
-
 
 window.addEventListener("load", function(event) {
   //if (!isMobile.any()) {
@@ -159,3 +157,13 @@ window.addEventListener("load", function(event) {
     }
   //}
 });
+
+fetch('../assets/csv/video.csv')
+  .then((response) => {
+      return response.text();
+  })
+  .then((text) => {
+      trackArray = CSVToJSON(text,';');
+      var obj = JSON.parse(JSON.stringify(trackArray))
+      numberOfLine = Object.keys(obj).length - 1;
+  });

@@ -61,9 +61,11 @@ function rel2abs( $rel, $base )
 }
 
 $csv = '../assets/csv/audio.csv';
+$fp = file($csv);
+$audionumber = count($fp) - 1;
 $csv = read($csv);
 
-if (isset($_GET['track']) && $_GET['track'] <= 33){
+if (isset($_GET['track']) && $_GET['track'] <= $audionumber){
   $track = htmlspecialchars($_GET["track"]);
 } else {
   $track = 1;
@@ -211,7 +213,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
       </div>
       <div class="choixTitreAudio">
         <?php
-        for ($i = 1; $i <= 33; $i++) {
+        for ($i = 1; $i <= $audionumber; $i++) {
           echo "<button class='song_title button_song' id='" . $csv[$i][0] . "' onclick='launchNewMusic(" . $csv[$i][0] . ");' type='button'>
           <img class='cover' src='" . $csv[$i][4] . "' alt='cover'>
           <div class='listMusic'>

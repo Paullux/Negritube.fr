@@ -7,6 +7,7 @@ var currentTrack = 1;
 var enCoursDeLecture = document.getElementById('enCoursDeLecture');
 var isPlaying = false;
 var pausedOnDemand = false;
+var numberOfLine = 1;
 
 var isMobile = {
   Android: function() {
@@ -41,7 +42,7 @@ function launchNewMusic(trackNumber) {
 
   song.style.backgroundColor = "#484848";
 
-  for (let i = 1; i <= 33; i++) {
+  for (let i = 1; i <= numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
@@ -57,7 +58,7 @@ function launchNewMusic(trackNumber) {
     clearInterval(k);
     k = setInterval("pauseAud()", 20000);
   }
-  if (trackNumber > 21 && trackNumber <= 33) {
+  if (trackNumber > 21 && trackNumber <= numberOfLine) {
     document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Misiyon.jpg')";
   }
 
@@ -115,9 +116,9 @@ function playAud() {
 function nextSong() {
   clearInterval(k);
   if (shuffleBool) {
-    trackNumber = getRandomIntInclusive(1, 33);
+    trackNumber = getRandomIntInclusive(1, numberOfLine);
   } else {
-    if (trackNumber < 33) {
+    if (trackNumber < numberOfLine) {
       ++trackNumber;
     } else {
       trackNumber = 1;
@@ -216,7 +217,6 @@ window.addEventListener("load", function(event) {
 });
 
 function togglePlay() {
-  console.log("passe par là");
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {  
@@ -229,3 +229,27 @@ function togglePlay() {
     }  
   }
 }
+
+fetch('../assets/csv/audio.csv')
+.then((response) => {
+    return response.text();
+})
+.then((text) => {
+    trackArray = CSVToJSON(text,',');
+    var obj = JSON.parse(JSON.stringify(trackArray));
+    numberOfLine = Object.keys(obj).length;
+});
+
+const CSVToJSON = (data, delimiter = ',') => {
+  const titles = data.slice(0, data.indexOf('\n')).split(delimiter);
+  return data
+    .slice(data.indexOf('\n') + 1)
+    .split('\n')
+    .map(v => {
+      const values = v.split(delimiter);
+      return titles.reduce(
+        (obj, title, index) => ((obj[title] = values[index]), obj),
+        {}
+      );
+    });
+};

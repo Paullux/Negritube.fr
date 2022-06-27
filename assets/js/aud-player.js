@@ -1,7 +1,6 @@
 // (A) AUDIO OBJECT + HTML CONTROLS
 var audio = new Audio("../assets/audio/AllAlbums/1.mp3"), // change to your own!
 currentTrack = audio.getAttribute("src"),
-totalTrack = "33",
 skipPrevious = document.getElementById("skipPrevious"),
 skipPreviousIco = document.getElementById("skipPreviousIco"),
 skipNext = document.getElementById("skipNext"),
@@ -35,9 +34,11 @@ skipPrevious.onclick = () => {
 
 skipNext.onclick = () => {
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
-  if (Number(currentTrack) < Number(totalTrack)) {
+  if (Number(currentTrack) < numberOfLine) {
     var nextTrack = Number(currentTrack) + 1;
     launchNewMusic(nextTrack);
+  } else {
+    launchNewMusic(1);
   }
 };
 
