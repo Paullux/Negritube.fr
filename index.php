@@ -36,6 +36,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
+  <script> window.location.assign('https://negritube.fr/index.php'); return; </script>
+  <script>
+    if ( window.location != "https://negritube.fr/index.php" ) {
+      window.location = "https://negritube.fr/index.php";
+    }
+  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07Z7YG6ZX"></script>
