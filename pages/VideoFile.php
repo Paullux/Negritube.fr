@@ -107,7 +107,6 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <meta name="twitter:image" content="<?php echo $ogLink ?>">
   <meta name="twitter:image:alt" content="Negritube.fr" />
 
-  <link rel="canonical" href="<?php echo "https://negritube.fr/pages/VideoFile.php?track=" . $realTrack ?>"/>
   <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
   <link href="../assets/css/switchTheme.css" rel="stylesheet" />
