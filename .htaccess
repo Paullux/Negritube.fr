@@ -6,4 +6,6 @@ RewriteCond %{HTTP_HOST} ^(www\.)?negritube\.fr
 
 RewriteRule ^(.*)$ https://negritube.fr/$1 [R,L]
 
+RedirectMatch 403 ^/assets/?$
+
 ErrorDocument 404 https://negritube.fr/404.php
