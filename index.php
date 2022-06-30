@@ -1,7 +1,3 @@
-<?//redirection permanente
-header('Location: https://negritube.fr/', TRUE, 301);
-Exit();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,9 +38,9 @@ Exit();
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
   <script> window.location.assign('https://negritube.fr/index.php'); return; </script>
   <script>
-    //if ( window.location != "https://negritube.fr/index.php" ) {
-      //window.location = "https://negritube.fr/index.php";
-    //}
+    if ( window.location != "https://negritube.fr/index.php" ) {
+      window.location = "https://negritube.fr/index.php";
+    }
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
