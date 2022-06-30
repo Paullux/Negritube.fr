@@ -1,3 +1,7 @@
+<?//redirection permanente
+header('Location: https://negritube.fr/', TRUE, 301);
+Exit();
+?>
 <!DOCTYPE html>
 <html>
 <head>
