@@ -38,8 +38,8 @@
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
   <script> window.location.assign('https://negritube.fr/index.php'); return; </script>
   <script>
-    if ( window.location != "https://negritube.fr/index.php" ) {
-      window.location = "https://negritube.fr/index.php";
+    if ( window.location != "https://negritube.fr/" ) {
+      window.location = "https://negritube.fr/";
     }
   </script>
 
