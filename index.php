@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#f6b73c" />
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://negritube.fr/index.php/">
+  <meta property="og:url" content="https://negritube.fr/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Negritube.fr">
   <meta property="og:description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">
@@ -20,7 +20,7 @@
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:domain" content="negritube.fr">
-  <meta property="twitter:url" content="https://negritube.fr/index.php/">
+  <meta property="twitter:url" content="https://negritube.fr/">
   <meta name="twitter:title" content="Negritube.fr">
   <meta name="twitter:description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">
   <meta name="twitter:image" content="https://negritube.fr/assets/img/Carte-Twitter.png">
@@ -36,7 +36,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
-  <script> window.location.assign('https://negritube.fr/index.php'); return; </script>
   <script>
     if ( window.location != "https://negritube.fr/" ) {
       window.location = "https://negritube.fr/";
