@@ -7,27 +7,27 @@ require_once ( 'formulaire.php' );
 <head>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
-  <title>Negritube.fr - Avé Maria Antillais</title>
-  <meta name="description" content="Une vidéo de Ballade créole : Avé Maria Antillais">
+  <title>Negritube.fr - Contact</title>
+  <meta name="description" content="Pour une prise de contact">
   <meta name="keywords" content="créole" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://negritube.fr/pages/Avé%20Maria%20Antillais.php">
+  <meta property="og:url" content="https://negritube.fr/pages/contact.php">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Negritube.fr - Avé Maria Antillais">
-  <meta property="og:description" content="Une vidéo de Ballade créole : Avé Maria Antillais">
-  <meta property="og:image" content="https://negritube.fr/assets/img/miniature/Avé%20Maria%20Antillais.png">
+  <meta property="og:title" content="Negritube.fr - Contact">
+  <meta property="og:description" content="Pour une prise de contact">
+  <meta property="og:image" content="https://negritube.fr/assets/img/Carte-og.png">
   <meta property="og:locale" content="fr_FR" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:domain" content="negritube.fr">
-  <meta property="twitter:url" content="https://negritube.fr/pages/Avé%20Maria%20Antillais.php">
-  <meta name="twitter:title" content="Negritube.fr - Avé Maria Antillais">
-  <meta name="twitter:description" content="Une vidéo de Ballade créole : Avé Maria Antillais">
-  <meta name="twitter:image" content="https://negritube.fr/assets/img/miniature/Avé%20Maria%20Antillais.png">
+  <meta property="twitter:url" content="https://negritube.fr/pages/contact.php">
+  <meta name="twitter:title" content="Negritube.fr - Contact">
+  <meta name="twitter:description" content="Pour une prise de contact">
+  <meta name="twitter:image" content="https://negritube.fr/assets/img/Carte-Twitter.png">
   <meta name="twitter:image:alt" content="Negritube.fr" />
 
   <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
