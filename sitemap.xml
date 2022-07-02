@@ -7,22 +7,22 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>https://negritube.fr/</loc>
-    <lastmod>2022-07-02T18:11:54+00:00</lastmod>
+    <lastmod>2022-07-02T17:11:54+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://negritube.fr/pages/VideoFile.php</loc>
-    <lastmod>2022-07-02T18:11:54+00:00</lastmod>
+    <lastmod>2022-07-02T17:11:54+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   
     <loc>https://negritube.fr/pages/AudioFile.php</loc>
-    <lastmod>2022-07-02T18:11:54+00:00</lastmod>
+    <lastmod>2022-07-02T17:11:54+00:00</lastmod>
     <priority>0.80</priority>
   </url>
     <url>
     <loc>https://negritube.fr/pages/contact.php</loc>
-    <lastmod>2022-07-02T18:11:54+00:00</lastmod>
+    <lastmod>2022-07-02T17:11:54+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>
