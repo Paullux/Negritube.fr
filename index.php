@@ -37,7 +37,7 @@
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
   <script>
-    if ( window.location != "https://negritube.fr/" ) {
+    if ( window.location != "https://negritube.fr/" && window.location != "https://paulluxwaffle.synology.me/index.php") {
       window.location = "https://negritube.fr/";
     }
   </script>
