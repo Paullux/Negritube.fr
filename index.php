@@ -126,7 +126,7 @@
         </div>
       </nav>
       <div class="link_song miniatureandcover">
-        <a class="miniature box" href="pages/VideoFile.php" onmouseover="launchWait(0);" onmouseout="cancelWait();">
+        <a class="miniature box" href="video-0.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
             Les Clips
           </h3>
@@ -135,7 +135,7 @@
           <div class="left"></div>
           <div class="right"></div>
         </a>
-        <a class="albumCover box" href="pages/AudioFile.php" onmouseover="launchWait(1);" onmouseout="cancelWait();">
+        <a class="albumCover box" href="audio-1.html" onmouseover="launchWait(1);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
             Les Albums
           </h3>

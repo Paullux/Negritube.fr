@@ -10,7 +10,7 @@ var numberOfLine = 1;
 
 function launchNewClip(trackNumber) {
 
-  window.history.replaceState('', '', updateURLParameter(window.location.href, "track", trackNumber));
+  window.history.replaceState('', '', 'https://negritube.fr/video-' + trackNumber + '.html');
 
   for (let i = 0; i <= numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
@@ -100,53 +100,7 @@ var isMobile = {
   }
 };
 
-function updateURLParameter(url, param, paramVal)
-{
-    var TheAnchor = null;
-    var newAdditionalURL = "";
-    var tempArray = url.split("?");
-    var baseURL = tempArray[0];
-    var additionalURL = tempArray[1];
-    var temp = "";
-
-    if (additionalURL) 
-    {
-        var tmpAnchor = additionalURL.split("#");
-        var TheParams = tmpAnchor[0];
-            TheAnchor = tmpAnchor[1];
-        if(TheAnchor)
-            additionalURL = TheParams;
-
-        tempArray = additionalURL.split("&");
-
-        for (var i=0; i<tempArray.length; i++)
-        {
-            if(tempArray[i].split('=')[0] != param)
-            {
-                newAdditionalURL += temp + tempArray[i];
-                temp = "&";
-            }
-        }        
-    }
-    else
-    {
-        var tmpAnchor = baseURL.split("#");
-        var TheParams = tmpAnchor[0];
-            TheAnchor  = tmpAnchor[1];
-
-        if(TheParams)
-            baseURL = TheParams;
-    }
-
-    if(TheAnchor)
-        paramVal += "#" + TheAnchor;
-
-    var rows_txt = temp + "" + param + "=" + paramVal;
-    return baseURL + "?" + newAdditionalURL + rows_txt;
-}
-
-let params = new URLSearchParams(document.location.search);
-var track = params.get("track");
+var track = document.location.toString().split("-")[1].split(".")[0];
 
 window.addEventListener("load", function(event) {
   //if (!isMobile.any()) {
