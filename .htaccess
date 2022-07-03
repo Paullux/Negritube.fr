@@ -23,8 +23,8 @@ RewriteRule ^video-([0-9]*).html$ /pages/VideoFile.php?track=$1 [L]
 
 #--------------------------------------------------
 
-RewriteRule ^/pages/AudioFile.php?track=([0-9]*) /audio-$1.html [R=301,L]
-RewriteRule ^/pages/VideoFile.php?track=([0-9]*) /video-$1.html [R=301,L]
+RewriteRule ^/pages/AudioFile.php?track=([0-9]*) /audio-$1.html [L,R=301]
+RewriteRule ^/pages/VideoFile.php?track=([0-9]*) /video-$1.html [L,R=301]
 
 RewriteCond %{REQUEST_URI} ^/404/$
 RewriteRule ^(.*)$ /404.php [L]
