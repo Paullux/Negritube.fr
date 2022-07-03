@@ -1,7 +1,27 @@
 ErrorDocument 404 https://negritube.fr/404.php
 
-RewriteEngine On 
+#--------------------------------------------------
+# Répertoire : /pages/
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
 RewriteBase /
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# AudioFile avec numéro track :
+RewriteRule ^audio-([0-9]*).html$ /pages/AudioFile.php?track=$1 [L]
+
+# VideoFile avec numéro de track :
+RewriteRule ^video-([0-9]*).html$ /pages/VideoFile.php?track=$1 [L]
+
+#--------------------------------------------------
 
 RewriteCond %{REQUEST_URI} ^/404/$
 RewriteRule ^(.*)$ /404.php [L]

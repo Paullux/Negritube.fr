@@ -38,7 +38,7 @@ if (!isMobile.any()) {
 
 function launchNewMusic(trackNumber) {
 
-  window.history.replaceState('', '', updateURLParameter(window.location.href, "track", trackNumber));
+  //window.history.replaceState('', '', updateURLParameter(window.location.href, "track", trackNumber));
 
   song.style.backgroundColor = "#484848";
 
@@ -202,8 +202,10 @@ function updateURLParameter(url, param, paramVal)
     return baseURL + "?" + newAdditionalURL + rows_txt;
 }
 
-let params = new URLSearchParams(document.location.search);
-var track = params.get("track");
+//let params = new URLSearchParams(document.location.search);
+//var track = params.get("track");
+var track = document.location.toString().split("-")[1].split(".")[0];
+console.log(track);
 
 
 window.addEventListener("load", function(event) {
