@@ -16,10 +16,13 @@ RewriteBase /
 #--------------------------------------------------
 
 # AudioFile avec numéro track :
-RewriteRule ^audio-([0-9]*).html$ /pages/AudioFile.php?track=$1 [L]
+RewriteRule ^audio-(\d+)\.html$ /pages/AudioFile.php?track=$1 [L]
 
 # VideoFile avec numéro de track :
-RewriteRule ^video-([0-9]*).html$ /pages/VideoFile.php?track=$1 [L]
+RewriteRule ^video-(\d+)\.html$ /pages/VideoFile.php?track=$1 [L]
+
+# Contact
+RewriteRule ^contact.html$ /pages/contact.php [L]
 
 #--------------------------------------------------
 

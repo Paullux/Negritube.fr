@@ -120,9 +120,9 @@
           </p>
         </div>
         <div id="Menu_Cache">
-          <li><a href="pages/VideoFile.php">Les Clips</a></li>
-          <li><a href="pages/AudioFile.php">Les Albums</a></li>
-          <li><a href="pages/contact.php">Negritube.fr - Prise de Contact</a></li>
+          <li><a href="video-0.html">Les Clips</a></li>
+          <li><a href="audio-1.html">Les Albums</a></li>
+          <li><a href="contact.html">Negritube.fr - Prise de Contact</a></li>
         </div>
       </nav>
       <div class="link_song miniatureandcover">
