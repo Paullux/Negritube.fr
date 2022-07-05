@@ -162,6 +162,9 @@ var urlParams = new URLSearchParams(queryString);
 var oldTrack = urlParams.get('track');
 var track = document.location.toString().split("-")[1].split(".")[0];
 
+console.log("oldTrack : " + oldTrack);
+console.log("track : " + track);
+
 if (oldTrack != null) {
   track = oldTrack;
 }
