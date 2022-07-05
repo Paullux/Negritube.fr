@@ -1,20 +1,3 @@
-ErrorDocument 404 https://negritube.fr/404.php
-
-#--------------------------------------------------
-# Répertoire : /pages/
-#--------------------------------------------------
-
-# Le serveur doit suivre les liens symboliques :
-Options +FollowSymlinks
-
-# Activation du module de réécriture d'URL :
-RewriteEngine on
-RewriteBase /
-
-#--------------------------------------------------
-# Règles de réécriture d'URL :
-#--------------------------------------------------
-
 #Ancienne URL :
 Redirect 301 "/pages/Mal%20tèt.php" "https://negritube.fr/audio-1.html"
 Redirect 301 "/pages/Konsyans.php" "https://negritube.fr/audio-2.html"
@@ -38,6 +21,22 @@ Redirect 301 "/pages/Avé%20Maria%20Antillais.php" "https://negritube.fr/video-1
 Redirect 301 "/pages/Pénélope.php" "https://negritube.fr/video-14.html"
 Redirect 301 "/pages/Konjé%20bonifié.php" "https://negritube.fr/video-15.html"
 
+ErrorDocument 404 "https://negritube.fr/404.php"
+
+#--------------------------------------------------
+# Répertoire : /pages/
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+RewriteBase /
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
 
 # AudioFile avec numéro track :
 RewriteRule ^audio-(\d+)\.html$ /pages/AudioFile.php?track=$1 [L]
