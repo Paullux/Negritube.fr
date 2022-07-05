@@ -157,7 +157,12 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
+var oldTrack = urlParams.get('track');
 var track = document.location.toString().split("-")[1].split(".")[0];
+
+if (oldTrack != null) {
+  track = oldTrack;
+}
 
 window.addEventListener("load", function(event) {
   //if (!isMobile.any()) {
