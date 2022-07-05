@@ -103,10 +103,10 @@ var isMobile = {
 var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
 var oldTrack = urlParams.get('track');
-var track = document.location.toString().split("-")[1].split(".")[0];
+var track = oldTrack;
 
-if (oldTrack != null) {
-  track = oldTrack;
+if (oldTrack == null) {
+  track = document.location.toString().split("-")[1].split(".")[0];;
 }
 
 window.addEventListener("load", function(event) {
