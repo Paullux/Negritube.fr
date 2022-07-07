@@ -144,54 +144,21 @@
           <div class="left"></div>
           <div class="right"></div>
         </a>
+        <?php
+          $csv = '../assets/csv/audio.csv';
+          $fp = file($csv);
+          $audionumber = count($fp) - 1;
+          for ($i = 1; $i <= $audionumber; $i++) {
+            echo "<a style='display: none' href='audio-" . $i . ".html'>a</a>";
+          }
+          $csv = '../assets/csv/video.csv';
+          $fp = file($csv);
+          $videonumber = count($fp) - 1;
+          for ($i = 1; $i <= $videonumber; $i++) {
+            echo "<a style='display: none' href='video-" . $i . ".html'>a</a>";
+          }
+        ?>
       </div>
-      <a style="display: none" href="audio-2.html">a</a>
-      <a style="display: none" href="audio-3.html">a</a>
-      <a style="display: none" href="audio-4.html">a</a>
-      <a style="display: none" href="audio-5.html">a</a>
-      <a style="display: none" href="audio-6.html">a</a>
-      <a style="display: none" href="audio-7.html">a</a>
-      <a style="display: none" href="audio-8.html">a</a>
-      <a style="display: none" href="audio-9.html">a</a>
-      <a style="display: none" href="audio-10.html">a</a>
-      <a style="display: none" href="audio-11.html">a</a>
-      <a style="display: none" href="audio-12.html">a</a>
-      <a style="display: none" href="audio-13.html">a</a>
-      <a style="display: none" href="audio-14.html">a</a>
-      <a style="display: none" href="audio-15.html">a</a>
-      <a style="display: none" href="audio-16.html">a</a>
-      <a style="display: none" href="audio-17.html">a</a>
-      <a style="display: none" href="audio-18.html">a</a>
-      <a style="display: none" href="audio-19.html">a</a>
-      <a style="display: none" href="audio-20.html">a</a>
-      <a style="display: none" href="audio-21.html">a</a>
-      <a style="display: none" href="audio-22.html">a</a>
-      <a style="display: none" href="audio-23.html">a</a>
-      <a style="display: none" href="audio-24.html">a</a>
-      <a style="display: none" href="audio-25.html">a</a>
-      <a style="display: none" href="audio-26.html">a</a>
-      <a style="display: none" href="audio-27.html">a</a>
-      <a style="display: none" href="audio-28.html">a</a>
-      <a style="display: none" href="audio-29.html">a</a>
-      <a style="display: none" href="audio-30.html">a</a>
-      <a style="display: none" href="audio-31.html">a</a>
-      <a style="display: none" href="audio-32.html">a</a>
-      <a style="display: none" href="audio-33.html">a</a>
-      <a style="display: none" href="video-1.html">a</a>
-      <a style="display: none" href="video-2.html">a</a>
-      <a style="display: none" href="video-3.html">a</a>
-      <a style="display: none" href="video-4.html">a</a>
-      <a style="display: none" href="video-5.html">a</a>
-      <a style="display: none" href="video-6.html">a</a>
-      <a style="display: none" href="video-7.html">a</a>
-      <a style="display: none" href="video-8.html">a</a>
-      <a style="display: none" href="video-9.html">a</a>
-      <a style="display: none" href="video-10.html">a</a>
-      <a style="display: none" href="video-11.html">a</a>
-      <a style="display: none" href="video-12.html">a</a>
-      <a style="display: none" href="video-13.html">a</a>
-      <a style="display: none" href="video-14.html">a</a>
-      <a style="display: none" href="video-15.html">a</a>
     </div>
     <div class="basDePageIndex">
       <center>
