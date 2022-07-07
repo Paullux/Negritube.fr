@@ -150,13 +150,13 @@
         $fp = file($csv);
         $audionumber = count($fp) - 1;
         for ($i = 2; $i <= $audionumber; $i++) {
-          echo '<a style="display: none" href="audio-' . $i .'.html">a</a>';
+          echo '<a style="display: none" href="audio-' . $i . '.html">a</a>';
         }
         $csv = '../assets/csv/video.csv';
         $fp = file($csv);
         $videonumber = count($fp);
         for ($i = 1; $i <= $videonumber; $i++) {
-          echo '<a style="display: none" href="video-' . $i .'.html">a</a>';
+          echo '<a style="display: none" href="video-' . $i . '.html">a</a>';
         }
       ?>
     </div>
