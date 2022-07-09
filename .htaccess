@@ -42,9 +42,9 @@ RewriteBase /
 #--------------------------------------------------
 
 # Sur mon NAS
-<Directory "/volume1/web/Multi-Plateform/">
-    RewriteRule !^Multi-Plateform/ Multi-Plateform%{REQUEST_URI}
-</Directory>
+#<Directory "/volume1/web/Multi-Plateform/">
+#    RewriteRule !^Multi-Plateform/ Multi-Plateform%{REQUEST_URI}
+#</Directory>
 
 # Index.php
 RewriteRule ^$ /index.php
