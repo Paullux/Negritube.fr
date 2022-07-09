@@ -41,6 +41,9 @@ RewriteBase /
 # Règles de réécriture d'URL :
 #--------------------------------------------------
 
+# Sur mon NAS
+RewriteRule !^Multi-Plateform/ Multi-Plateform%{REQUEST_URI}
+
 # Index.php
 RewriteRule ^$ /index.php
 
