@@ -42,9 +42,9 @@ RewriteBase /
 #--------------------------------------------------
 
 # Sur mon NAS
-<LocationMatch "^/Multi-Plateform/">
+<Location "/Multi-Plateform">
     RewriteRule !^Multi-Plateform/ Multi-Plateform%{REQUEST_URI}
-</LocationMatch>
+</Location>
 
 # Index.php
 RewriteRule ^$ /index.php
