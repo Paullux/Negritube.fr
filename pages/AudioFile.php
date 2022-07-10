@@ -204,12 +204,16 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
         <br>
         ______
         <br><br>
-        L'album Eritaj est ausi disponible dans le magasin :<br>
+        L'album Éritaj est ausi disponible dans le magasin :<br>
         Blazing Music<br>
         138-140 rue des Rosiers<br>
         (Marché Dauphine Stand 228)<br>
         93400  Saint-Ouen<br><br>
         Il est possible de commander en ligne l'album sur le : <br><a href=https://blazingmusicshop.com/products/philippe-blaze-eritaj target="_blank" style="color:black;">site web de Blazing Music</a>
+        <br>
+        ______
+        <br>
+        L'album Éritaj se trouve aussi en téléchargement sur Amazon : <br><a href=https://www.amazon.fr/dp/B086HPCRS5?tag=amz-mkt-chr-fr-21&ascsubtag=1ba00-01000-org00-win10-other-nomod-fr000-pcomp-feature-scomp-feature-scomp&ref=aa_scomp target="_blank"  style="color:black;">Éritaj</a>
       </div>
       <div class="choixTitreAudio">
         <?php
