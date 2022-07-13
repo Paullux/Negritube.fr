@@ -37,9 +37,12 @@
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
   <script>
-    if ( window.location != "https://negritube.fr/" && !(window.location.href.indexOf("paulluxwaffle.synology.me") > -1)) {
-      window.location = "https://negritube.fr/";
+    if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
+      Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
+    } else {
+      Server = "https://negritube.fr/";
     }
+    window.history.replaceState('', '', Server);
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->

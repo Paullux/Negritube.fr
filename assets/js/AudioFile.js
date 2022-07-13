@@ -104,7 +104,7 @@ function launchNewMusic(trackNumber) {
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {
-      enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerplay.png')";
+    enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerplay.png')";
   }
 }
 
