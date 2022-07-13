@@ -9,6 +9,20 @@ var isPlaying = false;
 var pausedOnDemand = false;
 var numberOfLine = 1;
 
+var coverVEnBas = document.getElementById('coverVEnBas');
+var TitreEnBas = document.getElementById('TitreEnBas');
+var AuteurEnBas = document.getElementById('AuteurEnBas');
+var AlbumEnBas = document.getElementById('AlbumEnBas');
+
+var Server = "";
+
+if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
+  Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
+}else {
+  Server = "https://negritube.fr/";
+}
+
+
 var isMobile = {
   Android: function() {
     return navigator.userAgent.match(/Android/i);
@@ -33,12 +47,24 @@ var isMobile = {
 if (!isMobile.any()) {
   enCoursDeLecture.style.backgroundImage = "";
 } else {
-  enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerpause.png')";
+    enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerpause.png')";
 }
 
 function launchNewMusic(trackNumber) {
 
-  window.history.replaceState('', '', 'https://negritube.fr/audio-' + trackNumber + '.html');
+  fetch(Server + 'assets/csv/audio.csv')
+    .then((response) => {
+      return response.text();
+    })
+    .then((text) => {
+      trackArray = CSVToJSON(text,',');
+      TitreEnBas.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber]['Titre'];
+      AuteurEnBas.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber]['Artiste'];
+      AlbumEnBas.innerHTML = "Album :&nbsp;" + trackArray[trackNumber]['Album'];
+    });
+
+    window.history.replaceState('', '', Server + 'audio-' + trackNumber + '.html');
+
 
   song.style.backgroundColor = "#484848";
 
@@ -48,36 +74,37 @@ function launchNewMusic(trackNumber) {
   }
 
   if (trackNumber == 1) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Mal_tèt.jpeg')";
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Mal_tèt.jpeg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Mal_tèt.jpeg';
   }
   if (trackNumber > 1 && trackNumber <= 8) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Konsyans.jpg')";
+      document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Konsyans.jpg')";
+      coverVEnBas.src = Server + 'assets/img/album%20cover/Konsyans.jpg';
   }
   if (trackNumber > 8 && trackNumber <= 21) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Eritaj.jpg')";
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Eritaj.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Eritaj.jpg';
+
     clearInterval(k);
     k = setInterval("pauseAud()", 20000);
   }
   if (trackNumber > 21 && trackNumber <= numberOfLine) {
-    document.getElementById('cover').style.backgroundImage = "url('../assets/img/album cover/Misiyon.jpg')";
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Misiyon.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Misiyon.jpg';
   }
 
-  audio.src = "../assets/audio/AllAlbums/" + trackNumber + ".mp3";
+  audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
 
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
   document.getElementById(currentTrack).style.backgroundColor = "rgba(65,65,65, 0.6)";
   document.getElementById(currentTrack).style.color = "#FFF";
-
-  var title_song = document.getElementById(trackNumber).innerHTML;
-
-  song.innerHTML = title_song;
 
   audio.play();
 
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {
-    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerplay.png')";
+      enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerplay.png')";
   }
 }
 
@@ -86,25 +113,25 @@ function pauseAud() {
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {
-    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerpause.png')";
+    enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerpause.png')";
   }
   audio.currentTime=0;
-  song.style.backgroundColor = "#c7432e";
-  song.innerHTML+=" - Fin de l'Extrait";
+  document.getElementById("song_title_audio"); song.style.backgroundColor = "#c7432e";
+  TitreEnBas.innerHTML+=" - Fin de l'Extrait";
   clearInterval(k);
   k = setInterval("nextSong();", 2000);
 }
 
 function playAud() {
-  if (song.innerHTML.endsWith(" - Fin de l'Extrait")) {
-    song.innerHTML = rmEnd(song.innerHTML, " - Fin de l'Extrait");
+  if (TitreEnBas.innerHTML.endsWith(" - Fin de l'Extrait")) {
+    TitreEnBas.innerHTML = rmEnd(TitreEnBas.innerHTML, " - Fin de l'Extrait");
   }
   audio.play();
 
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {
-    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerplay.png')";
+    enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerplay.png')";
   }
 
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
@@ -141,7 +168,7 @@ function pauseAud2() {
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {
-    enCoursDeLecture.style.backgroundImage = "url('../assets/img/musicplayerpause.png')";
+    enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerpause.png')";
   }
   audio.currentTime=0;
   clearInterval(k);
@@ -190,15 +217,18 @@ function togglePlay() {
   }
 }
 
-fetch('../assets/csv/audio.csv')
-.then((response) => {
+
+fetch(Server + 'assets/csv/audio.csv')
+  .then((response) => {
     return response.text();
-})
-.then((text) => {
+  })
+  .then((text) => {
     trackArray = CSVToJSON(text,',');
     var obj = JSON.parse(JSON.stringify(trackArray));
     numberOfLine = Object.keys(obj).length;
-});
+  });
+
+
 
 const CSVToJSON = (data, delimiter = ',') => {
   const titles = data.slice(0, data.indexOf('\n')).split(delimiter);

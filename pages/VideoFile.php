@@ -159,10 +159,10 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <div class="my_page">
     <div class="big-title">
       <div id="item">
-        <a href="../index.php"><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
+        <a href="."><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
       </div>
       <div id="item">
-        <a href="../index.php" style="text-decoration: none; ">
+        <a href="." style="text-decoration: none; ">
           <h1 class="title_site">
             Negritube.fr
           </h1>
@@ -200,9 +200,9 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
           echo "<button class='song_title button_songV button_song' id='" . $csv[$i][0] . "' onclick='launchNewClip(" . $csv[$i][0] . ");' type='button'>
           <img class='coverV' src='" . $csv[$i][4] . "' alt='miniature'>
           <div class='listMusic'>
-          <h3 class='Titre'>Titre :&nbsp;<span id='p" . $csv[$i][0] . "'>" . $csv[$i][1] . "</h3>
-          <p class='Auteur'>Artiste : " . $csv[$i][2] . "</p>
-          <p class='Album'>Style : " . $csv[$i][3] . "</p>
+            <h3 class='Titre'>Titre :&nbsp;<span id='p" . $csv[$i][0] . "'>" . $csv[$i][1] . "</h3>
+            <p class='Auteur'>Artiste : " . $csv[$i][2] . "</p>
+            <p class='Album'>Style : " . $csv[$i][3] . "</p>
           </div>
           </button>";
         }
