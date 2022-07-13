@@ -8,29 +8,38 @@ var shuffleBool = new Boolean(true);
 var autorenewBool = new Boolean(true);
 var numberOfLine = 1;
 
+var Server = "";
+
+if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
+  Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
+}else {
+  Server = "https://negritube.fr/";
+}
+
 function launchNewClip(trackNumber) {
 
-  window.history.replaceState('', '', 'https://negritube.fr/video-' + trackNumber + '.html');
+  fetch(Server + 'assets/csv/video.csv')
+    .then((response) => {
+      return response.text();
+    })
+    .then((text) => {
+      trackArray = CSVToJSON(text,';');
+      title.innerHTML = trackArray[trackNumber]['Artiste'] + " : " + trackArray[trackNumber]['Titre'];
+      description.innerHTML = trackArray[trackNumber]['description'];
+    });
+  
+  window.history.replaceState('', '', Server + 'video-' + trackNumber + '.html');
 
   for (let i = 0; i <= numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
 
-  video.src = "../assets/videos/AllVideos/" + trackNumber + ".mp4";
+  video.src = Server + "assets/videos/AllVideos/" + trackNumber + ".mp4";
 
   currentTrack = video.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
   document.getElementById(currentTrack).style.backgroundColor = "rgba(65,65,65, 0.6)";
   document.getElementById(currentTrack).style.color = "#FFF";
-  fetch('../assets/csv/video.csv')
-  	.then((response) => {
-    		return response.text();
-  	})
-  	.then((text) => {
-    		trackArray = CSVToJSON(text,';');
-        title.innerHTML = trackArray[trackNumber]['Artiste'] + " : " + trackArray[trackNumber]['Titre'];
-        description.innerHTML = trackArray[trackNumber]['description'];
-  	});
 
   video.play();
 }
@@ -100,6 +109,16 @@ var isMobile = {
   }
 };
 
+fetch(Server + 'assets/csv/video.csv')
+  .then((response) => {
+    return response.text();
+  })
+  .then((text) => {
+    trackArray = CSVToJSON(text,',');
+    var obj = JSON.parse(JSON.stringify(trackArray));
+    numberOfLine = Object.keys(obj).length - 1;
+  });
+
 var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
 var oldTrack = urlParams.get('track');
@@ -118,13 +137,3 @@ window.addEventListener("load", function(event) {
     }
   //}
 });
-
-fetch('../assets/csv/video.csv')
-  .then((response) => {
-      return response.text();
-  })
-  .then((text) => {
-      trackArray = CSVToJSON(text,';');
-      var obj = JSON.parse(JSON.stringify(trackArray))
-      numberOfLine = Object.keys(obj).length - 1;
-  });

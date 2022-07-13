@@ -1,6 +1,12 @@
 <div id="aWrap">
 
-  <div id="song_title_audio">
+  <div id="song_title_audio" class="song_title" style="border: none">
+    <img  class='cover' id='coverVEnBas' src='' alt='cover'>
+    <div class='listMusic'>
+      <h3  class='Titre' id='TitreEnBas'>Titre :&nbsp;</h3>
+      <p  class='Auteur' id='AuteurEnBas'>Artiste : </p>
+      <p  class='Album' id='AlbumEnBas'>Album : </p>
+    </div>
   </div>
 
   <!-- (A) PREVIOUS BUTTON -->
