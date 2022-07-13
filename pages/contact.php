@@ -39,6 +39,14 @@ require_once ( 'formulaire.php' );
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="../assets/js/switchThemePages.js" crossorigin="paulw"></script>
+  <script>
+    if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
+      Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
+    } else {
+      Server = "https://negritube.fr/";
+    }
+    window.history.replaceState('', '', Server + 'contact.html');
+  </script>
 
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
@@ -80,10 +88,10 @@ require_once ( 'formulaire.php' );
   <div class="my_page">
     <div class="big-title">
       <div id="item">
-        <a href="../index.php"><img class="logo" src="../assets/img/logo-negritube.png" alt="negritube"></a>
+        <a href="."><img class="logo" src="assets/img/logo-negritube.png" alt="negritube"></a>
       </div>
       <div id="item">
-        <a href="../index.php" style="text-decoration: none; ">
+        <a href="." style="text-decoration: none; ">
           <h1 class="title_site">
             Negritube.fr
           </h1>
@@ -132,7 +140,7 @@ require_once ( 'formulaire.php' );
         <div class="captcha">
           <label style="<?php echo $captchaLabelColor; ?>">Entrer le texte dans l'image  <?php echo $captchaTextAdded; ?></label>
           <input name="captcha captchaInput" type="text" class="form-control" placeholder="Entrez le Captcha" style="<?php echo $captchaManquant; ?>">
-          <img src="./captcha.php" style="vertical-align: middle;"/>
+          <img src="./pages/captcha.php" style="vertical-align: middle;"/>
           <label style="<?php echo $messageCaptchaColor; ?>" >
             <?php
             if (isset($_POST["captcha"])) {
