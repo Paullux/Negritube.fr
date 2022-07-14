@@ -9,10 +9,17 @@ var isPlaying = false;
 var pausedOnDemand = false;
 var numberOfLine = 1;
 
-var coverVEnBas = document.getElementById('coverVEnBas');
+var listeMusique = document.getElementById('listeMusique');
 var TitreEnBas = document.getElementById('TitreEnBas');
 var AuteurEnBas = document.getElementById('AuteurEnBas');
 var AlbumEnBas = document.getElementById('AlbumEnBas');
+
+var coverVEnHaut = document.getElementById('coverVEnHaut');
+var TitreEnHaut = document.getElementById('TitreEnHaut');
+var AuteurEnHaut = document.getElementById('AuteurEnHaut');
+var AlbumEnHaut = document.getElementById('AlbumEnHaut');
+
+
 
 var Server = "";
 
@@ -58,9 +65,17 @@ function launchNewMusic(trackNumber) {
     })
     .then((text) => {
       trackArray = CSVToJSON(text,',');
-      TitreEnBas.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber]['Titre'];
-      AuteurEnBas.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber]['Artiste'];
-      AlbumEnBas.innerHTML = "Album :&nbsp;" + trackArray[trackNumber]['Album'];
+      if (!isMobile.any()) {
+        TitreEnBas.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber]['Titre'];
+        AuteurEnBas.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber]['Artiste'];
+        AlbumEnBas.innerHTML = "Album :&nbsp;" + trackArray[trackNumber]['Album'];
+      } else {
+        TitreEnHaut.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber - 1]['Titre'];
+        AuteurEnHaut.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber - 1]['Artiste'];
+        AlbumEnHaut.innerHTML = "Album :&nbsp;" + trackArray[trackNumber - 1]['Album'];
+        listeMusique.style.backgroundColor = "rgba(65,65,65, 0.6)";
+        listeMusique.style.color = "#FFF";
+      }
     });
 
     window.history.replaceState('', '', Server + 'audio-' + trackNumber + '.html');

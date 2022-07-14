@@ -116,6 +116,10 @@ nav p {
   background-size:cover;
 }
 
+.mobile {
+  display: none !important;
+}
+
 @media screen and (max-width: 2000px)
 {
   .title_site {
@@ -139,10 +143,12 @@ nav p {
 }
 @media screen and (max-width: 1280px) and (orientation: portrait)
 {
+  
   html,
   body {
     overflow: visible;
   }
+
   .my_page {
     display: flex;
     flex-direction: column;
@@ -163,13 +169,16 @@ nav p {
   }
   .infoMusic {
     margin-top: 50px;
-    height: 40vh !important;
+    height: 54vh !important;
     overflow: hidden !important;
   }
   .Music {
     margin-top: 50px;
-    height: 40vh !important;
+    height: 54vh !important;
     overflow: hidden !important;
+  }
+  .mobile {
+    display: block !important;
   }
   #title {
     margin-bottom: 0;
