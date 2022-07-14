@@ -31,6 +31,7 @@
   <link href="assets/css/switchTheme.css" rel="stylesheet" />
   <link href="assets/css/dark.css" rel="stylesheet" id="stylesheet" />
   <link href="assets/css/index.css" rel="stylesheet" />
+  <link href="assets/css/affiche.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -138,6 +139,9 @@
           <div class="left"></div>
           <div class="right"></div>
         </a>
+        <div class="zoom">
+          <img class="affiche box" src="assets/img/affichePlublication.jpg" />
+        </div>
         <a class="albumCover box" href="audio-1.html" onmouseover="launchWait(1);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
             Les Albums
