@@ -221,7 +221,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
           echo "<button class='song_title button_song' id='" . $csv[$i][0] . "' onclick='launchNewMusic(" . $csv[$i][0] . ");' type='button'>
           <img class='cover' src='" . $csv[$i][4] . "' alt='cover'>
           <div class='listMusic'>
-            <h3 class='Titre'>Titre :&nbsp;<span id='p" . $csv[$i][0] . "'>" . $csv[$i][1] . "</h3>
+            <p class='Titre'>Titre :&nbsp;<span id='p" . $csv[$i][0] . "'>" . $csv[$i][1] . "</p>
             <p class='Auteur'>Artiste : " . $csv[$i][2] . "</p>
             <p class='Album'>Album : " . $csv[$i][3] . "</p>
           </div>
