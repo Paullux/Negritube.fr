@@ -139,8 +139,8 @@
           <div class="left"></div>
           <div class="right"></div>
         </a>
-        <div class="zoom">
-          <img class="affiche box" src="assets/img/affichePlublication.jpg" />
+        <div class="zoom box">
+          <img class="affiche" src="assets/img/affichePlublication.jpg" />
         </div>
         <a class="albumCover box" href="audio-1.html" onmouseover="launchWait(1);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
