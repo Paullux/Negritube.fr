@@ -1,0 +1,20 @@
+.zoom img {
+    height: 20vh;
+    width: auto;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    transition: all 3s ease;
+    
+}
+  
+.zoom img:hover {
+    height: 60vh;
+    width: auto;
+    margin-top:0;
+    margin-right:auto;
+    margin-bottom:0;
+    margin-left:auto;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
