@@ -303,6 +303,12 @@ nav p {
   #turnDeviceNotification {
     display: none;
   }
+  .listMusicMobile{
+    display: flex !important;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }  
 }
 
 .big-title {
@@ -735,11 +741,18 @@ nav p {
   text-align: center;
 }
 
+.listMusicMobile {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;  
+}
+
 .listMusic {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0;
+  margin: 0;  
 }
 
 .Titre {
