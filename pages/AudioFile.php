@@ -179,17 +179,19 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
     </div>
     <div class="presentation">
       <div class="Music" onclick="togglePlay()">
-        <div class='song_title listMusic' id="listeMusique">
+        <div class='song_title aMasquer'>Chansons issues des Albums</div>
+        <div class='song_title listMusicMobile' id="listeMusique" style="height: 50px;">
           <p class='Auteur' id='AuteurEnHaut'>Chansons issues des Albums</p>
           <h3 class='Titre' id='TitreEnHaut'></h3>
           <p class='Album' id='AlbumEnHaut'></p>
         </div>
-        <div class="song_title aMasquer">
-          Pour relancer la lecture d'une chanson cliquez sur la partie droite
-        </div>
         <div class="imageContainer">
           <img class="image" id="cover">
           <img class="image imgIsPlaying" id="enCoursDeLecture">
+        </div>
+        <br><br>
+        <div class="song_title aMasquer">
+          Pour relancer la lecture d'une chanson cliquez sur la partie droite
         </div>
       </div>
       <div class="song_title aMasquer descriptionPhilippe">

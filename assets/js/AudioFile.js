@@ -66,9 +66,9 @@ function launchNewMusic(trackNumber) {
     .then((text) => {
       trackArray = CSVToJSON(text,',');
       if (!isMobile.any()) {
-        TitreEnBas.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber]['Titre'];
-        AuteurEnBas.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber]['Artiste'];
-        AlbumEnBas.innerHTML = "Album :&nbsp;" + trackArray[trackNumber]['Album'];
+        TitreEnBas.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber - 1]['Titre'];
+        AuteurEnBas.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber - 1]['Artiste'];
+        AlbumEnBas.innerHTML = "Album :&nbsp;" + trackArray[trackNumber - 1]['Album'];
       } else {
         TitreEnHaut.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber - 1]['Titre'];
         AuteurEnHaut.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber - 1]['Artiste'];
