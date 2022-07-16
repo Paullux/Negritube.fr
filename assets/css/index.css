@@ -1,5 +1,28 @@
+#preload-01 { background-image: url('../img/miniature/WIB.png') no-repeat -9999px -9999px; }
+#preload-02 { background-image: url('../img/miniature/DLO.png') no-repeat -9999px -9999px; }
+#preload-03 { background-image: url('../img/miniature/Fòs é kouraj.png') no-repeat -9999px -9999px; }
+#preload-04 { background-image: url('../img/miniature/Piétònn la (Philippe BLAZE).png') no-repeat -9999px -9999px; }
+#preload-05 { background-image: url('../img/miniature/Sò a limanité.png') no-repeat -9999px -9999px; }
+#preload-06 { background-image: url('../img/miniature/Sonjé BINO (Philippe BLAZE).png') no-repeat -9999px -9999px; }
+#preload-07 { background-image: url('../img/miniature/LILY.png') no-repeat -9999px -9999px; }
+#preload-08 { background-image: url('../img/miniature/Petite_Marie.png') no-repeat -9999px -9999px; }
+#preload-09 { background-image: url('../img/miniature/Nou_mélé_Philippe_BLAZE.png') no-repeat -9999px -9999px; }
+#preload-10 { background-image: url('../img/miniature/Chanson_Hommage_aux_Gwo_Mòdan.png') no-repeat -9999px -9999px; }
+#preload-11 { background-image: url('../img/miniature/Philippe_BLAZE_piano_bar.png') no-repeat -9999px -9999px; }
+#preload-12 { background-image: url('../img/miniature/Sèl_si_on_gran_chimen.png') no-repeat -9999px -9999px; }
+#preload-13 { background-image: url('../img/miniature/Ekzòd.png') no-repeat -9999px -9999px; }
+#preload-14 { background-image: url('../img/miniature/Avé Maria Antillais.png') no-repeat -9999px -9999px; }
+#preload-15 { background-image: url('../img/miniature/Pénélope.png') no-repeat -9999px -9999px; }
+#preload-16 { background-image: url('../img/miniature/Konjé bonifié.png') no-repeat -9999px -9999px; }
+
+#preload-17 { background-image: url('../img/album cover/Mal_tèt.jpeg') no-repeat -9999px -9999px; }
+#preload-18 { background-image: url('../img/album cover/Konsyans.jpg') no-repeat -9999px -9999px; }
+#preload-19 { background-image: url('../img/album cover/Eritaj.jpg') no-repeat -9999px -9999px; }
+#preload-20 { background-image: url('../img/album cover/Misiyon.jpg') no-repeat -9999px -9999px; }
+
 .miniature {
-  animation: changeMiniature 30s infinite;
+  animation: changeMiniature linear 30s infinite;
+  animation-delay: -2s;
   height: 40vh !important;
   width: 68vh !important;
   text-decoration: none;
