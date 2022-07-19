@@ -171,20 +171,18 @@
       </div>
     </div>
     <div class="basDePageIndex">
-      <center>
-        <div class="visiteurs">
-          Nombre de visiteurs sur le site :
-        </div>
-        <a class="compteur" href="https://www.mon-compteur.fr">
-          <img src="https://www.mon-compteur.fr/html_c01genv2-235526-6" border="0" />
-        </a>
-      </center>
-      <footer class="footerIndex">
-        <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
-      </footer>
+      <div class="visiteurs">
+        Nombre de visiteurs sur le site :
+      </div>
+      <a class="compteur" href="https://www.mon-compteur.fr">
+        <img src="https://www.mon-compteur.fr/html_c01genv2-235526-6" border="0" />
+      </a>
     </div>
   </div>
 </body>
+<footer class="footerIndex">
+  <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
+</footer>
 <script src="assets/js/menu.js" crossorigin="paulw"></script>
 <script src="assets/js/landscapeWarning.js" crossorigin="paulw"></script>
 </html>

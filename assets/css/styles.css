@@ -16,7 +16,6 @@ html,
 body {
   scroll-behavior: smooth;
   height: 100vh;
-  overflow: hidden;
 }
 
 button:before {
@@ -291,6 +290,9 @@ nav p {
   .compteur img {
     width: 350px !important;
     height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .monAudioPlayer {
     display: none;
@@ -364,6 +366,10 @@ nav p {
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.presentationIndex {
+  height: auto !important;
 }
 
 .link_song {
@@ -858,8 +864,13 @@ nav p {
 }
 .basDePageIndex {
   padding-top: 4%;
-  height: 14vh;
-  bottom: 0;
+  height: auto;
+  margin-top: 20px;
+}
+.compteur img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
