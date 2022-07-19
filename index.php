@@ -162,7 +162,7 @@
 
           $csv = 'assets/csv/video.csv';
           $fp = file($csv);
-          $videonumber = count($fp) - 1;
+          $videonumber = count($fp) - 2;
 
           for ($i = 1; $i <= $videonumber; $i++) {
             echo '<a style="display: none" href="video-' . $i . '.html">a</a>';
