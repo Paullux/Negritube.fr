@@ -188,7 +188,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
           <source src="../assets/videos/AllVideos/0.mp4" type="video/webm" />
         </video>
         <h3 class="song_title" id="title">
-          Choisissait un clip ci-dessous
+          Choisissez un clip ci-dessous
         </h3>
         <p class="song_title" id="description">
           Découvrez le gwoka évolutif et d'autre musique.
