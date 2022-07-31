@@ -127,6 +127,7 @@
           <li><a href="video-0.html">Les Clips</a></li>
           <li><a href="audio-1.html">Les Albums</a></li>
           <li><a href="contact.html">Negritube.fr - Prise de Contact</a></li>
+          <li><a href="about.html">Negritube.fr - A propos de Philippe BLAZE</a></li>
         </div>
       </nav>
       <div class="link_song miniatureandcover">

@@ -9,7 +9,9 @@ body {
 
 @keyframes changeBg{
   0%,100%  {background-image: url('../img/ConcertPhilippe1.png');}
-  50% {background-image: url('../img/ConcertPhilippe2.png');}
+  25% {background-image: url('../img/ConcertPhilippe2.png');}
+  50% {background-image: url('../img/photo_concert_2.jpg');}
+  75% {background-image: url('../img/photo_concert.jpg');}
 }
 
 .accueilH3 img {

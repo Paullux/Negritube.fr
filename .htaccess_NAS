@@ -51,6 +51,9 @@ RewriteRule ^video-(\d+)\.html$ https://paulluxwaffle.synology.me/Multi-Platefor
 # Contact
 RewriteRule ^contact\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/contact\.php [L]
 
+# About
+RewriteRule ^about\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/about\.php [L]
+
 # Assets
 #RewriteRule ^assets(.*)$ https://paulluxwaffle.synology.me/Multi-Plateform/assets/$1 [L]
 
