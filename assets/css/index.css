@@ -110,3 +110,34 @@
     flex-direction: column;
   }
 }
+.about {
+  width: 40vw !important;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  font-family: "Gill Sans", sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15pt;
+  color: var(--my-color);
+  text-align: left;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.space {
+  display: block;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 60vw !important;
+  background-color: var(--color-secondary);
+  color: var(--font-color);
+  border-radius: 20px;
+}
