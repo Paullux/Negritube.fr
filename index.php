@@ -152,7 +152,7 @@
           <div class="left"></div>
           <div class="right"></div>
         </a>
-        <div class="box song_title aMasquer descriptionPhilippe" style="height:480px;">
+        <div class="box song_title aMasquer descriptionPhilippe textesinfos" style="height:480px;">
           <div style="text-align: left">
             GWO KA – UNE EXCELLENTE MUSIQUE DE GUADELOUPE
             <br>
