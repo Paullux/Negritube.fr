@@ -142,7 +142,7 @@ nav p {
 }
 @media screen and (max-width: 1280px) and (orientation: portrait)
 {
-  
+
   html,
   body {
     overflow: visible;
@@ -310,7 +310,7 @@ nav p {
     flex-direction: column;
     padding: 0;
     margin: 0;
-  }  
+  }
 }
 
 .big-title {
@@ -386,7 +386,7 @@ nav p {
 }
 
 .link_song > .flex-row-item {
-  flex: 1 1 25%; 
+  flex: 1 1 25%;
   flex-basis: 25%;
   flex-grow: 0;
   height: 100%;
@@ -396,6 +396,10 @@ nav p {
 
 .link_song img {
   width: 100%;
+}
+
+.textesinfos {
+  padding:15px 15px 15px 15px;
 }
 
 @media screen and (min-width: 1280px)
@@ -751,14 +755,14 @@ nav p {
   display: none;
   flex-direction: column;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
 .listMusic {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
 .Titre {
