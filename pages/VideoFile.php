@@ -183,7 +183,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
     </div>
     <div class="presentationClip">
       <div class="infoMusic">
-        <video id="video" controls playsinline autoplay controlsList="nodownload">
+        <video id="video" controls playsinline autoplay controlsList="nodownload" poster="<?php echo $ogLink ?>" >
           <source src="../assets/videos/AllVideos/0.mp4" type="video/mp4" />
           <source src="../assets/videos/AllVideos/0.mp4" type="video/webm" />
         </video>

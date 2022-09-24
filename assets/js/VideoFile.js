@@ -27,7 +27,7 @@ function launchNewClip(trackNumber) {
       title.innerHTML = trackArray[trackNumber]['Artiste'] + " : " + trackArray[trackNumber]['Titre'];
       description.innerHTML = trackArray[trackNumber]['description'];
     });
-  
+
   window.history.replaceState('', '', Server + 'video-' + trackNumber + '.html');
 
   for (let i = 0; i <= numberOfLine; i++) {
