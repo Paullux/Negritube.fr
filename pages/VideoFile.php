@@ -155,7 +155,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <!-- End Matomo Code -->
 </head>
 <body> <!-- onload="document.getElementById(0).style.backgroundColor = 'rgba(65,65,65, 0.6)'; document.getElementById(0).style.color = '#FFF';">-->
-  <div id="turnDeviceNotification"></div>  
+  <div id="turnDeviceNotification"></div>
   <div class="my_page">
     <div class="big-title">
       <div id="item">
@@ -197,8 +197,9 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
       <div class="choixTitre">
         <?php
         for ($i = 1; $i <= $videonumber; $i++) {
+          $j = $i -1;
           echo "<button class='song_title button_songV button_song' id='" . $csv[$i][0] . "' onclick='launchNewClip(" . $csv[$i][0] . ");' type='button'>
-          <img class='coverV' src='" . $csv[$i][4] . "' alt='miniature'>
+          <img class='coverV' src='../assets/img/miniature/" . $j . ".png' alt='miniature'>
           <div class='listMusic'>
             <p class='Titre'>Titre :&nbsp;<span id='p" . $csv[$i][0] . "'>" . $csv[$i][1] . "</p>
             <p class='Auteur'>Artiste : " . $csv[$i][2] . "</p>
