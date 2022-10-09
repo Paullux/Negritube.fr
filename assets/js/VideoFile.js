@@ -30,7 +30,7 @@ function launchNewClip(trackNumber) {
 
   window.history.replaceState('', '', Server + 'video-' + trackNumber + '.html');
 
-  for (let i = 0; i <= numberOfLine; i++) {
+  for (let i = 0; i < numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
