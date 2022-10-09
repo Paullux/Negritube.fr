@@ -83,27 +83,27 @@ function launchNewMusic(trackNumber) {
 
   song.style.backgroundColor = "#484848";
 
-  for (let i = 1; i <= numberOfLine; i++) {
+  for (let i = 1; i < numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
 
-  if (trackNumber == 1) {
+  if (trackNumber >= 1 && trackNumber <= 3) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Mal_tèt.jpeg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Mal_tèt.jpeg';
   }
-  if (trackNumber > 1 && trackNumber <= 8) {
+  if (trackNumber > 3 && trackNumber <= 10) {
       document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Konsyans.jpg')";
       coverVEnBas.src = Server + 'assets/img/album%20cover/Konsyans.jpg';
   }
-  if (trackNumber > 8 && trackNumber <= 21) {
+  if (trackNumber > 10 && trackNumber <= 23) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Eritaj.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Eritaj.jpg';
 
     clearInterval(k);
     k = setInterval("pauseAud()", 20000);
   }
-  if (trackNumber > 21 && trackNumber <= numberOfLine) {
+  if (trackNumber > 23 && trackNumber <= numberOfLine) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Misiyon.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Misiyon.jpg';
   }
@@ -113,6 +113,8 @@ function launchNewMusic(trackNumber) {
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
   document.getElementById(currentTrack).style.backgroundColor = "rgba(65,65,65, 0.6)";
   document.getElementById(currentTrack).style.color = "#FFF";
+
+  console.log('track number : ' + trackNumber);
 
   audio.play();
 
