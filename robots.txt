@@ -1,7 +1,13 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
+User-agent: Googlebot
+
+Disallow: /nogooglebot/
+Disallow: /pages/AudioFile.php?track=1
+
+
+User-agent: *
+
+Allow: /
+
+
+
 Sitemap: https://www.negritube.fr/sitemap.xml
