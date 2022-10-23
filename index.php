@@ -37,6 +37,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283"
+     crossorigin="anonymous"></script>
   <script>
     if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
       Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
