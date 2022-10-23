@@ -103,9 +103,14 @@ function launchNewMusic(trackNumber) {
     clearInterval(k);
     k = setInterval("pauseAud()", 20000);
   }
-  if (trackNumber > 23 && trackNumber <= numberOfLine) {
+  if (trackNumber > 23 && trackNumber <= 35) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Misiyon.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Misiyon.jpg';
+  }
+
+  if (trackNumber > 35 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Ka Fé Tan.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Ka Fé Tan.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
@@ -223,14 +228,14 @@ window.addEventListener("load", function(event) {
 function togglePlay() {
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
-  } else {  
+  } else {
     pausedOnDemand = !pausedOnDemand;
     if (audio.currentTime > 0 && !audio.paused) {
       pauseAud2();
     } else {
       currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
       launchNewMusic(currentTrack);
-    }  
+    }
   }
 }
 
