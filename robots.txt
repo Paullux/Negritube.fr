@@ -1,8 +1,6 @@
 User-agent: Googlebot
 
 Disallow: /nogooglebot/
-Disallow: /pages/AudioFile.php?track=1
-
 
 User-agent: *
 
