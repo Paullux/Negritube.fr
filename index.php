@@ -90,7 +90,7 @@
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
-<body>
+<body id="bodyIndex">
   <div id="turnDeviceNotification"></div>
   <div class="index" style="align-items:center;">
     <div class="big-title">

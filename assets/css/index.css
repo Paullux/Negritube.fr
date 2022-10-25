@@ -44,6 +44,10 @@
   background-size: cover;
 }
 
+#bodyIndex {
+  height: 150vh;
+}
+
 @keyframes changeMiniature {
   0%,100%  {background-image: url('../img/miniature/0.png');}
   5.88%    {background-image: url('../img/miniature/1.png');}
