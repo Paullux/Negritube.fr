@@ -20,6 +20,7 @@
 #preload-19 { background-image: url('../img/album cover/Konsyans.jpg') no-repeat -9999px -9999px; }
 #preload-20 { background-image: url('../img/album cover/Eritaj.jpg') no-repeat -9999px -9999px; }
 #preload-21 { background-image: url('../img/album cover/Misiyon.jpg') no-repeat -9999px -9999px; }
+#preload-21 { background-image: url('../img/album cover/Ka Fé Tan.jpg') no-repeat -9999px -9999px; }
 
 .miniature {
   animation: changeMiniature linear 30s infinite;
@@ -82,9 +83,10 @@
 
 @keyframes changeAlbumCover {
   0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpeg');}
-  25%  {background-image: url('../img/album cover/Konsyans.jpg');}
-  50%  {background-image: url('../img/album cover/Eritaj.jpg');}
-  75%  {background-image: url('../img/album cover/Misiyon.jpg');}
+  20%  {background-image: url('../img/album cover/Konsyans.jpg');}
+  40%  {background-image: url('../img/album cover/Eritaj.jpg');}
+  60%  {background-image: url('../img/album cover/Misiyon.jpg');}
+  80%  {background-image: url('../img/album cover/Ka Fé Tan');}
 }
 
 .miniatureandcover {
