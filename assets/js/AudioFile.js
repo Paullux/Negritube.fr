@@ -108,9 +108,14 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/Misiyon.jpg';
   }
 
-  if (trackNumber > 35 && trackNumber <= numberOfLine) {
+  if (trackNumber > 35 && trackNumber <= 48) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Ka Fé Tan.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Ka Fé Tan.jpg';
+  }
+
+  if (trackNumber > 48 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Kembé Red.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Kembé Red.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
