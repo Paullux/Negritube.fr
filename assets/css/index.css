@@ -84,7 +84,7 @@
 }
 
 @keyframes changeAlbumCover {
-  0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpeg');}
+  0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpg');}
   14.29%  {background-image: url('../img/album cover/Konsyans.jpg');}
   28.57%  {background-image: url('../img/album cover/Eritaj.jpg');}
   42.86%  {background-image: url('../img/album cover/Misiyon.jpg');}
