@@ -89,7 +89,7 @@ function launchNewMusic(trackNumber) {
   }
 
   if (trackNumber >= 1 && trackNumber <= 3) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Mal_tèt.jpeg')";
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Mal_tèt.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Mal_tèt.jpeg';
   }
   if (trackNumber > 3 && trackNumber <= 10) {
@@ -119,8 +119,8 @@ function launchNewMusic(trackNumber) {
   }
 
   if (trackNumber > 49 && trackNumber <= numberOfLine) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/A la repriz')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/A la repriz';
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/A la repriz.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/A la repriz.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";

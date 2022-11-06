@@ -16,13 +16,13 @@
 #preload-16 { background-image: url('../img/miniature/15.png') no-repeat -9999px -9999px; }
 #preload-17 { background-image: url('../img/miniature/16.png') no-repeat -9999px -9999px; }
 
-#preload-18 { background-image: url('../img/album cover/Mal_tèt.jpeg') no-repeat -9999px -9999px; }
+#preload-18 { background-image: url('../img/album cover/Mal_tèt.jpg') no-repeat -9999px -9999px; }
 #preload-19 { background-image: url('../img/album cover/Konsyans.jpg') no-repeat -9999px -9999px; }
 #preload-20 { background-image: url('../img/album cover/Eritaj.jpg') no-repeat -9999px -9999px; }
 #preload-21 { background-image: url('../img/album cover/Misiyon.jpg') no-repeat -9999px -9999px; }
 #preload-22 { background-image: url('../img/album cover/Ka Fé Tan.jpg') no-repeat -9999px -9999px; }
 #preload-23 { background-image: url('../img/album cover/Kembé Red.jpg') no-repeat -9999px -9999px; }
-#preload-24 { background-image: url('../img/album cover/A la repriz.png') no-repeat -9999px -9999px; }
+#preload-24 { background-image: url('../img/album cover/A la repriz.jpg') no-repeat -9999px -9999px; }
 
 .miniature {
   animation: changeMiniature linear 30s infinite;
