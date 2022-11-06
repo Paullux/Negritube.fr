@@ -22,6 +22,7 @@
 #preload-21 { background-image: url('../img/album cover/Misiyon.jpg') no-repeat -9999px -9999px; }
 #preload-22 { background-image: url('../img/album cover/Ka Fé Tan.jpg') no-repeat -9999px -9999px; }
 #preload-23 { background-image: url('../img/album cover/Kembé Red.jpg') no-repeat -9999px -9999px; }
+#preload-24 { background-image: url('../img/album cover/A la repriz.png') no-repeat -9999px -9999px; }
 
 .miniature {
   animation: changeMiniature linear 30s infinite;
@@ -84,11 +85,12 @@
 
 @keyframes changeAlbumCover {
   0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpeg');}
-  16.7%  {background-image: url('../img/album cover/Konsyans.jpg');}
-  33.3%  {background-image: url('../img/album cover/Eritaj.jpg');}
-  50%  {background-image: url('../img/album cover/Misiyon.jpg');}
-  66.7%  {background-image: url('../img/album cover/Ka Fé Tan.jpg');}
-  83.3%  {background-image: url('../img/album cover/Kembé Red.jpg');}
+  14.29%  {background-image: url('../img/album cover/Konsyans.jpg');}
+  28.57%  {background-image: url('../img/album cover/Eritaj.jpg');}
+  42.86%  {background-image: url('../img/album cover/Misiyon.jpg');}
+  57.14%  {background-image: url('../img/album cover/Ka Fé Tan.jpg');}
+  71.43%  {background-image: url('../img/album cover/Kembé Red.jpg');}
+  85.71%  {background-image: url('../img/album cover/A la repriz.png');}
 }
 
 .miniatureandcover {

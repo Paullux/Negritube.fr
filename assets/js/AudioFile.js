@@ -113,9 +113,14 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/Ka Fé Tan.jpg';
   }
 
-  if (trackNumber > 48 && trackNumber <= numberOfLine) {
+  if (trackNumber > 48 && trackNumber <= 49) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Kembé Red.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Kembé Red.jpg';
+  }
+
+  if (trackNumber > 49 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/A la repriz')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/A la repriz';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
