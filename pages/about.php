@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
-  <title>A propos de Philippe BLAZE</title>
+  <title>Parcours de Philippe BLAZE</title>
   <meta name="description" content="Pour (re-)découvrir le gwoka, musique de Guadeloupe.">
-  <meta name="keywords" content="créole" />
+  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://negritube.fr/about.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="A propos de Philippe BLAZE">
+  <meta property="og:title" content="Parcours de Philippe BLAZE">
   <meta property="og:description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">
   <meta property="og:image" content="https://negritube.fr/assets/img/Carte-og.png">
   <meta property="og:locale" content="fr_FR" />
@@ -22,10 +22,10 @@
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:domain" content="negritube.fr">
   <meta property="twitter:url" content="https://negritube.fr/about.html">
-  <meta name="twitter:title" content="A propos de Philippe BLAZE">
+  <meta name="twitter:title" content="Parcours de Philippe BLAZE">
   <meta name="twitter:description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">
   <meta name="twitter:image" content="https://negritube.fr/assets/img/Carte-Twitter.png">
-  <meta name="twitter:image:alt" content="Negritube.fr" />
+  <meta name="twitter:image:alt" content="Negritube" />
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
@@ -101,7 +101,7 @@
         <div id="item">
           <a href="." style="text-decoration: none; ">
             <h1 class="title_site">
-              Negritube.fr
+              Negritube
             </h1>
           </a>
           <h2 class="subtitle_site">
@@ -125,11 +125,11 @@
             Menu
           </p>
         </div>
-        <div id="Menu_Cache">
+        <div id="Menu_Cache" style="margin-top: 2%;">
           <li><a href="video-0.html">Les Clips</a></li>
           <li><a href="audio-1.html">Les Albums</a></li>
-          <li><a href="contact.html">Negritube.fr - Prise de Contact</a></li>
-          <li><a href="about.html">Negritube.fr - A propos de Philippe BLAZE</a></li>
+          <li><a href="contact.html">Prise de Contact</a></li>
+          <li><a href="about.html">Parcours de Philippe BLAZE</a></li>
         </div>
       </nav>
       <div class="space">
