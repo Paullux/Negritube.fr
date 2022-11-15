@@ -71,7 +71,7 @@ if (isset($_GET['track']) && $_GET['track'] <= $audionumber){
   $track = 1;
 }
 
-$ogTitle = "Negritube.fr - " . $csv[$track][2] . " : " . $csv[$track][1];
+$ogTitle = $csv[$track][2] . ", " . $csv[$track][1] . " - Negritube";
 $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
 
 ?>
@@ -81,8 +81,8 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title><?php echo $ogTitle ?></title>
-  <meta name="description" content="Musique Issue des Albums">
-  <meta name="keywords" content="créole" />
+  <meta name="description" content=<?php echo '"Album ' . $csv[$track][3] . ' - de l\'artiste ' . $csv[$track][2] . ' - Chanson ' . $csv[$track][1] . '"' ?>>
+  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
 
@@ -90,18 +90,18 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <meta property="og:url" content="<?php echo "https://negritube.fr/audio-" . $track  . ".html"?>">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?php echo $ogTitle ?>">
-  <meta property="og:description" content="Musique Issues des Albums">
+  <meta property="og:description" content=<?php echo '"Album ' . $csv[$track][3] . ' - de l\'artiste ' . $csv[$track][2] . ' - Chanson ' . $csv[$track][1] . '"' ?>>
   <meta property="og:image" content="<?php echo $ogLink ?>">
   <meta property="og:locale" content="fr_FR" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
-  <meta property="twitter:domain" content="negritube.fr">
+  <meta property="twitter:domain" content="negritube">
   <meta property="twitter:url" content="<?php echo "https://negritube.fr/audio-" . $track  . ".html"?>">
   <meta name="twitter:title" content="<?php echo $ogTitle ?>">
-  <meta name="twitter:description" content="Musique Issue des Albums">
+  <meta name="twitter:description" content=<?php echo '"Album ' . $csv[$track][3] . ' - de l\'artiste ' . $csv[$track][2] . ' - Chanson ' . $csv[$track][1] . '"' ?>>
   <meta name="twitter:image" content="<?php echo $ogLink ?>">
-  <meta name="twitter:image:alt" content="Negritube.fr" />
+  <meta name="twitter:image:alt" content="Negritube" />
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link href="../assets/css/styles.css" rel="stylesheet" />
@@ -162,7 +162,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
       <div id="item">
         <a href="." style="text-decoration: none; ">
           <h1 class="title_site">
-            Negritube.fr
+            Negritube
           </h1>
         </a>
         <h2 class="subtitle_site">
