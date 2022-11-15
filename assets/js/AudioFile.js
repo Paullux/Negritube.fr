@@ -118,9 +118,19 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/Kembé Red.jpg';
   }
 
-  if (trackNumber > 49 && trackNumber <= numberOfLine) {
+  if (trackNumber > 49 && trackNumber <= 57) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/A la repriz.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/A la repriz.jpg';
+  }
+
+  if (trackNumber > 57 && trackNumber <= 67) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Ti Kaz An Bwa La.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Ti Kaz An Bwa La.jpg';
+  }
+
+  if (trackNumber > 67 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Lokans.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Lokans.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
