@@ -206,7 +206,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
         <br>
         ______
         <br><br>
-        L'album Éritaj est ausi disponible dans le magasin :<br>
+        L'album Éritaj est aussi disponible dans le magasin :<br>
         Blazing Music<br>
         138-140 rue des Rosiers<br>
         (Marché Dauphine Stand 228)<br>
