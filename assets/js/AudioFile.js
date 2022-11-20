@@ -90,7 +90,7 @@ function launchNewMusic(trackNumber) {
 
   if (trackNumber >= 1 && trackNumber <= 3) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Mal_tèt.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Mal_tèt.jpeg';
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Mal_tèt.jpg';
   }
   if (trackNumber > 3 && trackNumber <= 10) {
       document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Konsyans.jpg')";
