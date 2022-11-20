@@ -26,6 +26,7 @@ function launchNewClip(trackNumber) {
       trackArray = CSVToJSON(text,';');
       title.innerHTML = trackArray[trackNumber]['Artiste'] + " : " + trackArray[trackNumber]['Titre'];
       description.innerHTML = trackArray[trackNumber]['description'];
+      document.title = trackArray[trackNumber]['Artiste'] + ", " + trackArray[trackNumber]['Titre'] + " - Negritube";
     });
 
   window.history.replaceState('', '', Server + 'video-' + trackNumber + '.html');

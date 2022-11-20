@@ -76,6 +76,7 @@ function launchNewMusic(trackNumber) {
         listeMusique.style.backgroundColor = "rgba(65,65,65, 0.6)";
         listeMusique.style.color = "#FFF";
       }
+      document.title = trackArray[trackNumber - 1]['Artiste'] + ", " + trackArray[trackNumber - 1]['Titre'] + " - Negritube";
     });
 
     window.history.replaceState('', '', Server + 'audio-' + trackNumber + '.html');
