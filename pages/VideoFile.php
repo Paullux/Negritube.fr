@@ -86,7 +86,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <!-- HTML Meta Tags -->
   <title><?php echo $ogTitle ?></title>
   <meta name="description" content=<?php echo '"Clip - ' . $csv[$track][2] . ', ' . $csv[$track][1] . '"'?>>
-  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe" />
+  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe, Kréyol, Mizik, Mizik Kréyol, Gwoka, Gwoka Modenn, Gita, Gwadloup" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
 
