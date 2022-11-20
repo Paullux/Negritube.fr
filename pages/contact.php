@@ -9,7 +9,7 @@ require_once ( 'formulaire.php' );
   <!-- HTML Meta Tags -->
   <title>Contact</title>
   <meta name="description" content="Pour une prise de contact">
-  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe" />
+  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe, Kréyol, Mizik, Mizik Kréyol, Gwoka, Gwoka Modenn, Gita, Gwadloup" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
 

@@ -5,7 +5,7 @@
   <!-- HTML Meta Tags -->
   <title>Gwoka de Guadeloupe - Negritube</title>
   <meta name="description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">
-  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe" />
+  <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe, Kréyol, Mizik, Mizik Kréyol, Gwoka, Gwoka Modenn, Gita, Gwadloup" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
 
