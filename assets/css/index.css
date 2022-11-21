@@ -25,6 +25,7 @@
 #preload-24 { background-image: url('../img/album cover/A la repriz.jpg') no-repeat -9999px -9999px; }
 #preload-25 { background-image: url('../img/album cover/Ti Kaz An Bwa La.jpg') no-repeat -9999px -9999px; }
 #preload-26 { background-image: url('../img/album cover/Lokans.jpg') no-repeat -9999px -9999px; }
+#preload-27 { background-image: url('../img/album cover/Liméro twa.jpg') no-repeat -9999px -9999px; }
 
 .miniature {
   animation: changeMiniature linear 30s infinite;
@@ -87,14 +88,15 @@
 
 @keyframes changeAlbumCover {
   0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpg');}
-  11%  {background-image: url('../img/album cover/Konsyans.jpg');}
-  22%  {background-image: url('../img/album cover/Eritaj.jpg');}
-  33%  {background-image: url('../img/album cover/Misiyon.jpg');}
-  44%  {background-image: url('../img/album cover/Ka Fé Tan.jpg');}
-  55%  {background-image: url('../img/album cover/Kembé Red.jpg');}
-  66%  {background-image: url('../img/album cover/A la repriz.jpg');}
-  77%  {background-image: url('../img/album cover/Ti Kaz An Bwa La.jpg');}
-  88%  {background-image: url('../img/album cover/Lokans.jpg');}
+  10%  {background-image: url('../img/album cover/Konsyans.jpg');}
+  20%  {background-image: url('../img/album cover/Eritaj.jpg');}
+  30%  {background-image: url('../img/album cover/Misiyon.jpg');}
+  40%  {background-image: url('../img/album cover/Ka Fé Tan.jpg');}
+  50%  {background-image: url('../img/album cover/Kembé Red.jpg');}
+  60%  {background-image: url('../img/album cover/A la repriz.jpg');}
+  70%  {background-image: url('../img/album cover/Ti Kaz An Bwa La.jpg');}
+  80%  {background-image: url('../img/album cover/Lokans.jpg');}
+  90%  {background-image: url('../img/album cover/Liméro twa.jpg');}
 }
 
 .miniatureandcover {
