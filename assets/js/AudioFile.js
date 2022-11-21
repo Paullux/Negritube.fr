@@ -129,9 +129,14 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/Ti Kaz An Bwa La.jpg';
   }
 
-  if (trackNumber > 67 && trackNumber <= numberOfLine) {
+  if (trackNumber > 67 && trackNumber <= 83) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Lokans.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Lokans.jpg';
+  }
+
+  if (trackNumber > 83 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Liméro twa.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Liméro twa.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
