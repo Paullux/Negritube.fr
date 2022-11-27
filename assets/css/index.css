@@ -26,6 +26,9 @@
 #preload-25 { background-image: url('../img/album cover/Ti Kaz An Bwa La.jpg') no-repeat -9999px -9999px; }
 #preload-26 { background-image: url('../img/album cover/Lokans.jpg') no-repeat -9999px -9999px; }
 #preload-27 { background-image: url('../img/album cover/Liméro twa.jpg') no-repeat -9999px -9999px; }
+#preload-28 { background-image: url('../img/album cover/GWAKASONNE - Présumés Coupables - Cover.jpg') no-repeat -9999px -9999px; }
+#preload-29 { background-image: url('../img/album cover/José MANCLIERE Doubout pou Gadé.jpg') no-repeat -9999px -9999px; }
+#preload-30 { background-image: url('../img/album cover/Gérard Lockel - Cover.jpg') no-repeat -9999px -9999px; }
 
 .miniature {
   animation: changeMiniature linear 30s infinite;
@@ -75,7 +78,7 @@
 }
 
 .albumCover {
-  animation: changeAlbumCover 10s infinite;
+  animation: changeAlbumCover 15s infinite;
   height: 40vh !important;
   width: 40vh !important;
   text-decoration: none;
@@ -88,15 +91,18 @@
 
 @keyframes changeAlbumCover {
   0%,100%  {background-image: url('../img/album cover/Mal_tèt.jpg');}
-  10%  {background-image: url('../img/album cover/Konsyans.jpg');}
-  20%  {background-image: url('../img/album cover/Eritaj.jpg');}
-  30%  {background-image: url('../img/album cover/Misiyon.jpg');}
-  40%  {background-image: url('../img/album cover/Ka Fé Tan.jpg');}
-  50%  {background-image: url('../img/album cover/Kembé Red.jpg');}
-  60%  {background-image: url('../img/album cover/A la repriz.jpg');}
-  70%  {background-image: url('../img/album cover/Ti Kaz An Bwa La.jpg');}
-  80%  {background-image: url('../img/album cover/Lokans.jpg');}
-  90%  {background-image: url('../img/album cover/Liméro twa.jpg');}
+  7.69%  {background-image: url('../img/album cover/Konsyans.jpg');}
+  15.38%  {background-image: url('../img/album cover/Eritaj.jpg');}
+  23.07%  {background-image: url('../img/album cover/Misiyon.jpg');}
+  30.76%  {background-image: url('../img/album cover/Ka Fé Tan.jpg');}
+  38.45%  {background-image: url('../img/album cover/Kembé Red.jpg');}
+  46.14%  {background-image: url('../img/album cover/A la repriz.jpg');}
+  53.83%  {background-image: url('../img/album cover/Ti Kaz An Bwa La.jpg');}
+  61.52%  {background-image: url('../img/album cover/Lokans.jpg');}
+  69.21%  {background-image: url('../img/album cover/Liméro twa.jpg');}
+  76.90%  {background-image: url('../img/album cover/GWAKASONNE - Présumés Coupables - Cover.jpg');}
+  84.59%  {background-image: url('../img/album cover/José MANCLIERE Doubout pou Gadé.jpg');}
+  92.28%  {background-image: url('../img/album cover/Gérard Lockel - Cover.jpg');}
 }
 
 .miniatureandcover {
