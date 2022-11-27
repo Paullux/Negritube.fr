@@ -134,9 +134,24 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/Lokans.jpg';
   }
 
-  if (trackNumber > 83 && trackNumber <= numberOfLine) {
+  if (trackNumber > 83 && trackNumber <= 93) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Liméro twa.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Liméro twa.jpg';
+  }
+
+  if (trackNumber > 93 && trackNumber <= 99) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/GWAKASONNE - Présumés Coupables - Cover.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/GWAKASONNE - Présumés Coupables - Cover.jpg';
+  }
+
+  if (trackNumber > 99 && trackNumber <= 105) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/José MANCLIERE Doubout pou Gadé.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/José MANCLIERE Doubout pou Gadé.jpg';
+  }
+
+  if (trackNumber > 105 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Gérard Lockel - Cover.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Gérard Lockel - Cover.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
