@@ -149,9 +149,14 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/José MANCLIERE Doubout pou Gadé.jpg';
   }
 
-  if (trackNumber > 105 && trackNumber <= numberOfLine) {
+  if (trackNumber > 105 && trackNumber <= 106) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Gérard Lockel - Cover.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Gérard Lockel - Cover.jpg';
+  }
+
+  if (trackNumber > 106 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Robert Loyson.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Robert Loyson.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
