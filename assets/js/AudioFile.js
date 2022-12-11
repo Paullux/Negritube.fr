@@ -100,9 +100,6 @@ function launchNewMusic(trackNumber) {
   if (trackNumber > 10 && trackNumber <= 23) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Eritaj.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Eritaj.jpg';
-
-    clearInterval(k);
-    k = setInterval("pauseAud()", 20000);
   }
   if (trackNumber > 23 && trackNumber <= 35) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Misiyon.jpg')";
@@ -203,9 +200,6 @@ function playAud() {
   }
 
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
-
-  clearInterval(k);
-  k = setInterval("pauseAud()", 20000);
 }
 
 function nextSong() {
