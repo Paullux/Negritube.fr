@@ -151,9 +151,14 @@ function launchNewMusic(trackNumber) {
     coverVEnBas.src = Server + 'assets/img/album%20cover/Gérard Lockel - Cover.jpg';
   }
 
-  if (trackNumber > 106 && trackNumber <= numberOfLine) {
+  if (trackNumber > 106 && trackNumber <= 122) {
     document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Robert Loyson.jpg')";
     coverVEnBas.src = Server + 'assets/img/album%20cover/Robert Loyson.jpg';
+  }
+
+  if (trackNumber > 122 && trackNumber <= numberOfLine) {
+    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Les Maitres du Gwoka Vol.3.jpg')";
+    coverVEnBas.src = Server + 'assets/img/album%20cover/Les Maitres du Gwoka Vol.3.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
