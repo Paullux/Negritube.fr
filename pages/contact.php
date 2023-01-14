@@ -3,7 +3,7 @@ require_once ( 'validate.php' );
 require_once ( 'formulaire.php' );
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->

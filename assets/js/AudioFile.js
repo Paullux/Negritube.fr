@@ -69,6 +69,7 @@ function launchNewMusic(trackNumber) {
         TitreEnBas.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber - 1]['Titre'];
         AuteurEnBas.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber - 1]['Artiste'];
         AlbumEnBas.innerHTML = "Album :&nbsp;" + trackArray[trackNumber - 1]['Album'];
+        
       } else {
         TitreEnHaut.innerHTML = "Titre :&nbsp;" + trackArray[trackNumber - 1]['Titre'];
         AuteurEnHaut.innerHTML = "Artiste :&nbsp;" + trackArray[trackNumber - 1]['Artiste'];
@@ -76,6 +77,13 @@ function launchNewMusic(trackNumber) {
         listeMusique.style.backgroundColor = "rgba(65,65,65, 0.6)";
         listeMusique.style.color = "#FFF";
       }
+      console.log(trackArray[trackNumber - 1]);
+      console.log(trackArray[trackNumber - 1]['pochette']);
+      Pochette = trackArray[trackNumber - 1]['pochette'].split('..')[1];
+      document.getElementById('cover').style.backgroundImage = "url('" + Server + Pochette + "')";
+      coverVEnBas.src = Server + Pochette;
+      console.log(Pochette);
+
       document.title = trackArray[trackNumber - 1]['Artiste'] + ", " + trackArray[trackNumber - 1]['Titre'] + " - Negritube";
     });
 
@@ -87,78 +95,6 @@ function launchNewMusic(trackNumber) {
   for (let i = 1; i < numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
-  }
-
-  if (trackNumber >= 1 && trackNumber <= 3) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Mal_tèt.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Mal_tèt.jpg';
-  }
-  if (trackNumber > 3 && trackNumber <= 10) {
-      document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Konsyans.jpg')";
-      coverVEnBas.src = Server + 'assets/img/album%20cover/Konsyans.jpg';
-  }
-  if (trackNumber > 10 && trackNumber <= 23) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Eritaj.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Eritaj.jpg';
-  }
-  if (trackNumber > 23 && trackNumber <= 35) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Misiyon.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Misiyon.jpg';
-  }
-
-  if (trackNumber > 35 && trackNumber <= 48) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Ka Fé Tan.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Ka Fé Tan.jpg';
-  }
-
-  if (trackNumber > 48 && trackNumber <= 49) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Kembé Red.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Kembé Red.jpg';
-  }
-
-  if (trackNumber > 49 && trackNumber <= 57) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/A la repriz.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/A la repriz.jpg';
-  }
-
-  if (trackNumber > 57 && trackNumber <= 67) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Ti Kaz An Bwa La.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Ti Kaz An Bwa La.jpg';
-  }
-
-  if (trackNumber > 67 && trackNumber <= 83) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Lokans.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Lokans.jpg';
-  }
-
-  if (trackNumber > 83 && trackNumber <= 93) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Liméro twa.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Liméro twa.jpg';
-  }
-
-  if (trackNumber > 93 && trackNumber <= 99) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/GWAKASONNE - Présumés Coupables - Cover.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/GWAKASONNE - Présumés Coupables - Cover.jpg';
-  }
-
-  if (trackNumber > 99 && trackNumber <= 105) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/José MANCLIERE Doubout pou Gadé.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/José MANCLIERE Doubout pou Gadé.jpg';
-  }
-
-  if (trackNumber > 105 && trackNumber <= 106) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Gérard Lockel - Cover.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Gérard Lockel - Cover.jpg';
-  }
-
-  if (trackNumber > 106 && trackNumber <= 122) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Robert Loyson.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Robert Loyson.jpg';
-  }
-
-  if (trackNumber > 122 && trackNumber <= numberOfLine) {
-    document.getElementById('cover').style.backgroundImage = "url('" + Server + "assets/img/album%20cover/Les Maitres du Gwoka Vol.3.jpg')";
-    coverVEnBas.src = Server + 'assets/img/album%20cover/Les Maitres du Gwoka Vol.3.jpg';
   }
 
   audio.src = Server + "assets/audio/AllAlbums/" + trackNumber + ".mp3";
