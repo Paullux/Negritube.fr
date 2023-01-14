@@ -76,7 +76,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->

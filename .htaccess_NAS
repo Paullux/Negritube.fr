@@ -54,6 +54,9 @@ RewriteRule ^contact\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pa
 # About
 RewriteRule ^about\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/about\.php [L]
 
+# Mentions Légales
+RewriteRule ^mentions-legales\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/mentions-legales\.php [L]
+
 # Assets
 #RewriteRule ^assets(.*)$ https://paulluxwaffle.synology.me/Multi-Plateform/assets/$1 [L]
 

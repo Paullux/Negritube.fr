@@ -59,6 +59,9 @@ RewriteRule ^contact.html$ /pages/contact.php [L]
 # About
 RewriteRule ^about.html$ /pages/about.php [L]
 
+# Mentions Légales
+RewriteRule ^mentions-legales\.html$ /pages/mentions-legales\.php [L]
+
 #--------------------------------------------------
 
 RewriteCond %{REQUEST_URI} ^/404/$

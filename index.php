@@ -1,9 +1,16 @@
+<?php
+session_start();
+unset($_SESSION['email'], $_SESSION['derniere_action']);
+session_destroy();
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title>Gwoka de Guadeloupe - Negritube</title>
+
   <meta name="description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">
   <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe, Kréyol, Mizik, Mizik Kréyol, Gwoka, Gwoka Modenn, Gita, Gwadloup" />
   <meta name="author" content="Philippe Blaze" />
@@ -47,7 +54,10 @@
     }
     window.history.replaceState('', '', Server);
   </script>
-
+  <!--Cookies-->
+  <script src="assets/js/cookieconsent.min.js" data-cfasync="false"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" />
+  <!-- Fin Cookies -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07Z7YG6ZX"></script>
   <script>
@@ -57,17 +67,6 @@
 
   gtag('config', 'G-K07Z7YG6ZX');
   </script>
-
-  <!-- Clarity tracking code for https://negritube.fr/ -->
-  <script>
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "c73v5s2zme");
-  </script>
-
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
 
   <!-- Matomo -->
   <script>
@@ -452,6 +451,27 @@
       </a>
     </div>
   </div>
+    <!-- Cookies -->
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#332237"
+        },
+        "button": {
+          "background": "#3D3E70"
+        }
+      },
+      "theme": "classic",
+      "position": "top-right",
+      "content": {
+        "message": "Ce site web utilise des cookies afin de vous proposer une meilleure expérience de navigation.",
+        "dismiss": "OK",
+        "link": "En savoir plus...",
+        "href": "mentions-legales.html"
+      }
+    });
+    </script>
 </body>
 <footer class="footerIndex">
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
