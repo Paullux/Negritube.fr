@@ -20,3 +20,6 @@ pages/upload.php
 pages/vendor/*
 pages/composer.json
 pages/composer.lock
+pages/liste_File.php
+
+robots.txt

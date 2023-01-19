@@ -215,6 +215,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
     <div class="basDePageClip">
       <footer>
         <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
+        <h2><a class='callAudio' href='https://www.negritube.fr/pages/mentions-legales.php'>Mentions Légales</a></h2>
       </footer>
       <br>
     </div>
