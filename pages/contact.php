@@ -117,31 +117,31 @@ require_once ( 'formulaire.php' );
     <form id="contact-form" method="post" autocomplete="off">
       <div class="card-body p-0 my-3">
         <div class="row">
-          <label style="background: transparent !important; color:<?php echo $colorMessageWarning; ?>" > <?php echo $messageWarning; ?> </label>
+          <label style="background: transparent !important; color:<?php if (isset($colorMessageWarning)) echo $colorMessageWarning; ?>" > <?php if (isset($messageWarning)) echo $messageWarning; ?> </label>
           <div class="col-md-6">
             <div class="input-group">
-              <label style="<?php echo $nameLabelColor; ?>" >Votre Nom complet <?php echo $nameTextAdded; ?></label>
-              <input name="name" type="text" class="form-control" placeholder="Nom complet" style="<?php echo $nameManquant; ?>" value="<?php echo $name; ?>">
+              <label style="<?php if (isset($nameLabelColor)) echo $nameLabelColor; ?>" >Votre Nom complet <?php if (isset($nameTextAdded)) echo $nameTextAdded; ?></label>
+              <input name="name" type="text" class="form-control" placeholder="Nom complet" style="<?php if (isset($nameManquant)) echo $nameManquant; ?>" value="<?php if (isset($name)) echo $name; ?>">
             </div>
           </div>
           <div class="">
             <div class="input-group">
-              <label style="<?php echo $emailLabelColor; ?>" >Votre Email <?php echo $emailTextAdded; ?></label>
-              <input name="email" type="email" class="form-control" placeholder="exemple@domaine.com" style="<?php echo $emailManquant; ?>" value="<?php echo $email; ?>">
+              <label style="<?php if (isset($emailLabelColor)) echo $emailLabelColor; ?>" >Votre Email <?php if (isset($emailTextAdded)) echo $emailTextAdded; ?></label>
+              <input name="email" type="email" class="form-control" placeholder="exemple@domaine.com" style="<?php if (isset($emailManquant)) echo $emailManquant; ?>" value="<?php if (isset($email)) echo $email; ?>">
             </div>
           </div>
         </div>
         <div class="form-group">
           <div class="input-group input-group-static mb-4">
-            <label style="<?php echo $messageLabelColor; ?>" >Décrivez votre demande <?php echo $messageTextAdded; ?></label>
-            <textarea name="message" class="form-control" id="message" placeholder="Message" rows="5" placeholder="Décrivez votre demande avec 250 caractères aux maximum." style="<?php echo $messageManquant; ?>"><?php echo $message; ?></textarea>
+            <label style="<?php if (isset( $messageLabelColor)) echo $messageLabelColor; ?>" >Décrivez votre demande <?php if (isset($messageTextAdded)) echo $messageTextAdded; ?></label>
+            <textarea name="message" class="form-control" id="message" placeholder="Message" rows="5" placeholder="Décrivez votre demande avec 250 caractères aux maximum." style="<?php if (isset($messageManquant)) echo $messageManquant; ?>"><?php if (isset($message)) echo $message; ?></textarea>
           </div>
         </div>
         <div class="captcha">
-          <label style="<?php echo $captchaLabelColor; ?>">Entrer le texte dans l'image  <?php echo $captchaTextAdded; ?></label>
-          <input name="captcha captchaInput" type="text" class="form-control" placeholder="Entrez le Captcha" style="<?php echo $captchaManquant; ?>">
+          <label style="<?php if (isset($captchaLabelColor)) echo $captchaLabelColor; ?>">Entrer le texte dans l'image  <?php if (isset($captchaTextAdded)) echo $captchaTextAdded; ?></label>
+          <input name="captcha captchaInput" type="text" class="form-control" placeholder="Entrez le Captcha" style="<?php if (isset($captchaManquant)) echo $captchaManquant; ?>">
           <img src="./pages/captcha.php" style="vertical-align: middle;"/>
-          <label style="<?php echo $messageCaptchaColor; ?>" >
+          <label style="<?php if (isset($messageCaptchaColor)) echo $messageCaptchaColor; ?>" >
             <?php
             if (isset($_POST["captcha"])) {
               echo $status;
@@ -164,6 +164,9 @@ require_once ( 'formulaire.php' );
 </body>
 <footer>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
+  <?php
+    require_once(dirname(__FILE__) . '/footer.php');
+  ?>
 </footer>
 <script src="../assets/js/landscapeWarning.js" crossorigin="paulw"></script>
 </html>

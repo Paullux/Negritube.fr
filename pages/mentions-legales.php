@@ -323,6 +323,9 @@
 </body>
 <footer class="footerIndex">
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
+  <?php
+    require_once(dirname(__FILE__) . '/footer.php');
+  ?>
 </footer>
 <script src="assets/js/menu.js" crossorigin="Paulw"></script>
 <script src="assets/js/landscapeWarning.js" crossorigin="Paulw"></script>
