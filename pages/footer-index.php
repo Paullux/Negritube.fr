@@ -39,7 +39,7 @@ for ($j = 1; $j <= 10; $j++) {
 echo '</div>';
 echo '</div>';
 
-echo "<h2><a class='callAudio' href='https://www.negritube.fr/pages/mentions-legales.php'>Mentions Légales</a></h2>";
+echo "<h2><a class='callAudio' href='https://negritube.fr/pages/mentions-legales.php'>Mentions Légales</a></h2>";
 
   
 
