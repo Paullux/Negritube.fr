@@ -133,7 +133,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   gtag('config', 'G-K07Z7YG6ZX');
   </script>
 
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
+
 
   <!-- Matomo -->
   <script>
