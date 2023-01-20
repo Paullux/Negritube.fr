@@ -134,7 +134,7 @@
       </nav>
       <div class="space">
         <img class="about" src="assets/img/about/logo-prod.jpg" alt="logo_prod">
-        <div class="center" >Philippe BLAZE
+        <div class="center cv" >Philippe BLAZE
           <br>
           Auteur - Compositeur - Interprète – Guitariste
           <img class="about" src="assets/img/about/photo_de_philippe.jpg" alt="philippe">
@@ -150,13 +150,13 @@
 
           <br>BIO EXPRESS
           <br>
-          <br><>  A l’âge de 7 ans Philippe BLAZE quitte la Guadeloupe pour Paris
+          <br><br>  A l’âge de 7 ans Philippe BLAZE quitte la Guadeloupe pour Paris
           <br>
           <br>Ecole de musique – Paris :
           <br>Guitare et solfège
           <br>Conservatoire Régional de Loire Atlantique – Nantes :			Chant classique et solfège
           <br>
-          <br><>  A 25 ans : retour en Guadeloupe
+          <br><br>  A 25 ans : retour en Guadeloupe
           <br>
           <br>Professeur de musique : guitare, chant, solfège, basse
           <br>
@@ -165,6 +165,7 @@
           <br>1982	:	Création de l’Association de CAAPARE « Comité d’Action et
           <br>d’Assistance Promotionnelle des Artistes Rock et de leurs
           <br>Enregistrements »
+          <br>
           <br>Membres fondateurs :
           <br>• Directeur Général : Bruno LION (un des pontes actuels de la SACEM)
           <br>• Directeur artistique : Blaise MASSON à l’époque le plus jeune

@@ -148,6 +148,10 @@ nav p {
     overflow: visible;
   }
 
+  .cv {
+    font-size: 2em !important;
+  }
+
   .my_page {
     display: flex;
     flex-direction: column;
