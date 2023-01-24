@@ -1,4 +1,4 @@
-var trackNumber = 0;
+var Numero = 0;
 var currentTrack = 0;
 var video = document.getElementById("video");
 var trackArray;
@@ -6,32 +6,24 @@ var title = document.getElementById('title');
 var description = document.getElementById('description');
 var shuffleBool = new Boolean(true);
 var autorenewBool = new Boolean(true);
-var numberOfLine = 1;
 
 var Server = "";
 
 if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
   Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
-}else {
+} else {
   Server = "https://negritube.fr/";
 }
 
 function launchNewClip(trackNumber) {
-
-  fetch(Server + 'assets/csv/video.csv')
-    .then((response) => {
-      return response.text();
-    })
-    .then((text) => {
-      trackArray = CSVToJSON(text,';');
-      title.innerHTML = trackArray[trackNumber]['Artiste'] + " : " + trackArray[trackNumber]['Titre'];
-      description.innerHTML = trackArray[trackNumber]['description'];
-      document.title = trackArray[trackNumber]['Artiste'] + ", " + trackArray[trackNumber]['Titre'] + " - Negritube";
-    });
+      console.log(window.videos)
+      title.innerHTML = window.videos[trackNumber-1]['Artiste'] + " : " + window.videos[trackNumber-1]['Titre'];
+      description.innerHTML = window.videos[trackNumber-1]['description'];
+      document.title = window.videos[trackNumber-1]['Artiste'] + ", " + window.videos[trackNumber-1]['Titre'] + " - Negritube";
 
   window.history.replaceState('', '', Server + 'video-' + trackNumber + '.html');
 
-  for (let i = 0; i < numberOfLine; i++) {
+  for (let i = 1; i <= window.numberOfLine; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
@@ -46,18 +38,9 @@ function launchNewClip(trackNumber) {
 }
 
 function nextSong() {
-  if (shuffleBool) {
-    trackNumber = getRandomIntInclusive(0, numberOfLine);
-  } else {
-    if (trackNumber < numberOfLine) {
-    } else {
-      ++trackNumber;
-      trackNumber = 0;
-    }
-  }
-  if (autorenewBool) {
-    launchNewClip(trackNumber);
-  }
+    Numero = getRandomIntInclusive(1, window.numberOfLine);
+    if (Numero > window.numberOfLine) { Numero = 1; }
+    window.location.replace(Server + 'video-'+ Numero +'.html');
 }
 
 video.addEventListener('ended', (event) => {
@@ -74,20 +57,6 @@ function getRandomIntInclusive(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min +1)) + min;
 }
-
-const CSVToJSON = (data, delimiter = ',') => {
-  const titles = data.slice(0, data.indexOf('\n')).split(delimiter);
-  return data
-    .slice(data.indexOf('\n') + 1)
-    .split('\n')
-    .map(v => {
-      const values = v.split(delimiter);
-      return titles.reduce(
-        (obj, title, index) => ((obj[title] = values[index]), obj),
-        {}
-      );
-    });
-};
 
 var isMobile = {
   Android: function() {
@@ -110,16 +79,6 @@ var isMobile = {
   }
 };
 
-fetch(Server + 'assets/csv/video.csv')
-  .then((response) => {
-    return response.text();
-  })
-  .then((text) => {
-    trackArray = CSVToJSON(text,',');
-    var obj = JSON.parse(JSON.stringify(trackArray));
-    numberOfLine = Object.keys(obj).length - 1;
-  });
-
 var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
 var oldTrack = urlParams.get('track');
@@ -134,7 +93,7 @@ window.addEventListener("load", function(event) {
     if (track != null) {
       launchNewClip(track);
     } else {
-      launchNewClip(0);
+      launchNewClip(1);
     }
   //}
 });

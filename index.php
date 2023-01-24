@@ -2,6 +2,39 @@
 session_start();
 unset($_SESSION['email'], $_SESSION['derniere_action']);
 session_destroy();
+
+
+$serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
+
+// connect to the database
+$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
+
+// prepare the statement
+$sth = $dbco->prepare("SELECT * FROM musiques");
+
+// execute the statement
+$sth->execute();
+
+// fetch the result
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+$audionumber = count($result);
+
+// connect to the database
+$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
+
+// prepare the statement
+$sth = $dbco->prepare("SELECT * FROM videos");
+
+// execute the statement
+$sth->execute();
+
+// fetch the result
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+
+$videonumber = count($result);
+
 ?>
 
 <!DOCTYPE html>
@@ -125,14 +158,14 @@ session_destroy();
           </p>
         </div>
         <div id="Menu_Cache">
-          <li><a href="video-0.html">Les Clips</a></li>
+          <li><a href="video-1.html">Les Clips</a></li>
           <li><a href="audio-1.html">Les Albums</a></li>
           <li><a href="contact.html" rel="nofollow">Prise de Contact</a></li>
           <li><a href="about.html">Parcours de Philippe BLAZE</a></li>
         </div>
       </nav>
       <div class="link_song miniatureandcover">
-        <a class="miniature box" href="video-0.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
+        <a class="miniature box" href="video-1.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
             Les Clips
           </h3>
@@ -424,19 +457,11 @@ session_destroy();
           </div>
         </div>
         <?
-          $csv = 'assets/csv/audio.csv';
-          $fp = file($csv);
-          $audionumber = count($fp) - 1;
-
-          for ($i = 1; $i <= $audionumber; $i++) {
+           for ($i = 1; $i <= $audionumber; $i++) {
             echo '<a  class="miniatureInv box" style=\'display: none; background-image: url("assets/img/ConcertPhilippe1.png");\' href="audio-' . $i . '.html">a</a>';
           }
 
-          $csv = 'assets/csv/video.csv';
-          $fp = file($csv);
-          $videonumber = count($fp) - 2;
-
-          for ($i = 0; $i <= $videonumber; $i++) {
+          for ($i = 1; $i <= $videonumber; $i++) {
             echo '<a  class="miniatureInv box" style=\'display: none; background-image: url("assets/img/miniature/' . $i . '.png");\' href="video-' . $i . '.html">a</a>';
           }
         ?>
@@ -475,7 +500,7 @@ session_destroy();
 </body>
 <footer class="footerIndex">
   <?php
-    require_once(dirname(__FILE__) . '/pages/footer-index.php');
+    require_once(dirname(__FILE__) . '/pages/footer.php');
   ?>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
 </footer>

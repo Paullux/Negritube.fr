@@ -1,12 +1,45 @@
 <?php
-function read($csv){
-  $file = fopen($csv, 'r');
-  while (!feof($file) ) {
-    $line[] = fgetcsv($file, 1024);
-  }
-  fclose($file);
-  return $line;
+require 'config.php';
+
+if (isset($_GET['track']) && $_GET['track']){
+  $track = htmlspecialchars($_GET["track"]);
+} else {
+  $track = 1;
 }
+
+if ($track == 0) $track == 1;
+$index = intval($track) - 1;
+
+$serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
+
+// connect to the database
+$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
+
+// prepare the statement
+$sth = $dbco->prepare("SELECT * FROM musiques WHERE Numero = :Numero");
+
+// bind the parameters
+$sth->bindParam(':Numero', $track);
+
+// execute the statement
+$sth->execute();
+
+// fetch the result
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+if (empty($result)) {
+  // bind the parameters
+  $sth->bindParam(':Numero', 1);
+
+  // execute the statement
+  $sth->execute();
+
+  // fetch the result
+  $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+}
+
+$result = $result[0];
 
 function rel2abs( $rel, $base )
 {
@@ -60,19 +93,8 @@ function rel2abs( $rel, $base )
     return( $scheme.'://'.$abs );
 }
 
-$csv = '../assets/csv/audio.csv';
-$fp = file($csv);
-$audionumber = count($fp) - 1;
-$csv = read($csv);
-
-if (isset($_GET['track']) && $_GET['track'] <= $audionumber){
-  $track = htmlspecialchars($_GET["track"]);
-} else {
-  $track = 1;
-}
-
-$ogTitle = $csv[$track][2] . ", " . $csv[$track][1] . " - Negritube";
-$ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
+$ogTitle = $result['Artiste'] . ", " . $result['Titre'] . " - Negritube";
+$ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
 
 ?>
 <!DOCTYPE html>
@@ -81,7 +103,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <meta charset="utf-8">
   <!-- HTML Meta Tags -->
   <title><?php echo $ogTitle ?></title>
-  <meta name="description" content=<?php echo '"Album ' . $csv[$track][3] . ' - de l\'artiste ' . $csv[$track][2] . ' - Chanson ' . $csv[$track][1] . '"' ?>>
+  <meta name="description" content=<?php echo '"Album ' . $result["Album"] . ' - de l\'artiste ' . $result["Artiste"] . ' - Chanson ' . $result["Titre"] . '"'; ?> >
   <meta name="keywords" content="créole, musique, musique créole, gwoka, gwoka evolutif, guitare, guadeloupe, Kréyol, Mizik, Mizik Kréyol, Gwoka, Gwoka Modenn, Gita, Gwadloup" />
   <meta name="author" content="Philippe Blaze" />
   <meta name="theme-color" content="#f6b73c" />
@@ -89,18 +111,18 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="<?php echo "https://negritube.fr/audio-" . $track  . ".html"?>">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php echo $ogTitle ?>">
-  <meta property="og:description" content=<?php echo '"Album ' . $csv[$track][3] . ' - de l\'artiste ' . $csv[$track][2] . ' - Chanson ' . $csv[$track][1] . '"' ?>>
-  <meta property="og:image" content="<?php echo $ogLink ?>">
+  <meta property="og:title" content="<?= $ogTitle ?>">
+  <meta property="og:description" content=<?php echo '"Album ' . $result["Album"] . ' - de l\'artiste ' . $result["Artiste"] . ' - Chanson ' . $result["Titre"] . '"' ?>>
+  <meta property="og:image" content="<?= $ogLink ?>">
   <meta property="og:locale" content="fr_FR" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:domain" content="negritube">
   <meta property="twitter:url" content="<?php echo "https://negritube.fr/audio-" . $track  . ".html"?>">
-  <meta name="twitter:title" content="<?php echo $ogTitle ?>">
-  <meta name="twitter:description" content=<?php echo '"Album ' . $csv[$track][3] . ' - de l\'artiste ' . $csv[$track][2] . ' - Chanson ' . $csv[$track][1] . '"' ?>>
-  <meta name="twitter:image" content="<?php echo $ogLink ?>">
+  <meta name="twitter:title" content="<?= $ogTitle ?>">
+  <meta name="twitter:description" content=<?php echo '"Album ' . $result["Album"] . ' - de l\'artiste ' . $result["Artiste"] . ' - Chanson ' . $result["Titre"] . '"' ?>>
+  <meta name="twitter:image" content="<?= $ogLink ?>">
   <meta name="twitter:image:alt" content="Negritube" />
 
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
@@ -114,7 +136,6 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="../assets/js/switchThemePages.js" crossorigin="paulw"></script>
-
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -129,7 +150,7 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
   gtag('config', 'G-K07Z7YG6ZX');
   </script>
 
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>
+  <!--<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="71bb40dd-296e-4604-8a7b-f47916d5ad6a" data-blockingmode="auto" type="text/javascript"></script>-->
 
   <!-- Matomo -->
   <script>
@@ -148,6 +169,43 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
+  </script>
+  <script> 
+    var Server = "";
+    if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
+      Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
+    } else {
+      Server = "https://negritube.fr/";
+    }
+
+    window.addEventListener('load', (event) => {
+      window.history.replaceState('', '', Server + 'audio-'+<?= $result['Numero'] ?>+'.html');
+    });
+
+  </script>
+  <script type="text/javascript">
+    <?php
+      // prepare the statement
+      $sth = $dbco->prepare("SELECT * FROM musiques");
+
+      // execute the statement
+      $sth->execute();
+
+      // fetch the result
+      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+    ?>
+    window.music = [];
+    var dict = {}
+    <?php for ($i = 0; $i < count($result) ; $i++) {
+        echo 'var Numero = "'.$result[$i]["Numero"].'";
+        var Titre = "'.$result[$i]["Titre"].'";
+        var Artiste = "'.$result[$i]["Artiste"].'";
+        var Album = "'.$result[$i]["Album"].'";
+        var pochette = "'.$result[$i]["pochette"].'";
+        dict'.$i.' = {"Numero": Numero, "Titre": Titre, "Artiste": Artiste, "Album": Album, "pochette": pochette};
+        window.music.push(dict'.$i.');';
+      };
+    ?>
   </script>
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
@@ -184,12 +242,12 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
         <div class='song_title aMasquer'>Chansons issues des Albums</div>
         <div class='song_title listMusicMobile' id="listeMusique" style="height: 50px;">
           <p class='Auteur' id='AuteurEnHaut'>Chansons issues des Albums</p>
-          <h3 class='Titre' id='TitreEnHaut'></h3>
-          <p class='Album' id='AlbumEnHaut'></p>
+          <h3 class='Titre' id='TitreEnHaut'><?= $result[$index]['Titre'] ?></h3>
+          <p class='Album' id='AlbumEnHaut'><?= $result[$index]['Album'] ?></p>
         </div>
         <div class="imageContainer">
-          <img class="image" id="cover">
-          <img class="image imgIsPlaying" id="enCoursDeLecture">
+          <img class="image" id="cover" src= "<?= $result[$index]['pochette'] ?>">
+          <img hidden class="image imgIsPlaying" src="" id="enCoursDeLecture">
         </div>
         <br><br>
         <div class="song_title aMasquer">
@@ -219,15 +277,16 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
       </div>
       <div class="choixTitreAudio">
         <?php
-        for ($i = 1; $i <= $audionumber; $i++) {
-          echo "<button class='song_title button_song' id='" . $csv[$i][0] . "' onclick='launchNewMusic(" . $csv[$i][0] . ");' type='button'>
-          <img class='cover' src='" . $csv[$i][4] . "' alt='cover'>
+        for ($i = 0; $i < count($result); $i++) {
+          echo "<button class='song_title button_song' id='" . $result[$i]['Numero'] . "' onclick='launchNewMusic(\"" . $result[$i]['Numero'] . "\");' type='button'>
+          <img class='cover' src='" . $result[$i]['pochette'] . "' alt='cover'>
           <div class='listMusic'>
-            <p class='Titre'>Titre :&nbsp;<span id='p" . $csv[$i][0] . "'>" . $csv[$i][1] . "</p>
-            <p class='Auteur'>Artiste : " . $csv[$i][2] . "</p>
-            <p class='Album'>Album : " . $csv[$i][3] . "</p>
+            <p class='Titre'>Titre :&nbsp;<span id='p" . $result[$i]['Numero'] . "'>" . $result[$i]['Titre'] . "</p>
+            <p class='Auteur'>Artiste : " . $result[$i]['Artiste'] . "</p>
+            <p class='Album'>Album : " . $result[$i]['Album'] . "</p>
           </div>
-          </button>";
+          </button>
+          ";
         }
         ?>
       </div>
@@ -245,6 +304,9 @@ $ogLink =  rel2abs($csv[$track][4], "https://www.negritube.fr/pages/");
     </div>
   </div>
 </body>
+<script type="text/javascript">
+  window.numberOfLine = <?php echo count($result); ?>;
+</script>
 <script type="text/javascript" src="../assets/js/aud-player.js"></script>
 <script type="text/javascript" src="../assets/js/AudioFile.js"></script>
 <script src="../assets/js/landscapeWarning.js" crossorigin="paulw"></script>

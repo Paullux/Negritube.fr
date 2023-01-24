@@ -1,38 +1,51 @@
 <?php
-function readHere($csv, $separator){
-    $file = fopen($csv, 'r');
-    while (!feof($file) ) {
-        if ($separator == ',') $line[] = fgetcsv($file, 1024);
-        else $line[] = fgetcsv($file, 1024, $separator);
-    }
-    fclose($file);
-    return $line;
-}
-  
-$csvAudio = '../assets/csv/audio.csv';
-$fpAudio = file($csvAudio);
-$audionumber = count($fpAudio) - 1;
-$csvAudio = readHere($csvAudio, ',');
+require 'config.php';
+
+if ($track == 0) $track == 1;
+$index = intval($track) - 1;
+
+$serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
+
+// connect to the database
+$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
+
+// prepare the statement
+$sth = $dbco->prepare("SELECT * FROM musiques");
+
+// execute the statement
+$sth->execute();
+
+// fetch the result
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+
+$audionumber = count($result);
 echo '<div id="flexMusic">';
 echo '<div class="AudioClass">';
 echo '<h2>Musiques</h2>'; 
 for ($i = 1; $i <= 10; $i++) {
     $randomAudio = rand(1, $audionumber);
-    $linkTitleAudio = $csvAudio[$randomAudio][2] . ", " . $csvAudio[$randomAudio][1];
+    $linkTitleAudio = $result[$randomAudio-1]['Artiste'] . " - " . $result[$randomAudio-1]['Titre'];
     $reallinkAudio =  "https://negritube.fr/pages/AudioFile.php?track=$randomAudio";
     echo "<a class='callAudio' href=$reallinkAudio>$linkTitleAudio</a>";
 }
+
+// prepare the statement
+$sth = $dbco->prepare("SELECT * FROM videos");
+
+// execute the statement
+$sth->execute();
+
+// fetch the result
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
  
-$csvVideo = '../assets/csv/video.csv';
-$fpVideo = file($csvVideo);
-$videonumber = count($fpVideo) - 2;
-$csvVideo = readHere($csvVideo, ';');
+$videonumber = count($result);
 echo '</div>';
 echo '<div class="VideoClass">'; 
 echo '<h2>Clips vidéos</h2>';
 for ($j = 1; $j <= 10; $j++) {
     $randomVideo = rand(1, $videonumber);
-    $linkTitleVideo = $csvVideo[$randomVideo][2] . " " . $csvVideo[$randomVideo][1];
+    $linkTitleVideo = $result[$randomVideo-1]['Artiste'] . " " . $result[$randomVideo-1]['Titre'];
     $reallinkVideo =  "https://negritube.fr/pages/VideoFile.php?track=$randomVideo";
     echo "<a class='callVideo' href=$reallinkVideo>$linkTitleVideo</a>";
 }
