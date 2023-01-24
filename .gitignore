@@ -4,22 +4,4 @@ matomo/*
 .htaccess
 pages/config.php
 
-#Eléments du backend
-assets/css/login.css
-assets/css/secret.css
-assets/css/standard.css
-assets/img/bouton google.png
-assets/js/javascript.js
-assets/js/jquery.js
-assets/js/login.js
-pages/connect_propre.php
-pages/connect.php
-pages/login.php
-pages/secret.php
-pages/upload.php
-pages/vendor/*
-pages/composer.json
-pages/composer.lock
-pages/liste_File.php
-
 robots.txt

@@ -1,11 +1,11 @@
 <div id="aWrap">
 
   <div id="song_title_audio" class="song_title" style="border: none">
-    <img  class='cover' id='coverVEnBas' src='' alt='cover'>
+    <img  class='cover' id='coverVEnBas' src='<?= $result[$index]['pochette'] ?>' alt='cover'>
     <div class='listMusic'>
-      <h3  class='Titre' id='TitreEnBas'>Titre :&nbsp;</h3>
-      <p  class='Auteur' id='AuteurEnBas'>Artiste : </p>
-      <p  class='Album' id='AlbumEnBas'>Album : </p>
+      <h3  class='Titre' id='TitreEnBas'>Titre :&nbsp;<?= $result[$index]['Titre'] ?></h3>
+      <p  class='Auteur' id='AuteurEnBas'>Artiste : <?= $result[$index]['Artiste'] ?></p>
+      <p  class='Album' id='AlbumEnBas'>Album : <?= $result[$index]['Album'] ?></p>
     </div>
   </div>
 

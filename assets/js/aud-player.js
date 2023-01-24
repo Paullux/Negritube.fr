@@ -4,7 +4,7 @@ currentTrack = audio.getAttribute("src"),
 skipPrevious = document.getElementById("skipPrevious"),
 skipPreviousIco = document.getElementById("skipPreviousIco"),
 skipNext = document.getElementById("skipNext"),
-skipNext = document.getElementById("skipNextIco"),
+skipNextIco = document.getElementById("skipNextIco"),
 aPlay = document.getElementById("aPlay"),
 aPlayIco = document.getElementById("aPlayIco"),
 autorenew = document.getElementById("autorenew"),
@@ -25,8 +25,8 @@ skipPrevious.onclick = () => {
     audio.currentTime=0;
     launchNewMusic(currentTrack);
   } else {
-    if (Number(currentTrack) > "1") {
-      var previousTrack = Number(currentTrack) - 1;
+    if (Number(currentTrack) > 1) {
+      var previousTrack = Number(previousTrack) - 1;
       launchNewMusic(previousTrack);
     }
   }
@@ -34,13 +34,16 @@ skipPrevious.onclick = () => {
 
 skipNext.onclick = () => {
   currentTrack = audio.getAttribute("src").replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
-  if (Number(currentTrack) < numberOfLine) {
+  if (Number(currentTrack) < window.numberOfLine) {
     var nextTrack = Number(currentTrack) + 1;
+    document.cookie = 'index=' + nextTrack ;
     launchNewMusic(nextTrack);
   } else {
+    document.cookie = 'index=1' ;
     launchNewMusic(1);
   }
 };
+
 
 // (B) PLAY & PAUSE
 // (B1) CLICK TO PLAY/PAUSE
