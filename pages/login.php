@@ -1,6 +1,6 @@
 <?php
 require('config.php');
-//header('Access-Control-Allow-Origin: *');
+
 session_start();
 unset($_SESSION['email'], $_SESSION['derniere_action']);
 session_destroy();
@@ -40,7 +40,7 @@ session_destroy();
         <div id="flexy">
             <label class="register" for="idinput">Créer compte</label>
                 <label class="switch">
-                    <input type="checkbox" class="check-with-label" id="idinput" name="idinput" value="off">
+                    <input type="checkbox" class="check-with-label" id="idinput" name="idinput" value="on">
                     <span class="slider round"></span>
                 </label>
             <label class="login" for="idinput">Se connecter</label>
