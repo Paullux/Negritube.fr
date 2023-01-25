@@ -1,6 +1,6 @@
 <?php
 session_start();
-header("refresh: 600"); 
+header("refresh: 900"); 
 if (!isset($_SESSION['email'])) {
     header('location: ../index.php');
     exit();
@@ -8,7 +8,7 @@ if (!isset($_SESSION['email'])) {
 $to=time();
 $t_on=$_SESSION['derniere_action'];
 $diff_=$to-$t_on;
-if($diff_>599){ 
+if($diff_>899){ 
   echo"<script>alert('5 minutes sans aucune activité sur l'application, vous allez être amener à vous reconnecter!')</script>";
   unset($_SESSION['email'], $_SESSION['derniere_action']);
   session_destroy();
@@ -41,9 +41,6 @@ function sortTracks($a, $b) {
 }
 
 function arrayToList($albums, $audionumber) {
-    echo '<br><br><br><br>';
-    echo $audionumber;
-    echo '<br><br><br><br>';
     $i = intval($audionumber);
     forEach($albums as $item) {
         $album = $item->title;
@@ -86,7 +83,7 @@ function arrayToList($albums, $audionumber) {
             $i++;
         }
     }
-    echo "Tous c'est bien passé vos fichiers sont sur le serveur prêt à être écouté.";
+    echo "Tous c'est bien passé vos fichiers sont sur le serveur et prêt à être écoutés.";
 }
 
 $album = new Albums();
@@ -120,3 +117,43 @@ forEach($albums as $item) {
 }
 
 arrayToList($albums, $audionumber);
+
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <title>BackEnd</title>
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/secret.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../assets/css/standard.css" />
+    <script src="../assets/js/jquery.js"></script>-->
+</head>
+<body  style="font-family: Arial, sans-serif;">
+    <div class="navbar flexy">
+      <div class="flexy">
+        <?php 
+          if (isset($_SESSION['picture'])) {
+            echo "<img id='img_profile' src='" . $_SESSION['picture'] . "' alt='image' />";
+          } else {
+            if ($_SESSION['email'] == admin_one) {
+              echo "<img id='img_profile' src='../assets/img/Philippe-.png' alt='image' />";
+            } else {
+              echo "<img id='img_profile' src='../assets/img/favicon.png' alt='image' />";
+            }
+          }           
+        ?>
+        <h1>BackEnd, bienvenue <?= $user ?></h1>
+      </div>
+      <a href="login.php">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        Déconnexion
+      </a>
+    </div>
+</body>
+</html>  

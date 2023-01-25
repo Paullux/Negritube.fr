@@ -1,10 +1,10 @@
 <?php
 session_start();
-header("refresh: 600"); 
 if (!isset($_SESSION['email'])) {
-    header('location: ../index.php');
+    header('location: login.php');
     exit();
 }
+header("refresh: 600"); 
 $to=time();
 $t_on=$_SESSION['derniere_action'];
 $diff_=$to-$t_on;

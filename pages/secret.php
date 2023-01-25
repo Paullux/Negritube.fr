@@ -1,23 +1,9 @@
 <?php 
 require 'vendor/autoload.php';
 require 'config.php';
-
 session_start();
-header("refresh: 600"); 
-if (!isset($_SESSION['email'])) {
-    header('location: ../index.php');
-    exit();
-}
-$to=time();
-$t_on=$_SESSION['derniere_action'];
-$diff_=$to-$t_on;
-if($diff_>599){ 
-  echo"<script>alert('5 minutes sans aucune activité sur l'application, vous allez être amener à vous reconnecter!')</script>";
-  unset($_SESSION['email'], $_SESSION['derniere_action']);
-  session_destroy();
-  header('location: login.php');
-  exit();
-}
+unset($_SESSION['email'], $_SESSION['derniere_action']);
+session_destroy();
 
 $parts = explode('@', $_SESSION['email']);
 
