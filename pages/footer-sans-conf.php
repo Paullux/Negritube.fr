@@ -1,8 +1,4 @@
 <?php
-require 'config.php';
-
-//if ($track == 0) $track == 1;
-//$index = intval($track) - 1;
 
 $serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
 

@@ -66,7 +66,7 @@ session_destroy();
 </body>
 <footer>
   <?php
-    require_once(dirname(__FILE__) . '/footer.php');
+    require_once(dirname(__FILE__) . '/footer-sans-conf.php');
   ?>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
 </footer>

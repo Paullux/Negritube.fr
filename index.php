@@ -3,37 +3,11 @@ session_start();
 unset($_SESSION['email'], $_SESSION['derniere_action']);
 session_destroy();
 
+$dir    = 'assets/img/miniature/';
+$miniature = scandir($dir, SCANDIR_SORT_ASCENDING);
 
-$serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
-
-// connect to the database
-$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
-
-// prepare the statement
-$sth = $dbco->prepare("SELECT * FROM musiques");
-
-// execute the statement
-$sth->execute();
-
-// fetch the result
-$result = $sth->fetchAll(PDO::FETCH_ASSOC);
-
-$audionumber = count($result);
-
-// connect to the database
-$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
-
-// prepare the statement
-$sth = $dbco->prepare("SELECT * FROM videos");
-
-// execute the statement
-$sth->execute();
-
-// fetch the result
-$result = $sth->fetchAll(PDO::FETCH_ASSOC);
-
-
-$videonumber = count($result);
+$dir    = 'assets/img/album cover/';
+$cover = scandir($dir, SCANDIR_SORT_ASCENDING);
 
 ?>
 
@@ -77,6 +51,28 @@ $videonumber = count($result);
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="assets/js/anim.js" crossorigin="paulw"></script>
   <script src="assets/js/switchTheme.js" crossorigin="paulw"></script>
+  <script type="text/javascript">
+    window.Miniatures = [];
+    window.Covers = [];
+    var miniatureIci = "";
+    var coverIci = "";
+    <?php 
+      for ($i = 2; $i < count($miniature) ; $i++) {
+        if ($miniature[$i] !== 'Thumbs.db' && $miniature[$i] !== '@eaDir') {
+          echo 'miniatureIci = "'.$miniature[$i].'";
+                window.Miniatures.push("assets/img/miniature/" + miniatureIci);
+          ';
+        }
+      }
+      for ($i = 2; $i < count($cover) ; $i++) {
+        if ($cover[$i] !== 'Thumbs.db' && $cover[$i] !== '@eaDir') {
+          echo 'coverIci = "'.$cover[$i].'";
+                window.Covers.push("assets/img/album cover/" + coverIci);
+          ';
+        }
+      }
+    ?>
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838504479669283"
      crossorigin="anonymous"></script>
   <script>
@@ -165,7 +161,7 @@ $videonumber = count($result);
         </div>
       </nav>
       <div class="link_song miniatureandcover">
-        <a class="miniature box" href="video-1.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
+        <a class="miniature box" id="Miniatures" href="video-1.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
             Les Clips
           </h3>
@@ -177,7 +173,7 @@ $videonumber = count($result);
         <div class="zoom box">
           <img class="affiche" src="assets/img/affichePlublication.jpg" />
         </div>
-        <a class="albumCover box" href="audio-1.html" onmouseover="launchWait(1);" onmouseout="cancelWait();">
+        <a class="albumCover box" id="Covers" href="audio-1.html" onmouseover="launchWait(1);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">
             Les Albums
           </h3>
@@ -456,15 +452,6 @@ $videonumber = count($result);
             <br>
           </div>
         </div>
-        <?
-           for ($i = 1; $i <= $audionumber; $i++) {
-            echo '<a  class="miniatureInv box" style=\'display: none; background-image: url("assets/img/ConcertPhilippe1.png");\' href="audio-' . $i . '.html">a</a>';
-          }
-
-          for ($i = 1; $i <= $videonumber; $i++) {
-            echo '<a  class="miniatureInv box" style=\'display: none; background-image: url("assets/img/miniature/' . $i . '.png");\' href="video-' . $i . '.html">a</a>';
-          }
-        ?>
       </div>
     </div>
     <div class="basDePageIndex">
@@ -504,6 +491,7 @@ $videonumber = count($result);
   ?>
   <p>All rights reserved © Negritube.fr | Music and Video by Philippe Blaze | Site by Paullux Waffle</p>
 </footer>
+<script src="assets/js/index.js" crossorigin="paulw"></script>
 <script src="assets/js/menu.js" crossorigin="paulw"></script>
 <script src="assets/js/landscapeWarning.js" crossorigin="paulw"></script>
 </html>
