@@ -3,5 +3,6 @@ assets/audio/*
 matomo/*
 .htaccess
 pages/config.php
+pages/config-copy.php
 
 robots.txt
