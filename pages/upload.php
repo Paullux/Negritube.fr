@@ -46,8 +46,6 @@ if (!isset($_FILES['file']['name'][0])) {
 
 if (empty($errors)) {
     $countfiles = count($_FILES['file']['name']);
-    echo $countfiles;
-    echo '<br><br><br><br><br><br>';
     launchTable($countfiles, $fileExtensions);
 
 } else {
@@ -89,8 +87,6 @@ function launchTable($countfiles, $fileExtensions) {
     <title>BackEnd</title>
     
     <link rel="stylesheet" type="text/css" href="../assets/css/secret.css" />
-    <!--<link rel="stylesheet" type="text/css" href="../assets/css/standard.css" />
-    <script src="../assets/js/jquery.js"></script>-->
 </head>
 <body  style="font-family: Arial, sans-serif;">
     <div class="navbar flexy">

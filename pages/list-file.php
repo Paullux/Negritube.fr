@@ -19,23 +19,6 @@ if($diff_>899){
 require('albums.php');
 require 'config.php';
 
-function readHere($csv, $separator){
-    $file = fopen($csv, 'r');
-    while (!feof($file) ) {
-        if ($separator == ',') $line[] = fgetcsv($file, 1024);
-        else $line[] = fgetcsv($file, 1024, $separator);
-    }
-    fclose($file);
-    return $line;
-}
-
-function saveHere($csv, $list, $separator){
-    $file = fopen($csv, "a");
-    $list = array_map(function($val) { return str_replace('"', '', $val); }, $list);
-    fputcsv($file, $list, $separator);
-    fclose($file);
-}
-
 function sortTracks($a, $b) {
     return (int)$a->piste > (int)$b->piste;
 }
@@ -91,9 +74,6 @@ $albums = array();
 
 $counter = count($_POST['filename']);
 
-echo '<br><br><br><br>';
-echo $counter;
-
 for ($i = 0; $i < $counter; $i++) {
     $album = new Albums();
     $album->title = $_POST['album'][$i];
@@ -117,7 +97,9 @@ forEach($albums as $item) {
 }
 
 arrayToList($albums, $audionumber);
+$parts = explode('@', $_SESSION['email']);
 
+$user = $parts[0];
 ?>
 <!DOCTYPE html>
 <html lang="fr">
