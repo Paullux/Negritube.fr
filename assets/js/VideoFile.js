@@ -1,25 +1,25 @@
-var Numero = 0;
-var currentTrack = 0;
-var video = document.getElementById("video");
-var trackArray;
-var title = document.getElementById('title');
-var description = document.getElementById('description');
-var shuffleBool = new Boolean(true);
-var autorenewBool = new Boolean(true);
+let Numero = 0;
+let currentTrack = 0;
+const video = document.getElementById("video");
+let trackArray;
+const title = document.getElementById('title');
+const description = document.getElementById('description');
+const shuffleBool = new Boolean(true);
+const autorenewBool = new Boolean(true);
 
-var Server = "";
+let Server = "";
 
 if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
   Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
 } else {
   Server = "https://negritube.fr/";
 }
-var Lenght = document.getElementsByClassName("videoLenght").length;
+const Lenght = document.getElementsByClassName("videoLenght").length;
 
-var miniatureButton = [];
-var titreButton = [];
-var auteurButton = [];
-var descriptionButton = [];
+let miniatureButton = [];
+let titreButton = [];
+let auteurButton = [];
+let descriptionButton = [];
 
 for ( let i = 1 ; i <=  document.getElementsByClassName("videoLenght").length ; i++ ) {
   miniatureButton.push(document.getElementById('miniature'+i).src)
@@ -27,10 +27,6 @@ for ( let i = 1 ; i <=  document.getElementsByClassName("videoLenght").length ; 
   auteurButton.push(document.getElementById('Auteur'+i).innerHTML);
   descriptionButton.push(document.getElementById('description'+i).innerHTML)
 }
-
-console.log(titreButton);
-console.log(auteurButton);
-console.log(description);
 
 var isMobile = {
   Android: function() {
@@ -55,10 +51,10 @@ var isMobile = {
 
 function launchNewClip(trackNumber) {
 
-  var miniature = miniatureButton[trackNumber - 1];
-  var titre = titreButton[trackNumber - 1];
-  var auteur = auteurButton[trackNumber - 1];
-  var descriptionB = descriptionButton[trackNumber - 1];
+  let miniature = miniatureButton[trackNumber - 1];
+  let titre = titreButton[trackNumber - 1];
+  let auteur = auteurButton[trackNumber - 1];
+  let descriptionB = descriptionButton[trackNumber - 1];
 
   title.innerHTML = auteur + " : " + titre;
   description.innerHTML = descriptionB;

@@ -23,21 +23,20 @@ if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
 } else {
   Server = "https://negritube.fr/";
 }
-var Lenght = document.getElementsByClassName("coverLenght").length;
+
+var Length = document.getElementsByClassName("coverLenght").length;
 
 var coverButton = [];
 var TitreButton = [];
 var AuteurButton = [];
 var AlbumButton = [];
 
-for ( let i = 1 ; i <=  document.getElementsByClassName("videoLenght").length ; i++ ) {
+for ( let i = 1 ; i <=  document.getElementsByClassName("coverLength").length ; i++ ) {
   coverButton.push(document.getElementById('cover'+i).src);
   TitreButton.push(document.getElementById('p'+i).innerHTML);
   AuteurButton.push(document.getElementById('Auteur'+i).innerHTML);
   AlbumButton.push(document.getElementById('Album'+i).innerHTML);
 }
-
-
 
 var isMobile = {
   Android: function() {
@@ -60,10 +59,14 @@ var isMobile = {
   }
 };
 
+let NAS = true;
+
 if (!isMobile.any()) {
   enCoursDeLecture.style.backgroundImage = "";
+  NAS = true
 } else {
   enCoursDeLecture.style.backgroundImage = "url('assets/img/musicplayerpause.png')";
+  NAS = false
 }
 
 function launchNewMusic(Numero) {
@@ -72,6 +75,7 @@ function launchNewMusic(Numero) {
   var Artiste = AuteurButton[Numero - 1];
   var Album = AlbumButton[Numero - 1];
   var Pochette = coverButton[Numero - 1];
+  console.log(Pochette);
 
   if (!isMobile.any()) {
     TitreEnBas.innerHTML = "Titre :&nbsp;" + Titre;
@@ -95,7 +99,7 @@ function launchNewMusic(Numero) {
 
   song.style.backgroundColor = "#484848";
 
-  for (var i = 1; i <= document.getElementsByClassName("coverLenght").length; i++) {
+  for (var i = 1; i <= document.getElementsByClassName("coverLength").length; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }

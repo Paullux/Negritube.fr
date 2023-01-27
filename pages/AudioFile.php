@@ -265,7 +265,7 @@ $ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
         <?php
           for ($i = 0; $i < count($result); $i++) {
             echo "<button class='song_title button_song' id='" . $result[$i]['Numero'] . "' onclick='launchNewMusic(\"" . $result[$i]['Numero'] . "\");' type='button'>
-              <img class='cover coverLenght' id=² src='" . $result[$i]['pochette'] . "' alt='cover'>
+              <img class='cover coverLength' id='cover" . $result[$i]['Numero'] . "' src='" . $result[$i]['pochette'] . "' alt='cover'>
               <div class='listMusic'>
                 <p class='Titre'>Titre :&nbsp;<span id='p" . $result[$i]['Numero'] . "'>" . $result[$i]['Titre'] . "</span></p>
                 <p class='Auteur'>Artiste : <span id='Auteur" . $result[$i]['Numero'] . "'>" . $result[$i]['Artiste'] . "</span></p>
