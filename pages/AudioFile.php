@@ -183,34 +183,20 @@ $ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
     });
 
   </script>
-  <script type="text/javascript">
-    <?php
-      // prepare the statement
-      $sth = $dbco->prepare("SELECT * FROM musiques");
-
-      // execute the statement
-      $sth->execute();
-
-      // fetch the result
-      $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-    ?>
-    window.music = [];
-    var dict = {}
-    <?php for ($i = 0; $i < count($result) ; $i++) {
-        echo 'var Numero = "'.$result[$i]["Numero"].'";
-        var Titre = "'.$result[$i]["Titre"].'";
-        var Artiste = "'.$result[$i]["Artiste"].'";
-        var Album = "'.$result[$i]["Album"].'";
-        var pochette = "'.$result[$i]["pochette"].'";
-        dict'.$i.' = {"Numero": Numero, "Titre": Titre, "Artiste": Artiste, "Album": Album, "pochette": pochette};
-        window.music.push(dict'.$i.');';
-      };
-    ?>
-  </script>
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
 <body> <!-- onload="document.getElementById(1).style.backgroundColor = '#D88851';">² -->
+  <?php
+    // prepare the statement
+    $sth = $dbco->prepare("SELECT * FROM musiques");
+
+    // execute the statement
+    $sth->execute();
+
+    // fetch the result
+    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+  ?>
   <div id="turnDeviceNotification"></div>
   <div class="my_page">
     <div class="big-title">
@@ -277,17 +263,17 @@ $ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
       </div>
       <div class="choixTitreAudio">
         <?php
-        for ($i = 0; $i < count($result); $i++) {
-          echo "<button class='song_title button_song' id='" . $result[$i]['Numero'] . "' onclick='launchNewMusic(\"" . $result[$i]['Numero'] . "\");' type='button'>
-          <img class='cover' src='" . $result[$i]['pochette'] . "' alt='cover'>
-          <div class='listMusic'>
-            <p class='Titre'>Titre :&nbsp;<span id='p" . $result[$i]['Numero'] . "'>" . $result[$i]['Titre'] . "</p>
-            <p class='Auteur'>Artiste : " . $result[$i]['Artiste'] . "</p>
-            <p class='Album'>Album : " . $result[$i]['Album'] . "</p>
-          </div>
-          </button>
-          ";
-        }
+          for ($i = 0; $i < count($result); $i++) {
+            echo "<button class='song_title button_song' id='" . $result[$i]['Numero'] . "' onclick='launchNewMusic(\"" . $result[$i]['Numero'] . "\");' type='button'>
+              <img class='cover coverLenght' id=² src='" . $result[$i]['pochette'] . "' alt='cover'>
+              <div class='listMusic'>
+                <p class='Titre'>Titre :&nbsp;<span id='p" . $result[$i]['Numero'] . "'>" . $result[$i]['Titre'] . "</span></p>
+                <p class='Auteur'>Artiste : <span id='Auteur" . $result[$i]['Numero'] . "'>" . $result[$i]['Artiste'] . "</span></p>
+                <p class='Album'>Album : <span id='Album" . $result[$i]['Numero'] . "'>" . $result[$i]['Album'] . "</span></p>
+              </div>
+            </button>
+            ";
+          }
         ?>
       </div>
     </div>

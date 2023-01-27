@@ -182,7 +182,6 @@ $ogLink =  rel2abs($result['miniature'], "https://www.negritube.fr/pages/");
     });
 
   </script>
-  <script type="text/javascript">
   <?php    
     // prepare the statement
     $sth = $dbco->prepare("SELECT * FROM videos");
@@ -193,20 +192,6 @@ $ogLink =  rel2abs($result['miniature'], "https://www.negritube.fr/pages/");
     // fetch the result
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
   ?>
-  window.videos = [];
-  var dict = {}
-  <?php for ($i = 0; $i < count($result) ; $i++) {
-      echo 'var Numero = "'.$result[$i]["Numero"].'";
-      var Titre = "'.$result[$i]["Titre"].'";
-      var Artiste = "'.$result[$i]["Artiste"].'";
-      var Style = "'.$result[$i]["Style"].'";
-      var miniature = "'.$result[$i]["miniature"].'";
-      var description = "'.$result[$i]["description"].'";
-      dict'.$i.' = {"Numero": Numero, "Titre": Titre, "Artiste": Artiste, "Style": Style, "miniature": miniature, "description": description};
-      window.videos.push(dict'.$i.');';
-    };
-  ?>
-  </script>
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
 </head>
@@ -252,16 +237,17 @@ $ogLink =  rel2abs($result['miniature'], "https://www.negritube.fr/pages/");
       </div>
       <div class="choixTitre">
         <?php
-        for ($i = 0; $i < count($result); $i++) {
-          echo "<button class='song_title button_songV button_song' id='" . $result[$i]['Numero'] . "' onclick='launchNewClip(\"" . $result[$i]['Numero'] . "\");' type='button'>
-          <img class='coverV' src='../assets/img/miniature/" . $result[$i]['Numero'] . ".png' alt='miniature'>
-          <div class='listMusic'>
-            <p class='Titre'>Titre :&nbsp;<span id='p" . $result[$i]['Numero'] . "'>" . $result[$i]['Titre'] . "</p>
-            <p class='Auteur'>Artiste : " . $result[$i]['Artiste'] . "</p>
-            <p class='Album'>Style : " . $result[$i]['Style'] . "</p>
-          </div>
-          </button>";
-        }
+          for ($i = 0; $i < count($result); $i++) {
+            echo "<button class='song_title button_songV button_song videoLenght' id='" . $result[$i]['Numero'] . "' onclick='launchNewClip(\"" . $result[$i]['Numero'] . "\");' type='button'>
+              <img class='coverV' id='miniature" . $result[$i]['Numero'] . "' src='../assets/img/miniature/" . $result[$i]['Numero'] . ".png' alt='miniature'>
+              <div class='listMusic'>
+                <p class='Titre'>Titre :&nbsp;<span id='p" . $result[$i]['Numero'] . "'>" . $result[$i]['Titre'] . "</span></p>
+                <p class='Auteur'>Artiste : <span id='Auteur" . $result[$i]['Numero'] . "'>" . $result[$i]['Artiste'] . "</span></p>
+                <p class='Album'>Style : <span id='Style" . $result[$i]['Numero'] . "'>" . $result[$i]['Style'] . "</span></p>
+                <p class='description' style='visibility: hidden; height:0; margin-bottom: -5vh;'>description : <span id='description" . $result[$i]['Numero'] . "' style='visibilty: hidden;'>" . $result[$i]['description'] . "</span></p>
+              </div>
+            </button>";
+          }
         ?>
       </div>
     </div>

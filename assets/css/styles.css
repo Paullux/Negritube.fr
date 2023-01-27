@@ -831,7 +831,7 @@ nav p {
   flex-direction: column;
   display: flex;
   overflow-y: auto;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 .choixTitreAudio {

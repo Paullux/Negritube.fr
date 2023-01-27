@@ -1,5 +1,3 @@
-var k = setInterval("pauseAud()", 20000);
-clearInterval(k);
 var song = document.getElementById('song_title_audio');
 var canvas = document.getElementById('canvas');
 var trackNumber = 1;
@@ -18,14 +16,28 @@ var TitreEnHaut = document.getElementById('TitreEnHaut');
 var AuteurEnHaut = document.getElementById('AuteurEnHaut');
 var AlbumEnHaut = document.getElementById('AlbumEnHaut');
 
-
 var Server = "";
 
 if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
   Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
-}else {
+} else {
   Server = "https://negritube.fr/";
 }
+var Lenght = document.getElementsByClassName("coverLenght").length;
+
+var coverButton = [];
+var TitreButton = [];
+var AuteurButton = [];
+var AlbumButton = [];
+
+for ( let i = 1 ; i <=  document.getElementsByClassName("videoLenght").length ; i++ ) {
+  coverButton.push(document.getElementById('cover'+i).src);
+  TitreButton.push(document.getElementById('p'+i).innerHTML);
+  AuteurButton.push(document.getElementById('Auteur'+i).innerHTML);
+  AlbumButton.push(document.getElementById('Album'+i).innerHTML);
+}
+
+
 
 var isMobile = {
   Android: function() {
@@ -51,20 +63,20 @@ var isMobile = {
 if (!isMobile.any()) {
   enCoursDeLecture.style.backgroundImage = "";
 } else {
-    enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerpause.png')";
+  enCoursDeLecture.style.backgroundImage = "url('assets/img/musicplayerpause.png')";
 }
 
-function launchNewMusic(Numero) {    
-  var Titre = window.music[Numero-1]['Titre'];
-  var Artiste = window.music[Numero-1]['Artiste'];
-  var Album = window.music[Numero-1]['Album'];
-  var pochette = window.music[Numero-1]['pochette'];
- 
+function launchNewMusic(Numero) {
+
+  var Titre = TitreButton[Numero - 1];
+  var Artiste = AuteurButton[Numero - 1];
+  var Album = AlbumButton[Numero - 1];
+  var Pochette = coverButton[Numero - 1];
+
   if (!isMobile.any()) {
     TitreEnBas.innerHTML = "Titre :&nbsp;" + Titre;
     AuteurEnBas.innerHTML = "Artiste :&nbsp;" + Artiste;
     AlbumEnBas.innerHTML = "Album :&nbsp;" + Album;
-    
   } else {
     TitreEnHaut.innerHTML = "Titre :&nbsp;" + Titre;
     AuteurEnHaut.innerHTML = "Artiste :&nbsp;" + Artiste;
@@ -72,10 +84,10 @@ function launchNewMusic(Numero) {
     listeMusique.style.backgroundColor = "rgba(65,65,65, 0.6)";
     listeMusique.style.color = "#FFF";
   }
-  var Pochette = pochette.split('..')[1];
-  document.getElementById('cover').src = Server + Pochette;
-  coverVEnBas.src = Server + Pochette;
-  cover.src = Server + Pochette;
+
+  document.getElementById('cover').src = Pochette;
+  coverVEnBas.src = Pochette;
+  cover.src = Pochette;
 
   document.title = Artiste + ", " + Titre + " - Negritube";
 
@@ -83,7 +95,7 @@ function launchNewMusic(Numero) {
 
   song.style.backgroundColor = "#484848";
 
-  for (var i = 1; i <= window.numberOfLine; i++) {
+  for (var i = 1; i <= document.getElementsByClassName("coverLenght").length; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
@@ -134,9 +146,9 @@ function playAud() {
 function nextSong() {
   clearInterval(k);
   if (shuffleBool) {
-    trackNumber = getRandomIntInclusive(1, window.numberOfLine);
+    trackNumber = getRandomIntInclusive(1, document.getElementsByClassName("coverLenght").length);
   } else {
-    if (trackNumber < window.numberOfLine - 1) {
+    if (trackNumber < document.getElementsByClassName("coverLenght").length - 1) {
       ++trackNumber;
     } else {
       trackNumber = 1;
@@ -161,7 +173,6 @@ function pauseAud2() {
   } else {
     enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerpause.png')";
   }
-  clearInterval(k);
 }
 
 function rmEnd(str, ending){
@@ -184,6 +195,7 @@ if (oldTrack == null) {
 }
 
 window.addEventListener("DOMContentLoaded", function(event) {
+	var musicLenght = document.getElementsByClassName("coverLenght").length;
   //if (!isMobile.any()) {
     if (track != null) {
       launchNewMusic(track);
