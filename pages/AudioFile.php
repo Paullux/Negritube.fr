@@ -232,12 +232,12 @@ $ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
           <p class='Album' id='AlbumEnHaut'><?= $result[$index]['Album'] ?></p>
         </div>
         <div class="imageContainer">
-          <img class="image" id="cover" src= "<?= $result[$index]['pochette'] ?>">
+          <img class="image coverAudio" id="cover" src= "<?= $result[$index]['pochette'] ?>">
           <img hidden class="image imgIsPlaying" src="" id="enCoursDeLecture">
         </div>
         <br><br>
         <div class="song_title aMasquer">
-          Pour relancer la lecture d'une chanson cliquez sur la partie droite
+          Pour écouter des chanson cliquez sur la partie droite
         </div>
       </div>
       <div class="song_title aMasquer descriptionPhilippe">

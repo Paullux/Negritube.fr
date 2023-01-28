@@ -199,6 +199,7 @@
   .imageContainer {
     width: 100vw !important;
     height: 100vw !important;
+    margin-top: 10vw;
   }
   .listMusicMobile {
     width: 100%;
@@ -206,7 +207,7 @@
   }
   button {
     left:0;
-    rigth:0;
+    right:0;
     width: 100%;
     text-align: center;
   }

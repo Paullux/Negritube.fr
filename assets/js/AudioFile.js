@@ -116,6 +116,7 @@ function launchNewMusic(Numero) {
   if (!isMobile.any()) {
     enCoursDeLecture.style.backgroundImage = "";
   } else {
+    enCoursDeLecture.removeAttribute("hidden");
     enCoursDeLecture.style.backgroundImage = "url('" + Server + "assets/img/musicplayerplay.png')";
   }
 }
