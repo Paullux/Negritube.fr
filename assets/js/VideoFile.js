@@ -1,27 +1,27 @@
-let Numero = 0;
-let currentTrack = 0;
-const video = document.getElementById("video");
-let trackArray;
-const title = document.getElementById('title');
-const description = document.getElementById('description');
-const shuffleBool = new Boolean(true);
-const autorenewBool = new Boolean(true);
+var Numero = 0;
+var currentTrack = 0;
+var video = document.getElementById("video");
+var trackArray;
+var title = document.getElementById('title');
+var description = document.getElementById('description');
+var shuffleBool = new Boolean(true);
+var autorenewBool = new Boolean(true);
 
-let Server = "";
+var Server = "";
 
 if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
   Server = "https://paulluxwaffle.synology.me/Multi-Plateform/";
 } else {
   Server = "https://negritube.fr/";
 }
-const Lenght = document.getElementsByClassName("videoLenght").length;
+var Lenght = document.getElementsByClassName("videoLenght").length;
 
-let miniatureButton = [];
-let titreButton = [];
-let auteurButton = [];
-let descriptionButton = [];
+var miniatureButton = [];
+var titreButton = [];
+var auteurButton = [];
+var descriptionButton = [];
 
-for ( let i = 1 ; i <=  document.getElementsByClassName("videoLenght").length ; i++ ) {
+for ( var i = 1 ; i <=  document.getElementsByClassName("videoLenght").length ; i++ ) {
   miniatureButton.push(document.getElementById('miniature'+i).src)
   titreButton.push(document.getElementById('p'+i).innerHTML);
   auteurButton.push(document.getElementById('Auteur'+i).innerHTML);
@@ -51,10 +51,10 @@ var isMobile = {
 
 function launchNewClip(trackNumber) {
 
-  let miniature = miniatureButton[trackNumber - 1];
-  let titre = titreButton[trackNumber - 1];
-  let auteur = auteurButton[trackNumber - 1];
-  let descriptionB = descriptionButton[trackNumber - 1];
+  var miniature = miniatureButton[trackNumber - 1];
+  var titre = titreButton[trackNumber - 1];
+  var auteur = auteurButton[trackNumber - 1];
+  var descriptionB = descriptionButton[trackNumber - 1];
 
   title.innerHTML = auteur + " : " + titre;
   description.innerHTML = descriptionB;
@@ -62,7 +62,7 @@ function launchNewClip(trackNumber) {
 
   window.history.replaceState('', '', Server + 'video-' + trackNumber + '.html');
 
-  for (let i = 1; i <= document.getElementsByClassName("videoLenght").length; i++) {
+  for (var i = 1; i <= document.getElementsByClassName("videoLenght").length; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
