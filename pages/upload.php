@@ -83,7 +83,7 @@ $user = $parts[0];
         Déconnexion
       </a>
     </div>
-    <? if (!empty($errors)) {
+    <?php if (!empty($errors)) {
         echo "<br><h2>Vous avez encontré au moins une erreur. </h2><br>";
         foreach ($errors as $error) {
             echo '<h3>'.$error . '<h2><br>';
