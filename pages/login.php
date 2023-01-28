@@ -38,14 +38,15 @@ session_destroy();
     <h1>Se connecter</h1>
     <form action="connect_propre.php" method="post">
         <div id="flexy">
-            <label class="register" for="idinput">Créer compte</label>
-                <label class="switch">
-                    <input type="checkbox" class="check-with-label" id="idinput" name="idinput" value="on">
-                    <span class="slider round"></span>
+            <label hidden class="register" for="idinput">Créer compte</label>
+                <label hidden class="switch">
+                    <input hidden type="checkbox" class="check-with-label" id="idinput" name="idinput" 
+value="on">
+                    <span hidden class="slider round"></span>
                 </label>
-            <label class="login" for="idinput">Se connecter</label>
+            <label hidden class="login" for="idinput">Se connecter</label>
         </div>
-        <br><br>
+
         <div class="c100">
             <label class="idElement" for="login">Email : </label><br>
             <input type="text" id="login" name="login"

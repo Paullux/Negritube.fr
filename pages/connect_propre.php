@@ -76,27 +76,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     header("Location: login.php");
                     exit();
                 }
-            } else if ($idinput == 'off'){
-                try{
+            } else if ($idinput == 'off' && ($response->email === admin_one || $response->email === admin_two)){
+                //try{
                     //On se connecte à la BDD
-                    $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
-                    $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    //$dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
+                    //$dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     //On insère les données reçues
-                    $sth = $dbco->prepare("
-                        INSERT INTO utilisateurs(email, password_hash)
-                        VALUES(:email, :password_hash)");
-                    $sth->bindParam(':email',$email);
-                    $sth->bindParam(':password_hash',$hashed_password);
-                    $sth->execute();
+                    //$sth = $dbco->prepare("
+                    //    INSERT INTO utilisateurs(email, password_hash)
+                    //    VALUES(:email, :password_hash)");
+                    //$sth->bindParam(':email',$email);
+                    //$sth->bindParam(':password_hash',$hashed_password);
+                    //$sth->execute();
                     //On renvoie l'utilisateur vers la page de remerciement
                     header("Location: login.php");
                     exit();
-                }
-                catch(Exception $e){
-                    echo 'Erreur : '.$e->getMessage();
-                    header("Location: login.php");
-                    exit();
-                }
+                //}
+                //catch(Exception $e){
+                    //echo 'Erreur : '.$e->getMessage();
+                    //header("Location: login.php");
+                    //exit();
+                //}
             }
         }    
     }
