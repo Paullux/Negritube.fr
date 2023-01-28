@@ -66,7 +66,7 @@ $user = $parts[0];
           Glisser les MP3 🎵 ou les pochettes d'album 💿<br>
           uniquement en mp3 ou en jpg ici ! 
         </p>
-        <input type="file" name="file[]" id="file" class="dropzone-input" hidden multiple />
+        <input type="file" name="file[]" id="file" class="dropzone-input" accept="audio/mpeg,image/jpeg" hidden multiple />
       </div>
       <input type="submit" id="UploadButton" value="Lancer le traitement de vos fichiers"></input>
     </form>
