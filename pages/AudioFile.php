@@ -237,7 +237,7 @@ $ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
         </div>
         <br><br>
         <div class="song_title aMasquer">
-          Pour écouter des chanson cliquez sur la partie droite
+          Pour écouter des chansons, cliquez sur la partie droite
         </div>
       </div>
       <div class="song_title aMasquer descriptionPhilippe">
