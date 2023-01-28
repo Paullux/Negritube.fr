@@ -1,8 +1,9 @@
 assets/videos/*
 assets/audio/*
+assets/uploads/*
 matomo/*
 .htaccess
 pages/config.php
 pages/config-copy.php
-
+pages/vendor
 robots.txt

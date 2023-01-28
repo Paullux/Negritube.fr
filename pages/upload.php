@@ -43,38 +43,11 @@ if (!isset($_FILES['file']['name'][0])) {
         }
     } 
 }
-
-if (empty($errors)) {
-    $countfiles = count($_FILES['file']['name']);
-    launchTable($countfiles, $fileExtensions);
-
-} else {
-    echo "Vous avez encontré au moins une erreur. <br>";
-    foreach ($errors as $error) {
-        echo $error . '<br>';
-    }
-    echo '<button onclick="history.back()">Retour</button>';
-}
-
-function launchTable($countfiles, $fileExtensions) {
-    
-    $parts = explode('@', $_SESSION['email']);
-    $user = $parts[0];
-    
-    $images = new ArrayObject(array()); //array de covers
-    $music = new ArrayObject(array());
-    for ($i = 0; $i < $countfiles; $i++) {
-        $filename = $_FILES['file']['name'][$i];
-        if (strtolower($fileExtensions[$i]) === 'jpg') {
-            $images->append($filename);
-        } else if (strtolower($fileExtensions[$i]) === 'mp3'){
-            $music->append($filename);
-        }
-        $_SESSION['temp_file'][$i] = '../assets/uploads/' . $_FILES['file']['name'][$i];
-        move_uploaded_file($_FILES['file']['tmp_name'][$i], $_SESSION['temp_file'][$i]);
-    }
+$parts = explode('@', $_SESSION['email']);
+$user = $parts[0];
 
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -109,52 +82,73 @@ function launchTable($countfiles, $fileExtensions) {
         Déconnexion
       </a>
     </div>
-    <form id="formAddMP3" action="list-file.php" method="post">
-        <table>
-            <thead>
-            <tr>
-                <th>Fichiers téléversés</th>
-                <th>Numéro de la piste sur l'album</th>
-                <th>Titre chanson</th>
-                <th>Artiste</th>
-                <th>Album</th>
-                <th>Pochette</th>
-            </tr>
-            </thead>
-            <tbody id="fichierTeleverse">
-                <?php for ($i = 0;$i < $countfiles; $i++) { 
-                    if (strtolower($fileExtensions[$i]) == 'mp3') { ?>
-                    <tr>
-                        <td>
-                            <input type="text" class="mp3" name="filename[]" readonly required value="<?= $music[$i] ?>">
-                        </td>
-                        <td>
-                            <input type="number" class="mp3" name="track[]" required value="">
-                        </td>
-                        <td>
-                            <input type="text" class="mp3" name="title[]" required value="">
-                        </td>
-                        <td>
-                            <input type="text" class="mp3" name="artist[]" required value="">
-                        </td>
-                        <td>
-                            <input type="text" class="mp3" name="album[]" required  value=""> 
-                        </td>
-                        <td>
-                            <select class="mp3" id="<?php echo 'cover_'.$i ?>" name="cover[]" required>
-                            <option value="">--Please choose an option--</option>
-                            <?php forEach($images as $image) {
-                                echo '<option value="'.$image.'">'.$image.'</option>';
-                            } ?>
-                        </td>
-                    </tr>
-                <? } } ?>
-            </tbody>
-        </table>
-        <input type="submit" id="UploadButton" value="Téléverser les fichiers"></input>
-    </form>
+    <? if (!empty($errors)) {
+        echo "<br><h2>Vous avez encontré au moins une erreur. </h2><br>";
+        foreach ($errors as $error) {
+            echo '<h3>'.$error . '<h2><br>';
+        }
+        echo '<br><button id="UploadButton" onclick="history.back()">Retour</button>';
+    } else {  
+        $countfiles = count($_FILES['file']['name']);       
+        $images = new ArrayObject(array()); //array de covers
+        $music = new ArrayObject(array());
+        for ($i = 0; $i < $countfiles; $i++) {
+            $filename = $_FILES['file']['name'][$i];
+            if (strtolower($fileExtensions[$i]) === 'jpg') {
+                $images->append($filename);
+            } else if (strtolower($fileExtensions[$i]) === 'mp3'){
+                $music->append($filename);
+            }
+            $_SESSION['temp_file'][$i] = '../assets/uploads/' . $_FILES['file']['name'][$i];
+            move_uploaded_file($_FILES['file']['tmp_name'][$i], $_SESSION['temp_file'][$i]);
+        }?>
+        <form id="formAddMP3" action="list-file.php" method="post">
+            <table>
+                <thead>
+                <tr>
+                    <th>Fichiers téléversés</th>
+                    <th>Numéro de la piste sur l'album</th>
+                    <th>Titre chanson</th>
+                    <th>Artiste</th>
+                    <th>Album</th>
+                    <th>Pochette</th>
+                </tr>
+                </thead>
+                <tbody id="fichierTeleverse">
+                    <?php $j = 0;
+                    for ($i = 0;$i < $countfiles; $i++) { 
+                        if (strtolower($fileExtensions[$i]) == 'mp3') { ?>
+                            <tr>
+                                <td>
+                                    <input type="text" class="mp3" name="filename[]" readonly required value="<?= $music[$j] ?>">
+                                </td>
+                                <td>
+                                    <input type="number" class="mp3" name="track[]" required value="">
+                                </td>
+                                <td>
+                                    <input type="text" class="mp3" name="title[]" required value="">
+                                </td>
+                                <td>
+                                    <input type="text" class="mp3" name="artist[]" required value="">
+                                </td>
+                                <td>
+                                    <input type="text" class="mp3" name="album[]" required  value=""> 
+                                </td>
+                                <td>
+                                    <select class="mp3" id="<?php echo 'cover_'.$i ?>" name="cover[]" required>
+                                    <option value="">--Please choose an option--</option>
+                                    <?php forEach($images as $image) {
+                                        echo '<option value="'.$image.'">'.$image.'</option>';
+                                    } ?>
+                                </td>
+                            </tr>
+                        <? $j++;
+                        } 
+                    } ?>
+                </tbody>
+            </table>
+            <input type="submit" id="UploadButton" value="Téléverser les fichiers"></input>
+        </form>
+    <?php } ?>
 </body>
 </html>      
-<?php
-}
-?>
