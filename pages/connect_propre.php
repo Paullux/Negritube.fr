@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     //On insère les données reçues
                     $sth = $dbco->prepare("
-                        INSERT INTO negritube(email, password_hash)
+                        INSERT INTO utilisateurs(email, password_hash)
                         VALUES(:email, :password_hash)");
                     $sth->bindParam(':email',$email);
                     $sth->bindParam(':password_hash',$hashed_password);
