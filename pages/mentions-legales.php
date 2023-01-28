@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <!-- HTML Meta Tags -->
   <title>Mentions Légales - Negritube</title>
   <meta name="description" content="pour (re-)découvrir le gwoka, musique de Guadeloupe.">

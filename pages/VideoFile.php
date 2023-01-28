@@ -98,7 +98,7 @@ $ogLink =  rel2abs($result['miniature'], "https://www.negritube.fr/pages/");
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <!-- HTML Meta Tags -->
   <title><?php echo $ogTitle ?></title>
   <meta name="description" content=<?php echo '"Clip - ' . $result['Titre'] . ', ' . $result['Artiste'] . '"'?>>

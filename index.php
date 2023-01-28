@@ -14,7 +14,7 @@ $cover = scandir($dir, SCANDIR_SORT_ASCENDING);
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <!-- HTML Meta Tags -->
   <title>Gwoka de Guadeloupe - Negritube</title>
 

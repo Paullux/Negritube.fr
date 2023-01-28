@@ -5,7 +5,7 @@ require_once ( 'formulaire.php' );
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <!-- HTML Meta Tags -->
   <title>Contact</title>
   <meta name="description" content="Pour une prise de contact">
