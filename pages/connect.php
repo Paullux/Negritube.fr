@@ -16,7 +16,7 @@ try{
             'code' => $_GET['code'],
             'client_id' => GOOGLE_ID,
             'client_secret' => GOOGLE_SECRET,
-            'redirect_uri' => 'https://paulluxwaffle.synology.me/Multi-Plateform/pages/connect.php',
+            'redirect_uri' => 'https://negritube.fr/pages/connect.php',
             'grant_type' => 'authorization_code'
         ]
     ]);
