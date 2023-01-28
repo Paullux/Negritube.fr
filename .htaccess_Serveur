@@ -21,8 +21,8 @@ Redirect 301 "/pages/Avé Maria Antillais.php" "https://negritube.fr/video-13.h$
 Redirect 301 "/pages/Pénélope.php" "https://negritube.fr/video-14.html"
 Redirect 301 "/pages/Konjé bonifié.php" "https://negritube.fr/video-15.html"
 
-Redirect 301 "/pages/AudioFile.php?track=(\d+)" "https://negritube.fr/audio-$1.html"
-Redirect 301 "/pages/VideoFile.php?track=(\d+)" "https://negritube.fr/video-$1.html"
+#Redirect 301 "/pages/AudioFile.php?track=(\d+)" "https://negritube.fr/audio-$1.html"
+#Redirect 301 "/pages/VideoFile.php?track=(\d+)" "https://negritube.fr/video-$1.html"
 
 ErrorDocument 404 "https://negritube.fr/404.php"
 

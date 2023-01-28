@@ -10,7 +10,8 @@ $t_on=$_SESSION['derniere_action'];
 $diff_=$to-$t_on;
 if($diff_>799){ 
   echo"<script>alert('10 minutes sans aucune activité sur l'application, vous allez être amener à vous reconnecter!')</script>";
-  unset($_SESSION['email'], $_SESSION['derniere_action']);
+  unset($_SESSION['email']);
+  unset($_SESSION['derniere_action']);
   session_destroy();
   header('location: login.php');
   exit();
@@ -142,7 +143,7 @@ $user = $parts[0];
                                     } ?>
                                 </td>
                             </tr>
-                        <? $j++;
+                        <?php $j++;
                         } 
                     } ?>
                 </tbody>
