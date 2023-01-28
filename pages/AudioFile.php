@@ -227,7 +227,7 @@ $ogLink =  rel2abs($result['pochette'], "https://www.negritube.fr/pages/");
       <div class="Music" onclick="togglePlay()">
         <div class='song_title aMasquer'>Chansons issues des Albums</div>
         <div class='song_title listMusicMobile' id="listeMusique" style="height: 50px;">
-          <p class='Auteur' id='AuteurEnHaut'>Chansons issues des Albums</p>
+          <p class='Auteur' id='AuteurEnHaut'><?= $result[$i]['Artiste'] ?></p>
           <h3 class='Titre' id='TitreEnHaut'><?= $result[$index]['Titre'] ?></h3>
           <p class='Album' id='AlbumEnHaut'><?= $result[$index]['Album'] ?></p>
         </div>

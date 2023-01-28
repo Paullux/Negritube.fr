@@ -24,14 +24,14 @@ if (window.location.href.indexOf("paulluxwaffle.synology.me") > -1) {
   Server = "https://negritube.fr/";
 }
 
-var Length = document.getElementsByClassName("coverLenght").length;
+var Length = document.getElementsByClassName("coverLength").length;
 
 var coverButton = [];
 var TitreButton = [];
 var AuteurButton = [];
 var AlbumButton = [];
 
-for ( let i = 1 ; i <=  document.getElementsByClassName("coverLength").length ; i++ ) {
+for ( let i = 1 ; i <=  Length ; i++ ) {
   coverButton.push(document.getElementById('cover'+i).src);
   TitreButton.push(document.getElementById('p'+i).innerHTML);
   AuteurButton.push(document.getElementById('Auteur'+i).innerHTML);
@@ -75,16 +75,17 @@ function launchNewMusic(Numero) {
   var Artiste = AuteurButton[Numero - 1];
   var Album = AlbumButton[Numero - 1];
   var Pochette = coverButton[Numero - 1];
-  console.log(Pochette);
+
+  TitreEnHaut.innerHTML = "Titre :&nbsp;" + Titre;
+  AuteurEnHaut.innerHTML = "Artiste :&nbsp;" + Artiste;
+  AlbumEnHaut.innerHTML = "Album :&nbsp;" + Album;
 
   if (!isMobile.any()) {
     TitreEnBas.innerHTML = "Titre :&nbsp;" + Titre;
     AuteurEnBas.innerHTML = "Artiste :&nbsp;" + Artiste;
     AlbumEnBas.innerHTML = "Album :&nbsp;" + Album;
   } else {
-    TitreEnHaut.innerHTML = "Titre :&nbsp;" + Titre;
-    AuteurEnHaut.innerHTML = "Artiste :&nbsp;" + Artiste;
-    AlbumEnHaut.innerHTML = "Album :&nbsp;" + Album;
+
     listeMusique.style.backgroundColor = "rgba(65,65,65, 0.6)";
     listeMusique.style.color = "#FFF";
   }
@@ -99,7 +100,7 @@ function launchNewMusic(Numero) {
 
   song.style.backgroundColor = "#484848";
 
-  for (var i = 1; i <= document.getElementsByClassName("coverLength").length; i++) {
+  for (var i = 1; i <= Length; i++) {
     document.getElementById(i).style.backgroundColor = "rgba(192,192,192, 0.5)";
     document.getElementById(i).style.color = "#000";
   }
@@ -148,11 +149,10 @@ function playAud() {
 }
 
 function nextSong() {
-  clearInterval(k);
   if (shuffleBool) {
-    trackNumber = getRandomIntInclusive(1, document.getElementsByClassName("coverLenght").length);
+    trackNumber = getRandomIntInclusive(1, Length);
   } else {
-    if (trackNumber < document.getElementsByClassName("coverLenght").length - 1) {
+    if (trackNumber < Length - 1) {
       ++trackNumber;
     } else {
       trackNumber = 1;
@@ -199,7 +199,6 @@ if (oldTrack == null) {
 }
 
 window.addEventListener("DOMContentLoaded", function(event) {
-	var musicLenght = document.getElementsByClassName("coverLenght").length;
   //if (!isMobile.any()) {
     if (track != null) {
       launchNewMusic(track);
