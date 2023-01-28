@@ -10,7 +10,7 @@ if (isset($_GET['track']) && $_GET['track']){
 $serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
 
 // connect to the database
-$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
+$dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
 // prepare the statement
 $sth = $dbco->prepare("SELECT * FROM videos WHERE Numero = :Numero");

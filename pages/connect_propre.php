@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 && filter_var($email, FILTER_VALIDATE_EMAIL)
                 && !empty($hashed_password)) {       
                     // connect to the database
-                    $dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass);
+                    $dbco = new PDO("mysql:host=$serveur;dbname=$dbname", $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
     
                     // prepare the statement
                     $sth = $dbco->prepare("SELECT email, password_hash FROM utilisateurs WHERE email = :email");
