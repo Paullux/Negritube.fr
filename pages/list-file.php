@@ -22,7 +22,7 @@ require 'config.php';
 function sortTracks($a, $b) {
     return (int)$a->piste > (int)$b->piste;
 }
-
+$messages = [];
 function arrayToList($albums, $audionumber) {
     $i = intval($audionumber);
     forEach($albums as $item) {
@@ -35,9 +35,9 @@ function arrayToList($albums, $audionumber) {
             $newPath = '../assets/audio/AllAlbums/'.$i.'.mp3';
             $didUpload = rename($oldPath, $newPath);
             if ($didUpload) {
-                echo "<br>Le fichier " . $filename . " a bien été téléverser.";
+              $messages[] = "Le fichier " . $filename . " a bien été téléverser.";
             } else {
-                echo "<br>Une erreur s'est déroulé. Veuillez contacter l'administrateur du site.";
+              $messages[] = "Une erreur s'est déroulé lors du traitement du fichier " . $filename . ". Veuillez contacter l'administrateur du site.";
                 unlink($oldPath);
             }
             $filename = $Song->filename;
@@ -66,7 +66,7 @@ function arrayToList($albums, $audionumber) {
             $i++;
         }
     }
-    echo "Tous c'est bien passé vos fichiers sont sur le serveur et prêt à être écoutés.";
+    $messages[] = "Tous c'est bien passé vos fichiers sont sur le serveur et prêt à être écoutés.";
 }
 
 $album = new Albums();
@@ -113,8 +113,6 @@ $user = $parts[0];
     <title>BackEnd</title>
     
     <link rel="stylesheet" type="text/css" href="../assets/css/secret.css" />
-    <!--<link rel="stylesheet" type="text/css" href="../assets/css/standard.css" />
-    <script src="../assets/js/jquery.js"></script>-->
 </head>
 <body  style="font-family: Arial, sans-serif;">
     <div class="navbar flexy">
@@ -136,6 +134,15 @@ $user = $parts[0];
         <i class="fa fa-sign-out" aria-hidden="true"></i>
         Déconnexion
       </a>
+    </div>
+    <div>
+      <?php
+        echo '<br><br><h2>Résultat du téléversement : </h2><br>';
+        foreach($messages as $message) {
+          echo '<br><h3>' . $message . '</h3><br>';
+        }
+        echo '<br><button id="UploadButton" onclick="window.location.replace("..");">Retour à l\'accueil</button>';
+      ?>
     </div>
 </body>
 </html>  

@@ -86,9 +86,9 @@ $user = $parts[0];
     <?php if (!empty($errors)) {
         echo "<br><h2>Vous avez encontré au moins une erreur. </h2><br>";
         foreach ($errors as $error) {
-            echo '<h3>'.$error . '<h2><br>';
+            echo '<h3>'.$error . '</h3><br>';
         }
-        echo '<br><button id="UploadButton" onclick="history.back()">Retour</button>';
+        echo '<br><button id="UploadButton" onclick="history.back()">Retour à la page précédente</button>';
     } else {  
         $countfiles = count($_FILES['file']['name']);       
         $images = new ArrayObject(array()); //array de covers
