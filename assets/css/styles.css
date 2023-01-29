@@ -948,6 +948,42 @@ footer {
   flex-direction: column;
   justify-content:space-around;
   text-decoration: none;
+  width: 10vw;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  border: 1.5px solid #aaa;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);  
+}
+
+.vl {
+  border-left: 3px solid white;
+  height: 250px;
+  margin-bottom: -10px;
+}
+
+.negritube_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  border: 1.5px solid #aaa;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);  
+}
+
+.FlexExplication {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.negritube_signification {
+  text-align: justify;
+  width: 15vw !important;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 .VideoClass {
@@ -955,6 +991,14 @@ footer {
   flex-direction: column;
   justify-content:space-around;
   text-decoration: none;
+  width: 10vw;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  border: 1.5px solid #aaa;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);  
 }
 
 a.callAudio:link, a.callAudio:visited {
