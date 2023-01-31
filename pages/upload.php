@@ -96,6 +96,7 @@ $user = $parts[0];
         for ($i = 0; $i < $countfiles; $i++) {
             $filename = $_FILES['file']['name'][$i];
             if (strtolower($fileExtensions[$i]) === 'jpg') {
+                $filename = str_replace("'", "&quot;", $filename);
                 $images->append($filename);
             } else if (strtolower($fileExtensions[$i]) === 'mp3'){
                 $music->append($filename);

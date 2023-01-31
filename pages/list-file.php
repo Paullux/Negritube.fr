@@ -1,10 +1,16 @@
 <?php
+
 session_start();
 header("refresh: 900"); 
 if (!isset($_SESSION['email'])) {
     header('location: ../index.php');
     exit();
 }
+
+const UPLOAD = "../assets/uploads/";
+const COVER = "../assets/img/album cover/";
+const ALLALBUM = "../assets/audio/AllAlbums/";
+
 $to=time();
 $t_on=$_SESSION['derniere_action'];
 $diff_=$to-$t_on;
@@ -16,38 +22,51 @@ if($diff_>899){
   exit();
 }
 
+
+
 require('albums.php');
 require 'config.php';
 
 function sortTracks($a, $b) {
     return (int)$a->piste > (int)$b->piste;
 }
+
 $messages = [];
-function arrayToList($albums, $audionumber) {
+
+function toMessage(string $value, &$messages) {
+  $messages[] = $value;
+}
+
+function arrayToList($albums, $audionumber, &$messages) {
+
     $i = intval($audionumber);
     forEach($albums as $item) {
         $album = $item->title;
         $cover = $item->cover;
-        rename('../assets/uploads/'.$cover, '../assets/img/album cover/'.$cover);
+        $remove[] = "'";
+        $remove[] = '"';
+        $remove[] = "-"; // just as another example
+        $cover2 = str_replace( $remove, "", $cover );
+        rename(UPLOAD.$cover, COVER.$cover2);
         forEach($item->songs as $Song) {
             $filename = $Song->filename;
-            $oldPath = '../assets/uploads/'.$filename;
-            $newPath = '../assets/audio/AllAlbums/'.$i.'.mp3';
+            $oldPath = UPLOAD.$filename;
+            $newPath = ALLALBUM.$i.'.mp3';
             $didUpload = rename($oldPath, $newPath);
             if ($didUpload) {
-              $messages[] = "Le fichier " . $filename . " a bien été téléverser.";
+              toMessage("Le fichier " . $filename . " a bien été téléverser.", $messages);
             } else {
-              $messages[] = "Une erreur s'est déroulé lors du traitement du fichier " . $filename . ". Veuillez contacter l'administrateur du site.";
+              toMessage("Une erreur s'est déroulé lors du traitement du fichier " . $filename . ". Veuillez contacter l'administrateur du site.", $messages);
                 unlink($oldPath);
             }
             $filename = $Song->filename;
-            $oldPath = '../assets/uploads/'.$filename;
-            $newPath = '../assets/audio/AllAlbums/'.$i.'.mp3';
+            $oldPath = UPLOAD.$filename;
+            $newPath = ALLALBUM.$i.'.mp3';
             
             $songtitle = $Song->title;
             $artist = $Song->artist;
-            $number = strval($i); $
-            $pochette = '../assets/img/album cover/'.$cover;            
+            $number = strval($i);
+            $pochette = COVER.$cover2;            
 
             $serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
             $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
@@ -66,9 +85,8 @@ function arrayToList($albums, $audionumber) {
             $i++;
         }
     }
-    $messages[] = "Tous c'est bien passé vos fichiers sont sur le serveur et prêt à être écoutés.";
+    toMessage("Tous c'est bien passé vos fichiers sont sur le serveur et prêt à être écoutés.",$messages);
 }
-
 $album = new Albums();
 $albums = array();
 
@@ -91,12 +109,20 @@ for ($i = 0; $i < $counter; $i++) {
     array_push($albums[$current_album]->songs, $Song);
 }
 
-
 forEach($albums as $item) {
     usort($item->songs, 'sortTracks');
 }
 
-arrayToList($albums, $audionumber);
+$serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
+$dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
+
+$query = "SELECT MAX(Numero) as max_id FROM musiques";
+$sth = $dbco->prepare($query);
+$sth->execute();
+$row = $sth->fetch(PDO::FETCH_ASSOC);
+$audionumber = $row['max_id'] + 1;
+
+arrayToList($albums, $audionumber, $messages);
 $parts = explode('@', $_SESSION['email']);
 
 $user = $parts[0];
@@ -138,10 +164,10 @@ $user = $parts[0];
     <div>
       <?php
         echo '<br><br><h2>Résultat du téléversement : </h2><br>';
-        foreach($messages as $message) {
+        forEach($messages as $message) {
           echo '<br><h3>' . $message . '</h3><br>';
         }
-        echo '<br><button id="UploadButton" onclick="window.location.replace("..");">Retour à l\'accueil</button>';
+        echo '<br><button id="UploadButton" onclick="history.go(-3);">Retour à l\'accueil</button>';
       ?>
     </div>
 </body>
