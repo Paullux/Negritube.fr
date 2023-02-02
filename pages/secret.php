@@ -63,7 +63,7 @@ $user = $parts[0];
       <div class="dropzone" id="dropzone">
         <img width="256" height="256" class="dropzone-icon" id="image-dl" src="../assets/img/cloud-uploading.png" />
         <p id="text-drop-zone">
-          Glisser les MP3 🎵 ou les pochettes d'album 💿<br>
+          Glisser les MP3 et les pochettes d'album correspondantes<br>
           uniquement en mp3 ou en jpg ici ! 
         </p>
         <input type="file" name="file[]" id="file" class="dropzone-input" accept="audio/mpeg,image/jpeg" hidden multiple />

@@ -33,7 +33,7 @@ echo '<br></div>';
 
 echo '<div class="vl"></div>';
 echo '<div class="negritube_flex">';
-echo '<h3>Pourquoi Negritube :</h3>';
+echo '<h2>Pourquoi Negritube :</h2>';
 echo '<div class="FlexExplication">';
 echo '<p class="negritube_signification">Négritube est une plateforme dédiée à la musique noire, et notre nom est une référence au mouvement littéraire et intellectuel connu sous le nom de Négritude. Cette mouvance a eu une influence profonde sur la compréhension de l\'identité noire et a prôné une fierté pour les racines africaines et la mémoire de l\'héritage.</p>';
 echo '<p class="negritube_signification">À Négritube, nous sommes fermement convaincus que la musique noire est un vecteur important de la culture noire et de son patrimoine. Nous considérons notre site comme un sanctuaire où cette richesse musicale peut être célébrée et partagée avec le monde entier. Nous nous efforçons de faire en sorte que notre plateforme soit un lieu où la musique noire puisse être appréciée pour sa propre valeur musicale.</p>';

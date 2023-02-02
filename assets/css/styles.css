@@ -874,6 +874,7 @@ nav p {
   padding-top: 4%;
   height: auto;
   margin-top: 20px;
+
 }
 .compteur img {
   display: block;
@@ -884,7 +885,7 @@ nav p {
 footer {
   position: relative;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", sans-serif !important;
   font-style: normal;
   font-size: 10pt;
   color: #fff;
@@ -893,7 +894,7 @@ footer {
   text-shadow: 1px 1px 1px #000;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 9vh;
+  padding-top: 9vh; 
 }
 
 .footerIndex {
@@ -932,15 +933,18 @@ footer {
   flex-direction: row;
   justify-content:space-around;
   width: 80%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", sans-serif !important;
   font-style: normal;
-  font-size: 10pt;
+  font-size: 12pt;
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 1px #000;
   text-decoration: none; 
   margin-left: auto;
   margin-right: auto;
+  border: 1.5px solid #aaa;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5); 
 }
 
 .AudioClass {
@@ -948,35 +952,38 @@ footer {
   flex-direction: column;
   justify-content:space-around;
   text-decoration: none;
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: normal;
+  font-size: 10pt;
   width: 10vw;
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 2px;
   padding-bottom: 2px;
-  border: 1.5px solid #aaa;
-  border-radius: 20px;
-  background-color: rgba(0,0,0,0.5);  
 }
 
 .vl {
   border-left: 3px solid white;
-  height: 250px;
-  margin-bottom: -10px;
+  height: 300px;
+  margin-bottom: 0px;
 }
 
 .negritube_flex {
   display: flex;
   flex-direction: column;
   justify-content:space-around;
-  border: 1.5px solid #aaa;
-  border-radius: 20px;
-  background-color: rgba(0,0,0,0.5);  
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: normal;
+  font-size: 10pt;
 }
 
 .FlexExplication {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: normal;
+  font-size: 10pt;
 }
 
 .negritube_signification {
@@ -991,14 +998,14 @@ footer {
   flex-direction: column;
   justify-content:space-around;
   text-decoration: none;
+  font-family: "Gill Sans", sans-serif !important;
+  font-style: normal;
+  font-size: 10pt;
   width: 10vw;
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 2px;
   padding-bottom: 2px;
-  border: 1.5px solid #aaa;
-  border-radius: 20px;
-  background-color: rgba(0,0,0,0.5);  
 }
 
 a.callAudio:link, a.callAudio:visited {
