@@ -933,6 +933,7 @@ footer {
   flex-direction: row;
   justify-content:space-around;
   width: 80%;
+  height: auto;
   font-family: "Gill Sans", sans-serif !important;
   font-style: normal;
   font-size: 12pt;
@@ -956,6 +957,7 @@ footer {
   font-style: normal;
   font-size: 10pt;
   width: 10vw;
+  min-height: auto;
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 2px;
@@ -963,8 +965,8 @@ footer {
 }
 
 .vl {
-  border-left: 3px solid white;
-  height: 300px;
+  border-left: 1.5px solid #aaa;
+  height: auto;
   margin-bottom: 0px;
 }
 
@@ -984,6 +986,7 @@ footer {
   font-family: "Gill Sans", sans-serif !important;
   font-style: normal;
   font-size: 10pt;
+  min-height: auto;
 }
 
 .negritube_signification {
@@ -991,6 +994,7 @@ footer {
   width: 15vw !important;
   margin-left: 2vw;
   margin-right: 2vw;
+  min-height: auto;
 }
 
 .VideoClass {
@@ -1002,6 +1006,7 @@ footer {
   font-style: normal;
   font-size: 10pt;
   width: 10vw;
+  min-height: auto;
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 2px;
