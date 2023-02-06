@@ -69,7 +69,7 @@ function arrayToList($albums, $audionumber, &$messages) {
             $pochette = COVER.$cover2;            
 
             $serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
-            $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
+            $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
             $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             //On insère les données reçues
