@@ -47,6 +47,12 @@ if (!isset($_FILES['file']['name'][0])) {
 $parts = explode('@', $_SESSION['email']);
 $user = $parts[0];
 
+function clean($string) {
+    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+ 
+    return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+ }
+
 ?>
 
 <!DOCTYPE html>
@@ -96,6 +102,7 @@ $user = $parts[0];
         for ($i = 0; $i < $countfiles; $i++) {
             $filename = $_FILES['file']['name'][$i];
             if (strtolower($fileExtensions[$i]) === 'jpg') {
+                $filename = clean($filesname);
                 $filename = str_replace("'", "&quot;", $filename);
                 $images->append($filename);
             } else if (strtolower($fileExtensions[$i]) === 'mp3'){
