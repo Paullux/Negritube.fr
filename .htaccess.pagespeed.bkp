@@ -1,0 +1,92 @@
+# o2switch pagespeed start / DO NOT REMOVE OR EDIT
+<IfModule pagespeed_module>
+ModPagespeed on
+ModPagespeedRewriteLevel PassThrough
+ModPagespeedEnableFilters add_head,canonicalize_javascript_libraries,collapse_whitespace,combine_css,combine_heads,extend_cache,hint_preload_subresources,lazyload_images,rewrite_javascript,move_css_above_scripts,move_css_to_head,insert_dns_prefetch,remove_comments,remove_quotes,rewrite_images,strip_image_meta_data,sprite_images
+</IfModule>
+# o2switch pagespeed end / DO NOT REMOVE OR EDIT
+#Ancienne URL :
+Redirect 301 "/pages/Mal tèt.php" "https://negritube.fr/audio-1.html"
+Redirect 301 "/pages/Konsyans.php" "https://negritube.fr/audio-2.html"
+Redirect 301 "/pages/Eritaj.php" "https://negritube.fr/audio-9.html"
+Redirect 301 "/pages/Misiyon.php" "https://negritube.fr/audio-22.html"
+
+Redirect 301 "/pages/WIB.php" "https://negritube.fr/video-0.html"
+Redirect 301 "/pages/DLO.php" "https://negritube.fr/video-1.html"
+Redirect 301 "/pages/Fòs é kouraj.php" "https://negritube.fr/video-2.html"
+Redirect 301 "/pages/Piétònn'la (Philippe BLAZE).php" "https://negritube.fr/video-3.html"
+Redirect 301 "/pages/Sò a limanité.php" "https://negritube.fr/video-4.html"
+Redirect 301 "/pages/Sonjé BINO (Philippe BLAZE).php" "https://negritube.fr/vi$deo-5.html"
+Redirect 301 "/pages/LILY.php" "https://negritube.fr/video-6.html"
+Redirect 301 "/pages/Petite_Marie.php" "https://negritube.fr/video-7.html"
+Redirect 301 "/pages/Nou_mélé_Philippe_BLAZE.php" "https://negritube.fr/video$ -8.html"
+Redirect 301 "/pages/Chanson_Hommage_aux_Gwo_Mòdan.php" "https://negritube.fr/$video-9.html"
+Redirect 301 "/pages/Philippe_BLAZE_piano_bar.php" "https://negritube.fr/video-10.html"
+Redirect 301 "/pages/Sèl_si_on_gran_chimen.php" "https://negritube.fr/video-11$.html"
+Redirect 301 "/pages/Ekzòd.php" "https://negritube.fr/video-12.html"
+Redirect 301 "/pages/Avé Maria Antillais.php" "https://negritube.fr/video-13.h$tml"
+Redirect 301 "/pages/Pénélope.php" "https://negritube.fr/video-14.html"
+Redirect 301 "/pages/Konjé bonifié.php" "https://negritube.fr/video-15.html"
+
+#Redirect 301 "/pages/AudioFile.php?track=(\d+)" "https://negritube.fr/audio-$1.html"
+#Redirect 301 "/pages/VideoFile.php?track=(\d+)" "https://negritube.fr/video-$1.html"
+
+ErrorDocument 404 "https://negritube.fr/404.php"
+
+#--------------------------------------------------
+# Répertoire : /pages/
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+RewriteBase /
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Sur mon NAS
+#RewriteRule !^Multi-Plateform/ Multi-Plateform%{REQUEST_URI}
+
+# Index.php
+RewriteRule ^$ /index.php
+
+# AudioFile avec numéro track :
+RewriteRule ^audio-(\d+)\.html$ /pages/AudioFile.php?track=$1 [L]
+
+# VideoFile avec numéro de track :
+RewriteRule ^video-(\d+)\.html$ /pages/VideoFile.php?track=$1 [L]
+
+# Contact
+RewriteRule ^contact.html$ /pages/contact.php [L]
+
+# About
+RewriteRule ^about.html$ /pages/about.php [L]
+
+# Mentions Légales
+RewriteRule ^mentions-legales\.html$ /pages/mentions-legales\.php [L]
+
+#--------------------------------------------------
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /404.php [L]
+
+RewriteCond %{REQUEST_URI} ^/500/$
+RewriteRule ^(.*)$ /404.php [L]
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteCond %{HTTP_HOST} ^(www\.)?negritube\.fr
+
+RewriteRule ^(.*)$ https://negritube.fr/$1 [R,L]
+
+RedirectMatch 403 ^/assets/?$
+
+<IfModule mod_autoindex.c>
+Options -Indexes
+</IfModule>
+AddHandler cgi-script ffmpeg-php
+
