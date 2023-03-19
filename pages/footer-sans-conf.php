@@ -14,6 +14,12 @@ $sth->execute();
 // fetch the result
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
+if ('paulluxwaffle.synology.me' == $_SERVER['HTTP_HOST']) {
+    $url = 'https://paulluxwaffle.synology.me/Multi-Plateform';
+} else {
+    $url = 'https://negritube.fr';
+}
+
 
 $audionumber = count($result);
 echo '<div id="flexMusic">';
@@ -22,7 +28,7 @@ echo '<h2>Musiques</h2>';
 for ($i = 1; $i <= 10; $i++) {
     $randomAudio = rand(1, $audionumber);
     $linkTitleAudio = $result[$randomAudio-1]['Artiste'] . " - " . $result[$randomAudio-1]['Titre'];
-    $reallinkAudio =  "https://negritube.fr/pages/AudioFile.php?track=$randomAudio";
+    $reallinkAudio =  "$url/pages/AudioFile.php?track=$randomAudio";
     echo "<a class='callAudio' href=$reallinkAudio>$linkTitleAudio</a>";
 }
 echo '<br></div>';
@@ -38,7 +44,7 @@ echo '</div>';
 echo '<div class="vl"></div>';
 
 // prepare the statement
-$sth = $dbco->prepare("SELECT * FROM videos");
+$sth = $dbco->prepare("SELECT * FROM videoyt");
 
 // execute the statement
 $sth->execute();
@@ -51,14 +57,14 @@ echo '<div class="VideoClass">';
 echo '<h2>Clips vidéos</h2>';
 for ($j = 1; $j <= 10; $j++) {
     $randomVideo = rand(1, $videonumber);
-    $linkTitleVideo = $result[$randomVideo-1]['Artiste'] . " " . $result[$randomVideo-1]['Titre'];
-    $reallinkVideo =  "https://negritube.fr/pages/VideoFile.php?track=$randomVideo";
+    $linkTitleVideo = $result[$randomVideo]['title'];
+    $reallinkVideo =  "$url/pages/videoYoutube.php?track=$randomVideo";
     echo "<a class='callVideo' href=$reallinkVideo>$linkTitleVideo</a>";
 }
 echo '<br></div>';
 echo '</div>';
 
-echo "<h2><a class='callAudio' href='https://negritube.fr/pages/mentions-legales.php'>Mentions Légales</a></h2>";
+echo "<h2><a class='callAudio' href='$url/pages/mentions-legales.php'>Mentions Légales</a></h2>";
 
   
 

@@ -1,9 +1,9 @@
 <?php
 require 'config.php';
-
+require 'footer-sans-conf.php';
 //if ($track == 0) $track == 1;
 //$index = intval($track) - 1;
-
+/*
 $serveur = SERVEUR; $dbname = DBNAME; $user = USER; $pass = PASS;
 
 // connect to the database
@@ -42,7 +42,7 @@ echo '</div>';
 echo '<div class="vl"></div>';
 
 // prepare the statement
-$sth = $dbco->prepare("SELECT * FROM videos");
+$sth = $dbco->prepare("SELECT * FROM videoyt");
 
 // execute the statement
 $sth->execute();
@@ -55,14 +55,13 @@ echo '<div class="VideoClass">';
 echo '<h2>Clips vidéos</h2>';
 for ($j = 1; $j <= 10; $j++) {
     $randomVideo = rand(1, $videonumber);
-    $linkTitleVideo = $result[$randomVideo-1]['Artiste'] . " " . $result[$randomVideo-1]['Titre'];
-    $reallinkVideo =  "https://negritube.fr/pages/VideoFile.php?track=$randomVideo";
+    $linkTitleVideo = $result[$randomVideo-1]['title'];
+    $reallinkVideo =  "https://paulluxwaffle.synology.me/Multi-Plateform/pages/videoYoutube.php?track=$randomVideo";
     echo "<a class='callVideo' href=$reallinkVideo>$linkTitleVideo</a>";
 }
 echo '<br></div>';
 echo '</div>';
-
-echo "<h2><a class='callAudio' href='https://negritube.fr/pages/mentions-legales.php'>Mentions Légales</a></h2>";
+*/
 
   
 

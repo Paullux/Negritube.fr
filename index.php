@@ -55,15 +55,12 @@ $cover = scandir($dir, SCANDIR_SORT_ASCENDING);
     window.Miniatures = [];
     window.Covers = [];
     var miniatureIci = "";
-    var coverIci = "";
-    <?php 
-      for ($i = 2; $i < count($miniature) ; $i++) {
-        if ($miniature[$i] !== 'Thumbs.db' && $miniature[$i] !== '@eaDir') {
-          echo 'miniatureIci = "'.$miniature[$i].'";
-                window.Miniatures.push("assets/img/miniature/" + miniatureIci);
-          ';
-        }
-      }
+    var coverIci = "";    
+    for (i = 0; i < 42 ; i++) {
+        miniatureIci = i+'.jpg';
+        window.Miniatures.push("assets/img/youtubethumbnails/" + miniatureIci);
+    }
+    <?php
       for ($i = 2; $i < count($cover) ; $i++) {
         if ($cover[$i] !== 'Thumbs.db' && $cover[$i] !== '@eaDir') {
           echo 'coverIci = "'.$cover[$i].'";
@@ -162,6 +159,7 @@ $cover = scandir($dir, SCANDIR_SORT_ASCENDING);
       </nav>
       <div class="link_song miniatureandcover">
         <a class="miniature box" id="Miniatures" href="video-1.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
+          <img src="assets/img/pngegg.png" alt="YT" class="src">
           <h3 class="typeOfContent">
             Les Clips
           </h3>

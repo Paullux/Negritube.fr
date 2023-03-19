@@ -70,6 +70,9 @@ $user = $parts[0];
       </div>
       <input type="submit" id="UploadButton" value="Lancer le traitement de vos fichiers"></input>
     </form>
+    <form action="synchroniseYT.php" method="post">
+      <input type="submit" id="SynochroniseButton" value="Synchroniser les vidéos YouTube avec base de données"></input>
+    </form>
     <script src="../assets/js/javascript.js"></script>
 </body>
 </html>

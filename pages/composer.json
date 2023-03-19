@@ -1,6 +1,18 @@
 {
     "require": {
-        "guzzlehttp/guzzle": "6.3.3",
-        "symfony/var-dumper": "^6.0"
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/var-dumper": "^6.0",
+        "google/apiclient": "^2.0"
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "YouTube",
+            "YouTubeAnalytics",
+            "YouTubeReporting"
+        ]
     }
 }

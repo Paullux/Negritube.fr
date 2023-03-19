@@ -21,6 +21,14 @@
   background-size: cover;
 }
 
+.src {
+  width: 160px !important;
+  height: 160px;
+  position: fixed;
+  margin-top: calc((44vh - 160px) / 2);
+  margin-left: calc((68vh - 160px) / 2);
+}
+
 #bodyIndex {
   height: 150vh;
 }
@@ -72,6 +80,14 @@
     height: 30vh !important;
     width: 30vh !important;
   }
+
+  .src {
+    width: 160px !important;
+    height: 160px;
+    position: fixed;
+    margin-top: calc((30vh - 160px) / 2);
+    margin-left: calc((50vh - 160px) / 2);
+  }
 }
 
 @media screen and (max-width: 1280px) and (orientation: portrait)
@@ -79,6 +95,13 @@
   .miniature {
     height: 37vw !important;
     width: 70vw !important;
+  }
+  .src {
+    width: 80px !important;
+    height: 80px;
+    position: float;
+    margin-top: calc((37% - 80px) / 2);
+    margin-left: calc((70% - 80px) / 2);
   }
   .albumCover {
     height: 30vw !important;

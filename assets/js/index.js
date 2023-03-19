@@ -4,7 +4,7 @@ let miniatureCurrentImageIndex = 0;
 var cover = document.getElementById("Covers");
 var coverCurrentImageIndex = 0;
 
-miniature.style.backgroundImage = `url('assets/img/miniature/6.png')`;
+miniature.style.backgroundImage = `url('assets/img/youtubethumbnails/6.jpg')`;
 cover.style.backgroundImage = `url('assets/img/album cover/Mal_tèt.jpg')`;
 
 setInterval(() => {
@@ -14,7 +14,7 @@ setInterval(() => {
     miniature.style.backgroundImage = `url("${window.Miniatures[miniatureCurrentImageIndex]}")`;
     miniature.style.transition = `background 3s linear;`;
   }
-  miniatureCurrentImageIndex = (miniatureCurrentImageIndex + 1) % window.Miniatures.length;
+  miniatureCurrentImageIndex = (miniatureCurrentImageIndex + 1) % (window.Miniatures.length - 1);
 }, 6000);
 
 setInterval(() => {

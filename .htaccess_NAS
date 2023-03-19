@@ -46,7 +46,7 @@ RewriteRule ^(?!Multi-Plateform/).+ $0 [NC]
 RewriteRule ^audio-(\d+)\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/AudioFile\.php?track=$1 [L]
 
 # VideoFile avec numéro de track :
-RewriteRule ^video-(\d+)\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/VideoFile\.php?track=$1 [L]
+RewriteRule ^video-(\d+)\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/videoYoutube\.php?track=$1 [L]
 
 # Contact
 RewriteRule ^contact\.html$ https://paulluxwaffle.synology.me/Multi-Plateform/pages/contact\.php [L]
