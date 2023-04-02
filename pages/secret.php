@@ -37,6 +37,15 @@ $user = $parts[0];
     <link rel="stylesheet" type="text/css" href="../assets/css/secret.css" />
     <!--<link rel="stylesheet" type="text/css" href="../assets/css/standard.css" />
     <script src="../assets/js/jquery.js"></script>-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-947003196"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-947003196');
+    </script>
 </head>
 <body  style="font-family: Arial, sans-serif;">
     <div class="navbar flexy">

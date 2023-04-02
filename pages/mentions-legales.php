@@ -53,6 +53,15 @@
 
   gtag('config', 'G-K07Z7YG6ZX');
   </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-947003196"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-947003196');
+  </script>
 </head>
 <body id="bodyIndex">
   <div id="turnDeviceNotification"></div>

@@ -17,6 +17,15 @@ session_destroy();
     <link href="../assets/css/login.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <title>Se connecter</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-947003196"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-947003196');
+    </script>
 </head>
 <body>
     <div class="big-title">

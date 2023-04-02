@@ -194,6 +194,15 @@ $ogLink =  rel2abs($result['miniature'], "https://www.negritube.fr/pages/");
   ?>
   <noscript><p><img src="//negritube.fr/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-947003196"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-947003196');
+  </script>
 </head>
 <body>
   <div id="turnDeviceNotification"></div>

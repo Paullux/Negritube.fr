@@ -67,7 +67,17 @@ function clean($string) {
     <title>BackEnd</title>
     
     <link rel="stylesheet" type="text/css" href="../assets/css/secret.css" />
-</head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-947003196"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-947003196');
+    </script>
+    </head>
 <body  style="font-family: Arial, sans-serif;">
     <div class="navbar flexy">
       <div class="flexy">
