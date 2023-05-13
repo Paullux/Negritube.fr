@@ -168,7 +168,7 @@ $cover = scandir($dir, SCANDIR_SORT_ASCENDING);
       </nav>
       <div class="link_song miniatureandcover">
         <a class="miniature box" id="Miniatures" href="video-1.html" onmouseover="launchWait(0);" onmouseout="cancelWait();">
-          <img src="assets/img/pngegg.png" alt="YT" class="src">
+          <img src="assets/img/musicplayer.png" alt="YT" class="src">
           <h3 class="typeOfContent">
             Les Clips
           </h3>
@@ -178,7 +178,7 @@ $cover = scandir($dir, SCANDIR_SORT_ASCENDING);
           <div class="right"></div>
         </a>
         <div class="zoom box">
-          <img class="affiche" src="assets/img/affichePlublication.jpg" />
+          <img class="affiche" src="assets/img/affiche.jpg" />
         </div>
         <a class="albumCover box" id="Covers" href="audio-1.html" onmouseover="launchWait(1);" onmouseout="cancelWait();">
           <h3 class="typeOfContent">

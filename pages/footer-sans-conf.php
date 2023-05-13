@@ -44,7 +44,7 @@ echo '</div>';
 echo '<div class="vl"></div>';
 
 // prepare the statement
-$sth = $dbco->prepare("SELECT * FROM videoyt");
+$sth = $dbco->prepare("SELECT * FROM videos");
 
 // execute the statement
 $sth->execute();
@@ -57,8 +57,8 @@ echo '<div class="VideoClass">';
 echo '<h2>Clips vidéos</h2>';
 for ($j = 1; $j <= 10; $j++) {
     $randomVideo = rand(1, $videonumber);
-    $linkTitleVideo = $result[$randomVideo]['title'];
-    $reallinkVideo =  "$url/pages/videoYoutube.php?track=$randomVideo";
+    $linkTitleVideo = $result[$randomVideo - 1]['Artiste'] . ' - ' . $result[$randomVideo - 1]['Titre'];
+    $reallinkVideo =  "$url/pages/VideoFile.php?track=$randomVideo";
     echo "<a class='callVideo' href=$reallinkVideo>$linkTitleVideo</a>";
 }
 echo '<br></div>';
